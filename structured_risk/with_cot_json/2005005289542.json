@@ -1,0 +1,43 @@
+{
+  "risk_factor_classification": {
+    "Road Layer": [
+      {
+        "Risk Factor": "Lane Connectivity",
+        "Risk State": "Up-grade",
+        "Specific Description": "The southbound roadway had a +4 percent grade, potentially affecting V1's speed and visibility when approaching the intersection, contributing to the misjudgment of the gap in traffic. "
+      }
+    ],
+    "Infrastructure Layer": [
+      {
+        "Risk Factor": "Traffic Control Devices",
+        "Risk State": "No signal control",
+        "Specific Description": "The lack of traffic control on the east/west roadway, combined with the stop sign control on the southbound road, created a potentially ambiguous situation at the intersection where V1's turning attempt was based on imperfect gap assessment."
+      }
+    ],
+    "Object Interaction Layer": [
+      {
+        "Risk Factor": "Sight-distance Condition",
+        "Risk State": "Dynamic obstruction",
+        "Specific Description": "The presence of the box truck in the adjacent lane created a dynamic obstruction, severely restricting V2's sight distance to V1, hindering timely recognition of the oncoming vehicle and increasing the collision risk. The report specifically stated 'sightline restriction caused by the non-contact truck'."
+      },
+      {
+        "Risk Factor": "Yielding Behavior",
+        "Risk State": "Unprotected left-turn forcing",
+        "Specific Description": "The box truckâs action of waving V1 onto the roadway, despite the presence of oncoming traffic, could have created a false sense of security and contributed to V1âs decision to proceed with the left turn. This exemplifies an unprotected left-turn forcing situation that contributed to the collision."
+      }
+    ],
+    "Environment Layer": [],
+    "Other Relevant Risk Layer": [
+      {
+        "Risk Factor": "Traffic Congestion",
+        "Risk State": "N/A",
+        "Specific Description": "The backed-up traffic in the westbound lanes hampered V2âs ability to react to the encroachment and reduced visibility reducing the time to respond to V1âs maneuver. The report explicitly mentions 'traffic flow interruption caused by rush hour congestion'."
+      },
+      {
+        "Risk Factor": "Non-Contact Vehicle's Action",
+        "Risk State": "N/A",
+        "Specific Description": "The act of the stopped box truck waving V1 into the intersection, while possibly well-intentioned, contributed to the obscured view of V2 and the incorrect assessment of the traffic gap, prompting V1 to enter the intersection unsafely."
+      }
+    ]
+  }
+}

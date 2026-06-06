@@ -1,0 +1,42 @@
+{
+  "risk_factor_classification": {
+    "Road Layer": [],
+    "Infrastructure Layer": [
+      {
+        "Risk Factor": "Roadside Safety Zone",
+        "Risk Level": "Level 2",
+        "Specific Description": "The accident report states Vehicle #1 struck the 'left inside concrete retaining wall' after the initial contact with Vehicle #2. This indicates the presence of a rigid obstacle (the concrete wall) adjacent to the travel lanes, contributing to the severity of the crash after the initial collision."
+      }
+    ],
+    "Object Interaction Layer": [
+      {
+        "Risk Factor": "Following Behavior",
+        "Risk Level": "Level 2",
+        "Specific Description": "The report states Vehicle #1 'approached the Cavalier (V2) from behind at a high rate of speed and began following closely'. This demonstrates following too closely, which is a direct contributing factor to the sequence of events leading to the collision."
+      },
+      {
+        "Risk Factor": "Speed Interaction",
+        "Risk Level": "Level 2",
+        "Specific Description": "Vehicle #1 approached Vehicle #2 at a 'high rate of speed' creating a âlarge longitudinal speed differenceâ. This difference in speed contributed to the driver of Vehicle #1 misjudging the gap and attempting a risky maneuver, ultimately leading to the collision."
+      },
+      {
+        "Risk Factor": "Key Vehicle Behavior",
+        "Risk Level": "Level 3",
+        "Specific Description": "The report indicates Vehicle #1 attempted to 'return to the far left in front of Vehicle #2' and collided with Vehicle #2, which constitutes an illegal lane change/cut-in."
+      }
+    ],
+    "Environment Layer": [],
+    "Other Relevant Risk Layer": [
+      {
+        "Risk Factor": "Aggressive Driving",
+        "Risk Level": "Level 2",
+        "Specific Description": "Both drivers accused the other of aggressive driving. While not in the risk factor list, the aggressive acts of speeding and tailgating by Vehicle #1 were significant contributing factors to the escalating situation and the subsequent collision."
+      },
+      {
+        "Risk Factor": "Misjudgment of Gap/Speed",
+        "Risk Level": "Level 2",
+        "Specific Description": "The report identifies 'misjudgment of gap or other's speed' as a critical reason for the crash. This indicates a perception error by the driver of Vehicle #1, crucial in assessing the safety of a lane change."
+      }
+    ]
+  }
+}

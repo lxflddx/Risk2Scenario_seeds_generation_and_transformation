@@ -1,0 +1,244 @@
+{
+    "scenario_id": 4,
+    "accident_report": "(I) Vehicle Initialization\nOn a one-way four-lane urban expressway (Lane 1 is the rightmost, Lane 4 is the leftmost), the roadway has a continuous downhill grade of approximately -6.2% under unlit nighttime conditions. A rigid concrete barrier is present along the outer edge of Lane 4.\nV1 is traveling in Lane 3, approximately 25 meters behind V2, at an initial speed of 95 km/h, maintaining steady motion with the intention to proceed quickly in-lane, but with a short following distance.\nV2 is ahead of V1 in Lane 3, traveling at 60 km/h after merging from a right-side ramp, intending to gradually accelerate into the main traffic flow.\nV4 is in Lane 4, slightly behind V1 by about 5 meters, traveling at 100 km/h and accelerating, intending to overtake traffic using the leftmost lane.\n\n(II) Scenario Development\nDue to the downhill grade, all vehicles gradually increase speed. V1 accelerates from 95 km/h to approximately 105 km/h without sufficient braking, while V2 only increases slightly to about 65 km/h, creating a significant longitudinal speed difference of around 40 km/h. Under low nighttime visibility, V1 misjudges the closing distance and continues following closely, reducing available reaction time.\n\nAs the gap between V1 and V2 shrinks to about 15 meters, V1 begins light braking, but the downhill momentum limits deceleration effectiveness, and the gap continues to close. V2 detects the rapidly approaching vehicle behind but, due to limited visibility, fails to accurately assess surrounding traffic and initiates an evasive maneuver.\n\nWith no available space on the right, V2 abruptly steers left into Lane 4 without sufficient clearance checking. At the same time, V4 is approaching from behind in Lane 4 at approximately 105 km/h. Due to poor visibility, V2 misjudges V4’s position and speed, intruding directly into its path.\n\nV4 immediately performs hard braking and slight left steering, but lateral escape is constrained by the adjacent rigid barrier. Meanwhile, V1 attempts to steer left to avoid rear-ending V2, but Lane 4 is already occupied by V2 and V4, leaving insufficient lateral clearance. The available maneuvering space rapidly collapses.\n\n(III) Outcome\nV2 ultimately collides laterally with V4 while entering Lane 4, with the impact occurring near the left-side barrier. The crash results from the combined effects of downhill-induced speed increase, reduced nighttime visibility, significant speed differential, compressed reaction space due to V1’s close following, and V2’s unsafe lane-crossing maneuver. After the collision, Lanes 3 and 4 become partially blocked, leading to traffic slowdown and potential secondary risks.",
+    "tas_scenario": {
+        "Environmental Context": "One-way four-lane urban expressway with a downhill grade of -6.2% under unlit nighttime conditions. Rigid concrete barrier present along the outer edge of Lane 4.",
+        "Agent Initial States": [
+            "V1 is in Lane 3, traveling at 95 km/h, 25 meters behind V2.",
+            "V2 is in Lane 3, traveling at 60 km/h after merging from a right-side ramp.",
+            "V4 is in Lane 4, traveling at 100 km/h, slightly behind V1 by about 5 meters."
+        ],
+        "Temporal Action Sequence": [
+            [
+                "V1",
+                "keep_speed",
+                "east",
+                "eastbound",
+                "lane 3",
+                "",
+                "1"
+            ],
+            [
+                "V2",
+                "keep_speed",
+                "east",
+                "eastbound",
+                "lane 3",
+                "",
+                "2"
+            ],
+            [
+                "V4",
+                "accelerate",
+                "east",
+                "eastbound",
+                "lane 4",
+                "",
+                "3"
+            ],
+            [
+                "V1",
+                "accelerate",
+                "east",
+                "eastbound",
+                "lane 3",
+                "",
+                "4"
+            ],
+            [
+                "V2",
+                "keep_speed",
+                "east",
+                "eastbound",
+                "lane 3",
+                "",
+                "5"
+            ],
+            [
+                "V1",
+                "decelerate",
+                "east",
+                "eastbound",
+                "lane 3",
+                "",
+                "6"
+            ],
+            [
+                "V2",
+                "lane_change_left",
+                "lane 4",
+                "eastbound",
+                "lane 3",
+                "",
+                "7"
+            ],
+            [
+                "V4",
+                "decelerate",
+                "east",
+                "eastbound",
+                "lane 4",
+                "",
+                "8"
+            ],
+            [
+                "V1",
+                "lane_change_left",
+                "lane 4",
+                "eastbound",
+                "lane 3",
+                "",
+                "9"
+            ],
+            [
+                "V2",
+                "strike",
+                "V4",
+                "eastbound",
+                "lane 4",
+                "",
+                "10"
+            ]
+        ],
+        "Candidate Ego Vehicle": "V4"
+    },
+    "logical_scenario": {
+        "world": {
+            "time_of_day": "night",
+            "weather": "clear",
+            "road_condition": "dry"
+        },
+        "road": {
+            "structure": {
+                "type": "roadway",
+                "layout": "straight",
+                "num_lanes": 4,
+                "slope": "downhill"
+            },
+            "infrastructure": {
+                "roadside_safety": "rigid_barrier"
+            }
+        },
+        "vehicles": [
+            {
+                "vehicle_id": "V1",
+                "lane_id": [
+                    3,
+                    3
+                ],
+                "offset": [
+                    25,
+                    35
+                ],
+                "initial_speed": [
+                    26,
+                    36
+                ]
+            },
+            {
+                "vehicle_id": "V2",
+                "lane_id": [
+                    3,
+                    3
+                ],
+                "offset": [
+                    0,
+                    10
+                ],
+                "initial_speed": [
+                    20,
+                    30
+                ]
+            },
+            {
+                "vehicle_id": "ego",
+                "lane_id": [
+                    4,
+                    4
+                ],
+                "offset": [
+                    5,
+                    15
+                ],
+                "initial_speed": [
+                    30,
+                    40
+                ]
+            }
+        ],
+        "actions": [
+            {
+                "vehicle_id": "V1",
+                "type": "Accelerate",
+                "target_speed": [
+                    26,
+                    36
+                ],
+                "trigger_sequence": [
+                    2,
+                    2
+                ],
+                "time_interval": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "vehicle_id": "V1",
+                "type": "Decelerate",
+                "target_speed": [
+                    15,
+                    25
+                ],
+                "trigger_sequence": [
+                    3,
+                    3
+                ],
+                "time_interval": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "vehicle_id": "V2",
+                "type": "LaneChanging",
+                "target_lane": [
+                    4,
+                    4
+                ],
+                "target_speed": [
+                    20,
+                    30
+                ],
+                "trigger_sequence": [
+                    4,
+                    4
+                ],
+                "time_interval": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "vehicle_id": "V1",
+                "type": "LaneChanging",
+                "target_lane": [
+                    4,
+                    4
+                ],
+                "target_speed": [
+                    26,
+                    36
+                ],
+                "trigger_sequence": [
+                    6,
+                    6
+                ],
+                "time_interval": [
+                    1,
+                    2
+                ]
+            }
+        ]
+    }
+}

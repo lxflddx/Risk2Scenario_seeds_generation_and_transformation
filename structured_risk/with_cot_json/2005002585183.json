@@ -1,0 +1,40 @@
+{
+  "risk_factor_classification": {
+    "Road Layer": [
+      {
+        "Risk Factor": "Road Curvature",
+        "Risk Level": "Level 2",
+        "Specific Description": "The report states the roadway was 'slightly curving to the right prior to the crash site'. This curvature, while not severe, contributed to the crash as it may have reduced sight distance and increased the complexity of the driving task, particularly for Vehicle #2 who was distracted."
+      },
+      {
+        "Risk Factor": "Lane Configuration",
+        "Risk Level": "Level 2",
+        "Specific Description": "The roadway was 'two lane undivided', which means there was no physical barrier separating traffic in opposite directions. This configuration increases the risk of collisions when a vehicle maneuvers, such as Vehicle #1 preparing to turn left, as oncoming traffic must be judged and gaps utilized, creating a dynamic and potentially hazardous situation. The lack of lane division contributed to Vehicle #2âs misjudgment of the situation."
+      }
+    ],
+    "Infrastructure Layer": [],
+    "Object Interaction Layer": [
+      {
+        "Risk Factor": "Following Behavior",
+        "Risk Level": "Level 2",
+        "Specific Description": "Vehicle #2 'impacted the rear of Vehicle #1', indicating 'Following Too Closely'. Vehicle #1 stated Vehicle #2 was coming 'fast' and the driver of Vehicle #2 admitted he 'did see Vehicle #1 stopped in the roadway too late'. This demonstrates an unsafe following distance contributed to the collision."
+      },
+      {
+        "Risk Factor": "Speed Interaction",
+        "Risk Level": "Level 2",
+        "Specific Description": "Vehicle #1 was stopped, and Vehicle #2 was approaching at a speed that, combined with the driverâs distraction, did not allow sufficient time to react and avoid the collision. The driver of Vehicle #2 stated he 'tried to stop but didn't have enough time to stop', implying a 'Large Longitudinal Speed Difference' between the vehicles was a contributing factor."
+      }
+    ],
+    "Environment Layer": [],
+    "Other Relevant Risk Layer": [
+      {
+        "Risk Factor": "Driver Distraction",
+        "Specific Description": "The driver of Vehicle #2 was 'showing his girlfriend the trees in the areaâ¦looking to the right at times,â which constitutes a significant external distraction. This distraction directly led to the driver not perceiving Vehicle #1âs stopped position in time to react safely, as confirmed by his own statement 'he did see Vehicle #1 stopped in the roadway too late.'"
+      },
+      {
+        "Risk Factor": "Medication Use",
+        "Specific Description": "Vehicle #2 driver was 'taking multiple medications for an immune deficiency disease'. While the specific effects are unknown, multiple medications could potentially impair reaction time or cognitive function, indirectly contributing to the collision."
+      }
+    ]
+  }
+}

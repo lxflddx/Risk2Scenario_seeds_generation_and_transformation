@@ -1,0 +1,83 @@
+{
+  "timestamp": "2026-03-10 21:27:47",
+  "total_risk_factors": 5,
+  "risk_descriptions": [
+    {
+      "Risk Level": "Curved Road",
+      "Specific Description": "The accident occurred on a road that slightly curved to the right prior to the crash site. According to the analysis, curved roads increase the visual and cognitive loading on drivers, especially those in the inside lane, which may contribute to delayed recognition of forward hazards such as a stopped vehicle.",
+      "Accident Report ID": "2005002585183",
+      "Risk Factor": "Road Curvature"
+    },
+    {
+      "Risk Level": "Rigid Obstacle (Guardrail/Wall)",
+      "Specific Description": "A concrete traffic barrier divided the eastbound and westbound lanes, and Vehicle #1 struck this wall after swerving left onto the left shoulder. The presence of a rigid obstacle increases the consequences of loss of control, influencing the severity of the first collision.",
+      "Accident Report ID": "2005045705161",
+      "Risk Factor": "Roadside Safety Zone"
+    },
+    {
+      "Risk Level": "Emergency Braking",
+      "Specific Description": "V1's driver applied emergency braking upon the phantom vehicle's cut-in, initiating a loss of directional control that led to lane departure and collision.",
+      "Accident Report ID": "2005041508581",
+      "Risk Factor": "Key Vehicle Behavior"
+    },
+    {
+      "Risk Level": "Slippery",
+      "Specific Description": "Due to rain and wet roadways, the available traction was diminished. Therefore, lower road surface grip potentially extended V1âs required stopping distance, reducing tractional-reaction effectiveness in avoiding impact.",
+      "Accident Report ID": "2005045705282",
+      "Risk Factor": "Road Friction Coefficient"
+    },
+    {
+      "Risk Level": "Adverse Weather (Rain/Fog)",
+      "Specific Description": "Light rain was present. Light rain, even without slippery roads, can reduce visibility and compound challenges in detecting oncoming traffic like V1.",
+      "Accident Report ID": "2005043699321",
+      "Risk Factor": "Visibility Conditions"
+    }
+  ],
+  "detailed_results": [
+    {
+      "Input Factor": "RoadCurvature",
+      "Input Value": "Curve",
+      "Layer": "Road Layer",
+      "Risk Factor": "Road Curvature",
+      "Risk Level": "Curved Road",
+      "Specific Description": "The accident occurred on a road that slightly curved to the right prior to the crash site. According to the analysis, curved roads increase the visual and cognitive loading on drivers, especially those in the inside lane, which may contribute to delayed recognition of forward hazards such as a stopped vehicle.",
+      "Accident Report ID": "2005002585183"
+    },
+    {
+      "Input Factor": "RoadsideSafetyZone",
+      "Input Value": "RigidObstacle",
+      "Layer": "Infrastructure Layer",
+      "Risk Factor": "Roadside Safety Zone",
+      "Risk Level": "Rigid Obstacle (Guardrail/Wall)",
+      "Specific Description": "A concrete traffic barrier divided the eastbound and westbound lanes, and Vehicle #1 struck this wall after swerving left onto the left shoulder. The presence of a rigid obstacle increases the consequences of loss of control, influencing the severity of the first collision.",
+      "Accident Report ID": "2005045705161"
+    },
+    {
+      "Input Factor": "KeyVehicleBehavior",
+      "Input Value": "EmergencyBraking",
+      "Layer": "Object Interaction Layer",
+      "Risk Factor": "Key Vehicle Behavior",
+      "Risk Level": "Emergency Braking",
+      "Specific Description": "V1's driver applied emergency braking upon the phantom vehicle's cut-in, initiating a loss of directional control that led to lane departure and collision.",
+      "Accident Report ID": "2005041508581"
+    },
+    {
+      "Input Factor": "RoadFrictionCoefficient",
+      "Input Value": "Slippery",
+      "Layer": "Environment Layer",
+      "Risk Factor": "Road Friction Coefficient",
+      "Risk Level": "Slippery",
+      "Specific Description": "Due to rain and wet roadways, the available traction was diminished. Therefore, lower road surface grip potentially extended V1âs required stopping distance, reducing tractional-reaction effectiveness in avoiding impact.",
+      "Accident Report ID": "2005045705282"
+    },
+    {
+      "Input Factor": "VisibilityConditions",
+      "Input Value": "AdverseWeather",
+      "Layer": "Environment Layer",
+      "Risk Factor": "Visibility Conditions",
+      "Risk Level": "Adverse Weather (Rain/Fog)",
+      "Specific Description": "Light rain was present. Light rain, even without slippery roads, can reduce visibility and compound challenges in detecting oncoming traffic like V1.",
+      "Accident Report ID": "2005043699321"
+    }
+  ]
+}

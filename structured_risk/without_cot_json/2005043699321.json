@@ -1,0 +1,43 @@
+{
+  "risk_factor_classification": {
+    "Road Layer": [
+      {
+        "Risk Factor": "Lane Configuration",
+        "Risk Level": "Level 2",
+        "Specific Description": "The roadway was an undivided five-lane road with a two-way center turn lane. This configuration allows for opposing traffic to directly encroach into each other's paths, contributing to the vulnerability of Vehicle 1 when Vehicle 2 initiated a left turn. "
+      },
+      {
+        "Risk Factor": "Road Grade",
+        "Risk Level": "Level 3",
+        "Specific Description": "The eastbound lanes had a 5% uphill grade. While not directly causing the collision, the uphill grade may have impacted the visibility of Vehicle 1 for Vehicle 2, potentially reducing reaction time."
+      }
+    ],
+    "Infrastructure Layer": [],
+    "Object Interaction Layer": [
+      {
+        "Risk Factor": "Speed Interaction",
+        "Risk Level": "Level 2",
+        "Specific Description": "There was a large longitudinal speed difference between Vehicle 1 (72 kmph) and Vehicle 2 (40 kmph at impact). This speed differential contributed to the severity of the impact and the inability of Vehicle 2's driver to properly assess the approaching vehicle's speed before initiating the turn."
+      }
+    ],
+    "Environment Layer": [
+      {
+        "Risk Factor": "Road Friction Coefficient",
+        "Risk Level": "Level 2",
+        "Specific Description": "The report mentions 'light rain,' indicating a slippery road surface. Reduced friction would affect the braking distance and maneuverability of both vehicles, contributing to the collision."
+      },
+      {
+        "Risk Factor": "Visibility Conditions",
+        "Risk Level": "Level 3",
+        "Specific Description": "Report noted 'light rainâ which constitutes adverse weather. Adverse weather reduces visibility and affects driver perception, contributing to Vehicle 2 not seeing Vehicle 1."
+      }
+    ],
+    "Other Relevant Risk Layer": [
+      {
+        "Risk Factor": "Traffic Obstruction",
+        "Risk Level": "Level 2",
+        "Specific Description": "Vehicle 2âs driver stated his view was obstructed by other vehicles while attempting to turn left. The obstruction directly prevented Vehicle 2 from seeing Vehicle 1, leading to the encroachment and subsequent collision."
+      }
+    ]
+  }
+}

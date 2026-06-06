@@ -1,0 +1,42 @@
+{
+  "risk_factor_classification": {
+    "Road Layer": [
+      {
+        "Risk Factor": "Road Grade",
+        "Risk Level": "Level 2",
+        "Specific Description": "The road grade transitioned from a -6.2% downhill grade 200 meters before the crash to a +3.4% uphill grade at the final rest position, contributing to a changing road geometry. This could have influenced speed control or driver expectation. The report states 'Grade measurement 200 meters back from the first harmful event was -6.2% and grade measurement at final rest was +3.4%.'"
+      }
+    ],
+    "Infrastructure Layer": [
+      {
+        "Risk Factor": "Roadside Safety Zone",
+        "Risk Level": "Level 2",
+        "Specific Description": "The presence of a concrete traffic barrier (wall) served as a rigid obstacle. Vehicle #1 and Vehicle #2 both impacted the barrier after the initial collision. The report details that Vehicle #1 'struck the dividing wall with its left front' and Vehicle #2 'struck the divider wall with the left half of its front plane.'"
+      }
+    ],
+    "Object Interaction Layer": [
+      {
+        "Risk Factor": "Speed Interaction",
+        "Risk Level": "Level 2",
+        "Specific Description": "A large longitudinal speed difference existed between the vehicles, as Vehicle #2 reported the vehicle in front 'appeared to just stop' and Vehicle #1 stated that traffic ahead 'began to slow'. This unexpected slowdown initiated the chain of events. Both drivers mentioned 'traffic was slowing suddenly'."
+      },
+      {
+        "Risk Factor": "Key Vehicle Behavior",
+        "Risk Level": "Level 2",
+        "Specific Description": "Vehicle #2 performed emergency braking and a subsequent evasive maneuver. The driver swerved left 'to avoid colliding with another vehicle', and this action resulted in crossing into Vehicle #1âs lane. The report states that Vehicle #2 'swerved hard left and hit Vehicle #1.'"
+      },
+      {
+        "Risk Factor": "Key Vehicle Behavior",
+        "Risk Level": "Level 3",
+        "Specific Description": "Vehicle #2 performed an illegal evasion maneuver by crossing lane lines, which directly caused the collision with Vehicle #1. The Critical Precrash Event for Vehicle #2 was crossing its lane line. The driver of Vehicle #2 'swerved to the left crossing the center lane'."
+      }
+    ],
+    "Environment Layer": [],
+    "Other Relevant Risk Layer": [
+      {
+        "Risk Factor": "Unexpected Traffic Slowdown",
+        "Specific Description": "Traffic ahead of both vehicles slowed down unexpectedly for unknown reasons, which served as an initiating event in the crash. This is repeatedly stated in the accident report: 'traffic ahead of the crash was slowed unexpectedly for an unknown reasonâ and âas he was traveling in the left lane and traffic ahead began to slowâ."
+      }
+    ]
+  }
+}

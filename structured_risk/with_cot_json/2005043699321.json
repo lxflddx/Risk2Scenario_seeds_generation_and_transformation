@@ -1,0 +1,47 @@
+{
+  "risk_factor_classification": {
+    "Road Layer": [
+      {
+        "Risk Factor": "Road Grade",
+        "Risk Level": "Level 3",
+        "Specific Description": "The roadway had a 5% uphill grade. This contributed to the collision as the driver of Vehicle 1 may have had reduced visibility of oncoming traffic due to the grade, and potentially misjudged the closing speed of Vehicle 2."
+      },
+      {
+        "Risk Factor": "Lane Configuration",
+        "Risk Level": "Level 2",
+        "Specific Description": "The roadway was an undivided roadway with a center turn lane. The report states, 'the roadway wasâ¦an undivided roadway with a two-way center turn laneâ, which presented a risk as it allowed for opposing traffic to come into conflict during turning maneuvers. This increased the potential for a collision when Vehicle 2 turned left into the path of Vehicle 1."
+      }
+    ],
+    "Infrastructure Layer": [],
+    "Object Interaction Layer": [
+      {
+        "Risk Factor": "Following Behavior",
+        "Risk Level": "Level 2",
+        "Specific Description": "Vehicle 2 was following a relative, which influenced his decision-making. The report specifies âV2 was following a relative in a vehicle ahead of himâ, and suggests the driver wasnât fully focused on assessing oncoming traffic independently, contributing to the misjudgment of the situation."
+      },
+      {
+        "Risk Factor": "Speed Interaction",
+        "Risk Level": "Level 2",
+        "Specific Description": "There was a large longitudinal speed difference between the vehicles. Vehicle 1 was traveling at approximately 72 kmph, while Vehicle 2 was traveling at 40 kmph at impact. This difference in speed contributed to the severity of the collision as V2 turned in front of V1."
+      }
+    ],
+    "Environment Layer": [
+      {
+        "Risk Factor": "Road Friction Coefficient",
+        "Risk Level": "Level 2",
+        "Specific Description": "The report mentions âlight rainâ. Though specified as âlightâ, this contributed conditions that reduced the road friction coefficient and may have reduced the driverâs ability to control their vehicle. âAssociated factors were light rainâ¦â"
+      },
+      {
+        "Risk Factor": "Visibility Conditions",
+        "Risk Level": "Level 3",
+        "Specific Description": "The report indicates the crash occurred during âadverse weather (rain)â. The presence of rain reduced visibility and likely contributed to the driver of V2 not seeing the approaching vehicle. The report states, âAssociated factors were light rainâ¦â"
+      }
+    ],
+    "Other Relevant Risk Layer": [
+      {
+        "Risk Factor": "Dense Traffic Conditions",
+        "Specific Description": "The report mentions âdense traffic conditionsâ were present. The obstruction of V1 by traffic was a key factor, as V2 did not see V1 approaching and the critical reason was the driverâs view was obstructed by other vehicles."
+      }
+    ]
+  }
+}

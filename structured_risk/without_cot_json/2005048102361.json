@@ -1,0 +1,38 @@
+{
+  "risk_factor_classification": {
+    "Road Layer": [
+      {
+        "Risk Factor": "Intersection Geometry",
+        "Risk Level": "Level 2",
+        "Specific Description": "The intersection is not a conventional cross-intersection as it includes an access road joining the east leg controlled by a yield sign. This non-standard geometry potentially contributed to the crash by creating more complex traffic flow and decision-making requirements for V1."
+      },
+      {
+        "Risk Factor": "Lane Connectivity",
+        "Risk Level": "Level 2",
+        "Specific Description": "The east leg of the intersection has an up-grade of 6.5% as it approaches the intersection. While not directly causing the collision, the upgrade could affect vehicle speed and visibility, contributing to the overall risk at the intersection."
+      }
+    ],
+    "Infrastructure Layer": [
+      {
+        "Risk Factor": "Traffic Control Devices",
+        "Risk Level": "Level 2",
+        "Specific Description": "The intersection is controlled by stop signs on the east and west legs, and a yield sign on the access road, indicating a lack of signal control. This control scheme potentially requires more judgement and potentially increases the risk of misinterpretation by drivers, such as V1."
+      }
+    ],
+    "Object Interaction Layer": [
+      {
+        "Risk Factor": "Yielding Behavior",
+        "Risk Level": "Level 2",
+        "Specific Description": "Vehicle 1 failed to adequately assess oncoming traffic (Vehicle 2) while attempting a left turn after stopping at the yield sign, resulting in an unprotected left-turn forcing situation and leading to the collision. The driverâs inadequate surveillance indicates a failure in proper yielding behavior."
+      }
+    ],
+    "Environment Layer": [],
+    "Other Relevant Risk Layer": [
+      {
+        "Risk Factor": "Inadequate Surveillance",
+        "Risk Level": "Level 2",
+        "Specific Description": "The driver of V1 admitted to inadequate surveillance, specifically failing to look to his left rear at the approaching V2. This is a critical reason for the crash."
+      }
+    ]
+  }
+}

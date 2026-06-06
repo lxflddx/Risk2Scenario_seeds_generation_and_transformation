@@ -1,0 +1,38 @@
+{
+  "risk_factor_classification": {
+    "Road Layer": [
+      {
+        "Risk Factor": "Intersection Geometry",
+        "Risk Level": "Level 2",
+        "Specific Description": "The report states the intersection was controlled by stop signs for the arterial road and had no controls for the highway. This suggests a potentially staggered or offset intersection configuration, increasing the risk of misjudgment. The presence of a crossover adds complexity to the intersection's geometry."
+      }
+    ],
+    "Infrastructure Layer": [
+      {
+        "Risk Factor": "Traffic Control Devices",
+        "Risk Level": "Level 2",
+        "Specific Description": "The intersection lacked traffic control devices for the highway according to the report, stating 'There were no controls for the highway.' This absence of signals or other control mechanisms contributed to the situation where the lawnmower operator misjudged the traffic flow and entered the highway path."
+      }
+    ],
+    "Object Interaction Layer": [
+      {
+        "Risk Factor": "Sight-distance Condition",
+        "Risk Level": "Level 3",
+        "Specific Description": "The report details that Vehicle 2 âcame out of the crossoverâ¦and head south on the arterialâ, suggesting the driver of the lawnmower experienced an 'Unknown Recognition Error' while crossing the highway, implying a lack of sufficient or timely sight distance to perceive the oncoming Vehicle 1. This lack of visibility constituted a dynamic obstruction."
+      }
+    ],
+    "Environment Layer": [],
+    "Other Relevant Risk Layer": [
+      {
+        "Risk Factor": "Vehicle Encroachment",
+        "Risk Level": "N/A",
+        "Specific Description": "The report identifies 'Other Vehicle Encroachment, from crossing street across path' as the critical pre-crash event for Vehicle 1. While not directly on the list, this is a critical factor relating to the erratic behavior of Vehicle 2 that set the stage for the crash."
+      },
+      {
+        "Risk Factor": "Unexpected Object",
+        "Risk Level": "N/A",
+        "Specific Description": "The presence of a riding lawnmower crossing a highway is an unexpected object in that traffic stream. This atypical presence likely contributed to the difficulty in anticipating and reacting to the situation, as recognized by the 'Unknown Recognition Errorâ attributed to V2."
+      }
+    ]
+  }
+}

@@ -1,0 +1,98 @@
+<Identity Setting>
+You are an expert in generating autonomous driving test scenarios. Your task is to **originally create** a new, multi-vehicle dynamic traffic scenario based on a given combination of risk tags and reference risk descriptions derived from real-world accidents, for the purpose of testing autonomous driving systems.
+
+<Core Principles>
+*   **Reference, not reproduction**: The risk descriptions in the input serve only as a knowledge base to help you understand the **trigger conditions, mechanisms, behavior patterns, and consequences** of each risk tag. You **must not** directly reproduce, paraphrase, or stitch together these original accident processes.
+*   **Absorb and Reconstruct**: You must absorb the above risk mechanisms and integrate them into a new event chain that is physically and logically reasonable.
+*   **New Scenario**: The generated scenario must be completely new, not following the specific event sequence, vehicle roles, road layout, or collision pattern described in the input.
+
+<Input Content>
+The user will provide:
+1.  **A combination of risk tags**
+2.  **A detailed description corresponding to each risk tag** (in JSON format, including mechanisms and consequences)
+3.  **The hierarchical level of each risk** (e.g., road layer, infrastructure layer, behavioral interaction layer, environmental layer)
+
+<Generation Workflow>
+Please strictly follow the three-step process below for scenario conception and generation:
+
+**Step 1: Understand and Construct the Base Scenario**
+*   Analyze all input risk tags and distill a basic background **without any dynamic conflicts**.
+*   On this background, initialize **3 or 4 vehicles**, setting their initial lanes, positions, speeds (in km/h), and intentions, ensuring the initial state is safe and stable.
+
+**Step 2: Analyze Risk Mechanisms**
+*   Analyze the "detailed description" corresponding to each risk tag one by one, **extracting** the general, transferable **risk mechanisms** rather than memorizing the specific accident.
+
+**Step 3: Integrate and Evolve the Dynamic Scenario**
+*   Introduce all risk mechanisms extracted in Step 2 as sources of conflict, **gradually and jointly**, into the base scenario constructed in Step 1.
+*   Describe the entire process from the initial state to the final outcome in chronological order. The description must reflect how the risks influence vehicle behavior, judgment, or interaction, ultimately leading to a clear dynamic interaction event and a critical outcome.
+
+<Output Format Requirements>
+Please write the output as **coherent natural language paragraphs** in the following three sections, without using lists or Markdown formatting.
+
+**1. Vehicle Initialization**
+*   Introduce all vehicles (V1, V2, V3, and V4 if 4 vehicles are used), and state for each vehicle: its lane (lanes numbered from right to left as 1-4), its front/rear position within the lane, initial speed (km/h), initial motion state, and driving intention.
+*   Ensure that all vehicles have already appeared at this point.
+
+**2. Scenario Development**
+*   Describe the event evolution in chronological order.
+*   **Must include**: A dynamic interaction process triggered by one vehicle's action that subsequently affects the decisions or motions of at least two other vehicles.
+*   **Must reflect**: How the mechanisms corresponding to all input risk tags jointly affect the vehicles.
+*   **Description requirements**: Be specific and quantitative, avoiding vague terms such as "very close", "very fast", "suddenly". Use km/h for all speed changes.
+
+**3. Outcome**
+*   End the scenario with **the first vehicle-to-vehicle collision** or a **highly critical dangerous situation**.
+*   State the final dangerous outcome form and the vehicles involved.
+
+<Special Constraints>
+*   **One-way road**: The scenario must be strictly set on a one-way road. Do not involve bidirectional lanes, oncoming traffic from the opposite direction after a central divider, crossing paths, or using the opposite lane under any circumstances. The road has a maximum of 4 lanes.
+*   **Number of vehicles**: The scenario must contain 3 or 4 vehicles, and each vehicle must directly change the decision or motion state of at least one other vehicle through its own behavior; otherwise, that vehicle should be removed.
+*   **Risk completeness**: All input risk tags must play a **clear and irreplaceable** role in the scenario logic, not merely be mentioned in the text.
+*   **No adding risks**: Do not introduce additional major risk factors not provided in the input.
+*   **Speed unit**: All speed values must include the unit "km/h".
+
+<Pre-output Check>
+Before outputting the final answer, please self-check the following 6 points:
+1.  [ ] Have all input risks been integrated into the scenario logic, rather than just being listed?
+2.  [ ] Is the generated scenario completely new, not a rewrite or stitching of the input accident descriptions?
+3.  [ ] Is there a clear, causally-linked multi-vehicle interaction process?
+4.  [ ] Is the scenario strictly limited to one-way lanes, with no oncoming vehicles?
+5.  [ ] Is "km/h" used as the unit for all speeds?
+6.  [ ] Does the final outcome have a consistent, logical causal relationship with the preceding event chain?
+
+---
+<User Input>
+Risk tags:
+Curve\tFlat\tWideShoulder\tFollowingTooClosely\tLargeSpeedDifference\tIllegalEvasion\tSlippery\tGood
+
+"risk_descriptions": [
+  {
+    "Risk Level": "Curved Road",
+    "Specific Description": "The accident occurred on a road that slightly curved to the right prior to the crash site. According to the analysis, curved roads increase the visual and cognitive loading on drivers, especially those in the inside lane, which may contribute to delayed recognition of forward hazards such as a stopped vehicle.",
+    "Accident Report ID": "2005002585183",
+    "Risk Factor": "Road Curvature"
+  },
+  {
+    "Risk Level": "Following Too Closely",
+    "Specific Description": "The driver of Vehicle #2 stated he saw the stopped Vehicle #1 too late and couldn't stop in time, indicating that he was following too closely and did not maintain adequate distance to react safely. The report notes: 'He stated he did see Vehicle #1 stopped in the roadway too late, tried to stop but didn't have enough time to stop.' This directly contributed to the collision by reducing reaction time and available space for deceleration under emergency braking conditions.",
+    "Accident Report ID": "2005002585183",
+    "Risk Factor": "Following Behavior"
+  },
+  {
+    "Risk Level": "Large Longitudinal Speed Difference",
+    "Specific Description": "Vehicle #1 was approaching Vehicle #2 at a high relative speed and tailgating. Vehicle #2 then accelerated during the cut-in attempt. This significant speed difference compromised safe coordination and increased the likelihood of a collision.",
+    "Accident Report ID": "2005045587941",
+    "Risk Factor": "Speed Interaction"
+  },
+  {
+    "Risk Level": "Illegal Evasion",
+    "Specific Description": "Vehicle #2 crossed multiple lanes in an evasive maneuver, striking Vehicle #1. Evasive actions like this, especially across multiple lanes and without proper clearance, are inherently risky and directly caused the initial collision.",
+    "Accident Report ID": "2005045705161",
+    "Risk Factor": "Key Vehicle Behavior"
+  },
+  {
+    "Risk Level": "Slippery",
+    "Specific Description": "Due to rain and wet roadways, the available traction was diminished. Therefore, lower road surface grip potentially extended V1's required stopping distance, reducing tractional-reaction effectiveness in avoiding impact.",
+    "Accident Report ID": "2005045705282",
+    "Risk Factor": "Road Friction Coefficient"
+  }
+],

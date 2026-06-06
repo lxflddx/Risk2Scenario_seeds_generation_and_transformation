@@ -1,0 +1,64 @@
+{
+  "risk_factor_classification": {
+    "Road Layer": [
+      {
+        "Risk Factor": "Road Curvature",
+        "Risk Level": "Level 1",
+        "Specific Description": "The report states the roadway was straight, which represents the default safe state and is not a risk factor."
+      },
+      {
+        "Risk Factor": "Road Grade",
+        "Risk Level": "Level 1",
+        "Specific Description": "The report states the roadway was level, which represents the default safe state and is not a risk factor."
+      },
+      {
+        "Risk Factor": "Lane Configuration",
+        "Risk Level": "Level 1",
+        "Specific Description": "The report states the roadway was divided, which represents the default safe state and is not a risk factor."
+      }
+    ],
+    "Infrastructure Layer": [
+      {
+        "Risk Factor": "Roadside Safety Zone",
+        "Risk Level": "Level 2",
+        "Specific Description": "The presence of a concrete median barrier, while intended for safety, is identified, as it was impacted by Vehicle #3 after the initial collision, indicating a potential risk related to roadside design and impact severity."
+      }
+    ],
+    "Object Interaction Layer": [
+      {
+        "Risk Factor": "Speed Interaction",
+        "Risk Level": "Level 2",
+        "Specific Description": "Vehicle #1 was traveling at a higher speed than Vehicle #3 in the same lane. Vehicle #3's critical pre-crash event was 'another vehicle in his lane, traveling in the same direction at a higher speed', which directly led to the first collision."
+      },
+      {
+        "Risk Factor": "Following Behavior",
+        "Risk Level": "Level 2",
+        "Specific Description": "The initial collision involved Vehicle #1 impacting the rear of Vehicle #3. While the distance wasn't explicitly stated, the impact suggests a potential issue with following distance."
+      }
+    ],
+    "Environment Layer": [
+      {
+        "Risk Factor": "Road Friction Coefficient",
+        "Risk Level": "Level 1",
+        "Specific Description": "The report mentions clear skies, implying dry road conditions, representing the default safe state."
+      },
+      {
+        "Risk Factor": "Visibility Conditions",
+        "Risk Level": "Level 1",
+        "Specific Description": "The report mentions clear skies and mid-day conditions, indicating good visibility representing the default safe state."
+      }
+    ],
+    "Other Relevant Risk Layer": [
+      {
+        "Risk Factor": "Unknown Pre-Crash Event (Vehicle #1)",
+        "Risk Level": "Level 2",
+        "Specific Description": "The report states the critical pre-crash event for Vehicle #1 is unknown, suggesting a triggering factor that has not been identified but directly caused the initial impact."
+      },
+      {
+        "Risk Factor": "Driver Inexperience (Vehicle #3)",
+        "Risk Level": "Level 2",
+        "Specific Description": "The report identifies driver inexperience for Vehicle #3. Though subjective, it is stated as an associated factor to the driver's pre-crash event and may have been a contributing factor to their reaction to the speed difference."
+      }
+    ]
+  }
+}

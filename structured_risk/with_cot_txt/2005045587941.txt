@@ -1,0 +1,120 @@
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+{"id":"gen-1774493510-ZDH5stqAt7vW62fxhTg6","object":"chat.completion","created":1774493510,"model":"google/gemma-3-27b-it","provider":"DeepInfra","system_fingerprint":null,"choices":[{"index":0,"logprobs":null,"finish_reason":"stop","native_finish_reason":"stop","message":{"role":"assistant","content":"[JSON]
+{
+\"risk_factor_classification\": {
+\"Road Layer\": [],
+\"Infrastructure Layer\": [
+{
+\"Risk Factor\": \"Roadside Safety Zone\",
+\"Risk Level\": \"Level 2\",
+\"Specific Description\": \"The crash occurred near a barrier-divided interstate, with a concrete retaining wall present. The report states Vehicle #1 “…struck the left inside concrete retaining wall with its left side…”, indicating the presence of a rigid obstacle and contributing to the severity of the crash. \"
+}
+],
+\"Object Interaction Layer\": [
+{
+\"Risk Factor\": \"Following Behavior\",
+\"Risk Level\": \"Level 2\",
+\"Specific Description\": \"Vehicle #1 was ‘following closely’ Vehicle #2, attempting to make the driver move over. The report explicitly states Vehicle #1 “approached the Cavalier (V2) from behind at a high rate of speed and began following closely in an attempt to get the driver to move over and let him pass.” This 'following too closely' behavior was a direct precursor to the near collision.\"
+},
+{
+\"Risk Factor\": \"Speed Interaction\",
+\"Risk Level\": \"Level 2\",
+\"Specific Description\": \"There was a 'large longitudinal speed difference' between Vehicle #1 and Vehicle #2. Vehicle #1 was approaching at a 'high rate of speed', and Vehicle #2's brake tap suggests differing speeds and a potential misjudgment of gap/speed by Vehicle #1, increasing the risk of a collision. \"
+},
+{
+\"Risk Factor\": \"Key Vehicle Behavior\",
+\"Risk Level\": \"Level 3\",
+\"Specific Description\": \"Vehicle #1 executed an ‘illegal lane change/cut-in’ as it attempted to return to the left lane in front of Vehicle #2. The report states Vehicle #1 'tried to return to the far left in front of Vehicle #2', resulting in the initial contact between the vehicles, confirming an unsafe lane change maneuver. \"
+}
+],
+\"Environment Layer\": [],
+\"Other Relevant Risk Layer\": [
+{
+\"Risk Factor\": \"Aggressive Driving\",
+\"Specific Description\": \"Both drivers accused each other of aggressive driving. This behavior, while not in the predefined list, likely contributed to the escalation of the situation and the subsequent risky maneuvers, as stated in the report: 'aggressive acts, speeding and tailgating, were coded and the driver was upset with other vehicle driver.'\"
+},
+{
+\"Risk Factor\": \"Misjudgment of Gap or Speed\",
+\"Specific Description\": \"The critical reason for Vehicle #1’s critical event was a 'decision error, misjudgment of gap or other's speed'. This indicates a perceptual or cognitive error by the driver of Vehicle #1, contributing significantly to the collision, and is relevant to understanding the cause of the event.\"
+}
+]
+}
+}
+[/JSON]","refusal":null,"reasoning":null}}],"usage":{"prompt_tokens":1910,"completion_tokens":610,"total_tokens":2520,"cost":0.0002504,"is_byok":false,"prompt_tokens_details":{"cached_tokens":0,"cache_write_tokens":0,"audio_tokens":0,"video_tokens":0},"cost_details":{"upstream_inference_cost":0.0002504,"upstream_inference_prompt_cost":0.0001528,"upstream_inference_completions_cost":0.0000976},"completion_tokens_details":{"reasoning_tokens":0,"image_tokens":0,"audio_tokens":0}}}

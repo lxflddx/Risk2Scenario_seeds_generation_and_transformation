@@ -1,0 +1,44 @@
+{
+  "risk_factor_classification": {
+    "Road Layer": [
+      {
+        "Risk Factor": "Intersection Geometry",
+        "Risk Level": "Level 2",
+        "Specific Description": "The accident occurred at an intersection of a U.S. Highway and a rural arterial road. The report states it was intersected by a rural arterial road, indicating a potential for complex traffic movements and a higher collision risk compared to a conventional cross-intersection, potentially contributing to the encroachment event."
+      }
+    ],
+    "Infrastructure Layer": [
+      {
+        "Risk Factor": "Traffic Control Devices",
+        "Risk Level": "Level 2",
+        "Specific Description": "The intersection was controlled by stop signs for the arterial road but had no controls for the highway. This lack of control for the highway traffic creates an environment where vehicles on the arterial may misjudge gaps in the highway traffic, leading to unsafe crossing attempts. This contributed to Vehicle 2's encroachment onto the highway."
+      }
+    ],
+    "Object Interaction Layer": [
+      {
+        "Risk Factor": "Sight-distance Condition",
+        "Risk Level": "Level 2",
+        "Specific Description": "The report does not specify any obstructions to sight distance, but Vehicle 2 entering the highway from a crossover was struck by Vehicle 1. While not explicitly stated as an obstruction, the crossover location may have presented a limited view for both vehicles, contributing to Vehicle 1's inability to react to Vehicle 2âs movement."
+      }
+    ],
+    "Environment Layer": [
+      {
+        "Risk Factor": "Road Friction Coefficient",
+        "Risk Level": "Level 1",
+        "Specific Description": "Reported as dry conditions, thus not a risk factor"
+      },
+      {
+        "Risk Factor": "Visibility Conditions",
+        "Risk Level": "Level 1",
+        "Specific Description": "Daylight visibility, thus not a risk factor"
+      }
+    ],
+    "Other Relevant Risk Layer": [
+      {
+        "Risk Factor": "Unprotected Turn/Crossing",
+        "Risk Level": "Level 2",
+        "Specific Description": "Vehicle 2 attempted to cross the eastbound lanes of the highway from a crossover. This manoeuvre, coupled with the lack of traffic control on the highway, created an unprotected crossing situation where Vehicle 2 was vulnerable to oncoming traffic. This action directly led to the collision with Vehicle 1."
+      }
+    ]
+  }
+}

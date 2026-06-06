@@ -1,0 +1,9 @@
+Risk Factor: Vehicle 2 Driver Action
+Specific Description: Acceleration by Vehicle 2 to avoid the crash, potentially altering the dynamic situation.
+
+Risk Factor: Vehicle Maneuver â Stopping
+Specific Description: Vehicle #1âs stop to allow for a left turn created a scenario requiring Vehicle #2 to react to a stationary vehicle.
+
+Risk Factor: Driver Perception/Attention
+Specific Description: Vehicle #2 driverâs perception of a stopped vehicle and subsequent reaction suggest a potential issue with attentiveness or misjudgment.
+

@@ -1,0 +1,98 @@
+{
+  "timestamp": "2026-03-10 21:26:42",
+  "total_risk_factors": 6,
+  "risk_descriptions": [
+    {
+      "Risk Level": "Downhill",
+      "Specific Description": "The grade measurement 200 meters back from the first harmful event was -6.2%, indicating a downhill approach. Downhill sections can lead to increased vehicle speeds especially if drivers do not properly modulate braking; this could have influenced Vehicle #2âs inability to stop in time.",
+      "Accident Report ID": "2005045705161",
+      "Risk Factor": "Road Grade"
+    },
+    {
+      "Risk Level": "Rigid Obstacle (Guardrail/Wall)",
+      "Specific Description": "A concrete traffic barrier divided the eastbound and westbound lanes, and Vehicle #1 struck this wall after swerving left onto the left shoulder. The presence of a rigid obstacle increases the consequences of loss of control, influencing the severity of the first collision.",
+      "Accident Report ID": "2005045705161",
+      "Risk Factor": "Roadside Safety Zone"
+    },
+    {
+      "Risk Level": "Following Too Closely",
+      "Specific Description": "Vehicle #1 approached Vehicle #2 at high speed and followed closely, attempting to force the other driver to move over. This close proximity reduced the reaction margin and increased the chance of conflict during subsequent maneuvers.",
+      "Accident Report ID": "2005045587941",
+      "Risk Factor": "Following Behavior"
+    },
+    {
+      "Risk Level": "Large Longitudinal Speed Difference",
+      "Specific Description": "Vehicle two entered from the on-ramp and, being relatively unfamiliar with the roadway, likely had a lower speed compared to through traffic. This speed mismatch contributed to the risk during merging and subsequent evasive actions by V1. The difference in speeds reduced reaction time and increased the difficulty of avoiding conflict.",
+      "Accident Report ID": "2005043699241",
+      "Risk Factor": "Speed Interaction"
+    },
+    {
+      "Risk Level": "Illegal Evasion",
+      "Specific Description": "Vehicle #2 crossed multiple lanes in an evasive maneuver, striking Vehicle #1. Evasive actions like this, especially across multiple lanes and without proper clearance, are inherently risky and directly caused the initial collision.",
+      "Accident Report ID": "2005045705161",
+      "Risk Factor": "Key Vehicle Behavior"
+    },
+    {
+      "Risk Level": "Nighttime",
+      "Specific Description": "The crash occurred in the late evening hours on a dark and unlit roadway. Reduced visibility increases the difficulty of judging distances and speeds, especially for a turning maneuver like the one Vehicle 1 was attempting. This nighttime condition likely contributed to the misjudgment by the driver of Vehicle 1.",
+      "Accident Report ID": "2005045705861",
+      "Risk Factor": "Visibility Conditions"
+    }
+  ],
+  "detailed_results": [
+    {
+      "Input Factor": "RoadGrade",
+      "Input Value": "Downhill",
+      "Layer": "Road Layer",
+      "Risk Factor": "Road Grade",
+      "Risk Level": "Downhill",
+      "Specific Description": "The grade measurement 200 meters back from the first harmful event was -6.2%, indicating a downhill approach. Downhill sections can lead to increased vehicle speeds especially if drivers do not properly modulate braking; this could have influenced Vehicle #2âs inability to stop in time.",
+      "Accident Report ID": "2005045705161"
+    },
+    {
+      "Input Factor": "RoadsideSafetyZone",
+      "Input Value": "RigidObstacle",
+      "Layer": "Infrastructure Layer",
+      "Risk Factor": "Roadside Safety Zone",
+      "Risk Level": "Rigid Obstacle (Guardrail/Wall)",
+      "Specific Description": "A concrete traffic barrier divided the eastbound and westbound lanes, and Vehicle #1 struck this wall after swerving left onto the left shoulder. The presence of a rigid obstacle increases the consequences of loss of control, influencing the severity of the first collision.",
+      "Accident Report ID": "2005045705161"
+    },
+    {
+      "Input Factor": "FollowingBehavior",
+      "Input Value": "FollowingTooClosely",
+      "Layer": "Object Interaction Layer",
+      "Risk Factor": "Following Behavior",
+      "Risk Level": "Following Too Closely",
+      "Specific Description": "Vehicle #1 approached Vehicle #2 at high speed and followed closely, attempting to force the other driver to move over. This close proximity reduced the reaction margin and increased the chance of conflict during subsequent maneuvers.",
+      "Accident Report ID": "2005045587941"
+    },
+    {
+      "Input Factor": "SpeedInteraction",
+      "Input Value": "LargeSpeedDifference",
+      "Layer": "Object Interaction Layer",
+      "Risk Factor": "Speed Interaction",
+      "Risk Level": "Large Longitudinal Speed Difference",
+      "Specific Description": "Vehicle two entered from the on-ramp and, being relatively unfamiliar with the roadway, likely had a lower speed compared to through traffic. This speed mismatch contributed to the risk during merging and subsequent evasive actions by V1. The difference in speeds reduced reaction time and increased the difficulty of avoiding conflict.",
+      "Accident Report ID": "2005043699241"
+    },
+    {
+      "Input Factor": "KeyVehicleBehavior",
+      "Input Value": "IllegalEvasion",
+      "Layer": "Object Interaction Layer",
+      "Risk Factor": "Key Vehicle Behavior",
+      "Risk Level": "Illegal Evasion",
+      "Specific Description": "Vehicle #2 crossed multiple lanes in an evasive maneuver, striking Vehicle #1. Evasive actions like this, especially across multiple lanes and without proper clearance, are inherently risky and directly caused the initial collision.",
+      "Accident Report ID": "2005045705161"
+    },
+    {
+      "Input Factor": "VisibilityConditions",
+      "Input Value": "Nighttime",
+      "Layer": "Environment Layer",
+      "Risk Factor": "Visibility Conditions",
+      "Risk Level": "Nighttime",
+      "Specific Description": "The crash occurred in the late evening hours on a dark and unlit roadway. Reduced visibility increases the difficulty of judging distances and speeds, especially for a turning maneuver like the one Vehicle 1 was attempting. This nighttime condition likely contributed to the misjudgment by the driver of Vehicle 1.",
+      "Accident Report ID": "2005045705861"
+    }
+  ]
+}

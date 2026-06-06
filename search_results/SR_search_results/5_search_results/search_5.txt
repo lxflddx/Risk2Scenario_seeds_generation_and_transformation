@@ -1,0 +1,9 @@
+Risk Factor: Vehicle Encroachment
+Specific Description: Vehicle 1 encroached into Vehicle 2's lane, resulting in impact.
+
+Risk Factor: Obstructed Visibility
+Specific Description: Traffic congestion obstructed the view of both drivers, specifically contributing to V2âs inability to see V1
+
+Risk Factor: Driver Misjudgment (Vehicle 1)
+Specific Description: The driver of Vehicle 1 misjudged the gap in traffic and the speed of Vehicle 2 leading directly to the impact.
+

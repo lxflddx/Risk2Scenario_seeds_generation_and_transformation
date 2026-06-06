@@ -1,0 +1,277 @@
+{
+    "scenario_id": 13,
+    "accident_report": "Vehicle Initialization\nOn a one-way four-lane urban expressway, the road curves gently to the right. Lanes are numbered from right to left as Lane 1 to Lane 4. Due to rainfall, the road surface is wet, resulting in reduced tire-road friction.\nV1 is traveling in Lane 2, approximately 150 meters ahead in the curved հատված, at a steady speed of 60 km/h. It begins to decelerate slightly due to downstream traffic disturbances, with the intention to remain in its lane.\nV2 is in Lane 2, about 20 meters behind V1, traveling at 85 km/h. It is following too closely, with the driver intending to maintain speed through the curve.\nV3 is in Lane 3, slightly ahead of V2 by about 5 meters, traveling at 70 km/h in a stable cruising state, intending to continue straight.\nV4 is in Lane 1, approximately 30 meters behind V1, traveling at 65 km/h, intending to merge into Lane 2 when a suitable gap becomes available.\nScenario Development\nAs vehicles enter the right-hand curve, Lane 2 lies on the الداخل side of the curve, increasing visual and cognitive load for V2’s driver. This reduces the timely perception of V1’s deceleration. With only 20 meters of following distance at 85 km/h, V2 has less than one second to react.\nV1 gradually slows to 40 km/h due to traffic conditions ahead. On the wet surface, braking effectiveness is reduced, leading to a longer deceleration process. V2 fails to recognize this slowing early due to curvature-induced perception delay. By the time the gap shrinks to about 10 meters, V2 initiates emergency braking. However, due to low friction, its speed only reduces from 85 km/h to about 70 km/h, leaving a high risk of rear-end collision.\nAt the same time, V3 continues steadily in Lane 3 at 70 km/h. Since V2 is nearly parallel to V3, V2’s driver determines that stopping in-lane is insufficient and attempts an evasive maneuver. Under a large speed difference relative to V1 (about 30 km/h), V2 performs an aggressive multi-lane swerve to the left, attempting to bypass V1.\nOn the wet surface, the large steering input reduces lateral stability, increasing yaw. V3, facing sudden intrusion from V2, performs emergency braking and slight left steering, but Lane 4 does not provide sufficient safe clearance.\nDuring the lane-crossing maneuver, V2 is still traveling at approximately 65 km/h, while V3 is at 70 km/h. Due to inaccurate gap estimation and reduced lateral control on the slippery surface, V2’s front-right corner collides with V3’s front-left side.\nMeanwhile, V4 observes V1 slowing and begins braking while preparing to merge into Lane 2. However, V2’s abrupt lateral movement blocks the merge opportunity, forcing V4 to remain in Lane 1 and decelerate to 50 km/h. Although not directly involved in the first collision, V4’s behavior is clearly influenced by V2’s maneuver.\nResult\nThe first collision occurs in Lane 3, where V2, during an illegal multi-lane evasive maneuver, strikes V3 laterally. The crash results from the combined effects of delayed hazard perception due to road curvature, insufficient following distance, reduced braking and steering performance on a wet surface, and an aggressive lane-crossing maneuver under significant speed differential.",
+    "tas_scenario": {
+        "Environmental Context": "One-way four-lane urban expressway, gentle right curve, wet road surface (reduced tire-road friction), lanes numbered 1-4 from right to left.",
+        "Agent Initial States": [
+            "V1 is in Lane 2, 150 meters ahead of V2, traveling at 60 km/h, decelerating slightly.",
+            "V2 is in Lane 2, 20 meters behind V1, traveling at 85 km/h, maintaining speed.",
+            "V3 is in Lane 3, 5 meters ahead of V2, traveling at 70 km/h, maintaining speed.",
+            "V4 is in Lane 1, 30 meters behind V1, traveling at 65 km/h, intending to merge into Lane 2."
+        ],
+        "Temporal Action Sequence": [
+            [
+                "V1",
+                "decelerate",
+                "east",
+                "eastbound",
+                "lane 2",
+                "",
+                "1"
+            ],
+            [
+                "V2",
+                "keep_speed",
+                "east",
+                "eastbound",
+                "lane 2",
+                "",
+                "2"
+            ],
+            [
+                "V3",
+                "keep_speed",
+                "east",
+                "eastbound",
+                "lane 3",
+                "",
+                "3"
+            ],
+            [
+                "V4",
+                "keep_speed",
+                "east",
+                "eastbound",
+                "lane 1",
+                "",
+                "4"
+            ],
+            [
+                "V1",
+                "decelerate",
+                "east",
+                "eastbound",
+                "lane 2",
+                "",
+                "5"
+            ],
+            [
+                "V2",
+                "decelerate",
+                "east",
+                "eastbound",
+                "lane 2",
+                "",
+                "6"
+            ],
+            [
+                "V2",
+                "lane_change_left",
+                "east",
+                "eastbound",
+                "lane 2",
+                "lane 3",
+                "7"
+            ],
+            [
+                "V3",
+                "decelerate",
+                "east",
+                "eastbound",
+                "lane 3",
+                "",
+                "8"
+            ],
+            [
+                "V3",
+                "keep_speed",
+                "east",
+                "eastbound",
+                "lane 3",
+                "",
+                "9"
+            ],
+            [
+                "V2",
+                "strike",
+                "east",
+                "eastbound",
+                "lane 3",
+                "V3",
+                "10"
+            ],
+            [
+                "V4",
+                "decelerate",
+                "east",
+                "eastbound",
+                "lane 1",
+                "",
+                "11"
+            ]
+        ],
+        "Candidate Ego Vehicle": "V1"
+    },
+    "logical_scenario": {
+        "world": {
+            "time_of_day": "daytime",
+            "weather": "rain",
+            "road_condition": "slippery"
+        },
+        "road": {
+            "structure": {
+                "type": "roadway",
+                "layout": "curve",
+                "num_lanes": 4,
+                "slope": "flat"
+            },
+            "infrastructure": {
+                "roadside_safety": "wide_shoulder"
+            }
+        },
+        "vehicles": [
+            {
+                "vehicle_id": "ego",
+                "lane_id": [
+                    2,
+                    2
+                ],
+                "offset": [
+                    160,
+                    170
+                ],
+                "initial_speed": [
+                    55,
+                    65
+                ]
+            },
+            {
+                "vehicle_id": "V2",
+                "lane_id": [
+                    2,
+                    2
+                ],
+                "offset": [
+                    130,
+                    140
+                ],
+                "initial_speed": [
+                    80,
+                    90
+                ]
+            },
+            {
+                "vehicle_id": "V3",
+                "lane_id": [
+                    3,
+                    3
+                ],
+                "offset": [
+                    135,
+                    145
+                ],
+                "initial_speed": [
+                    65,
+                    75
+                ]
+            },
+            {
+                "vehicle_id": "V4",
+                "lane_id": [
+                    1,
+                    1
+                ],
+                "offset": [
+                    120,
+                    130
+                ],
+                "initial_speed": [
+                    60,
+                    70
+                ]
+            }
+        ],
+        "actions": [
+            {
+                "vehicle_id": "V2",
+                "type": "Decelerate",
+                "target_speed": [
+                    75,
+                    85
+                ],
+                "trigger_sequence": [
+                    3,
+                    3
+                ],
+                "time_interval": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "vehicle_id": "V2",
+                "type": "LaneChanging",
+                "target_lane": [
+                    3,
+                    3
+                ],
+                "target_speed": [
+                    65,
+                    75
+                ],
+                "trigger_sequence": [
+                    4,
+                    4
+                ],
+                "time_interval": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "vehicle_id": "V3",
+                "type": "Decelerate",
+                "target_speed": [
+                    60,
+                    70
+                ],
+                "trigger_sequence": [
+                    5,
+                    5
+                ],
+                "time_interval": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "vehicle_id": "V3",
+                "type": "keep_speed",
+                "trigger_sequence": [
+                    5,
+                    5
+                ],
+                "time_interval": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "vehicle_id": "V4",
+                "type": "Decelerate",
+                "target_speed": [
+                    55,
+                    65
+                ],
+                "trigger_sequence": [
+                    7,
+                    7
+                ],
+                "time_interval": [
+                    1,
+                    2
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,43 @@
+Summarize the Accident Report:
+○ Please read and summarize the following accident report, focusing on the basic situation, timeline, and key information directly related to the events leading up to the first collision.
+○ Ignore details about events or factors occurring after the first collision.
+
+Analyze Risk Factors Leading to the First Collision:
+○ Extract key information from the accident report and identify all risk factors that directly or indirectly contributed to the first collision, including risk factors from vehicles that were not involved in physical contact (such as a third-party vehicle that triggered the critical situation), as long as their actions influenced the occurrence of the first collision.
+○ Strict Restriction: Extract only the risk factors defined in the list. If you find other significant risk factors in the report that are not on the list, please categorize them into a new category named "Other Relevant Risk Layer".
+○ Exclude factors relevant only to post-collision events or subsequent consequences. Also, disregard driver-related subjective factors such as age, experience, intent, or psychological state.
+○ For each potential factor considered:
+For each candidate factor considered, follow this strict filtering procedure:
+
+1. First determine whether the factor can be mapped to one of the predefined Risk Factors in the list below.
+   - If it cannot be mapped, place it in "Other Relevant Risk Layer" only.
+
+2. If it can be mapped, determine its specific Risk Level from the predefined Level Settings.
+
+3. HARD FILTER:
+   - If the Risk Level is Level 1 (default safe state), DO NOT output it anywhere in the JSON.
+   - Do not output Level 1 factors even for completeness, context, comparison, or explanation.
+   - Only factors with Level 2 or higher are allowed to appear in "Road Layer", "Infrastructure Layer", "Object Interaction Layer", or "Environment Layer".
+
+4. Only after passing the Level 2+ filter, write the factor into the JSON and provide its Specific Description.
+
+5. Before finalizing the JSON, perform a final check:
+   - Delete any item whose Risk Level corresponds to Level 1.
+   - If a layer contains no Level 2+ factors, output an empty list [] for that layer.
+Categorize Risk Factors by Layer (JSON Format):
+○ Categorize the identified risk factors according to the following hierarchical structure and output as a JSON format object.
+○ Include the marker [JSON] at the beginning of your output and [/JSON] at the end.
+○ The JSON object structure is as follows:
+{
+"risk_factor_classification": {
+"Road Layer": [...],
+"Infrastructure Layer": [...],
+"Object Interaction Layer": [...],
+"Environment Layer": [...],
+"Other Relevant Risk Layer": [...] // This item appears only if risk factors outside the list exist.
+}
+}
+○ Each risk factor should include three fields:
+○ Risk Factor: A concise label describing the factor. You must use the names from the "Risk Factor" column in the list below.
+○ Risk State: For extracted risk factors that have passed the Level 2+ HARD FILTER, write the specific non-default state description from the "Level Settings" column (e.g., "Curved Road", "Downhill", "Slippery", "Adverse Weather (Rain/Fog)"). Do not include the "Level X" prefix; output only the state description itself. Never output any Level 1 state description (e.g., "Straight Road", "Dry", "Good", "Flat grade", "Normal signal control", "Unobstructed view", "Conventional cross-intersection", "Clear/present markings") anywhere in the JSON.
+○ Specific Description: A detailed explanation of how the factor contributed to the first collision. It must contain a quote or paraphrase from the report and your analytical understanding.

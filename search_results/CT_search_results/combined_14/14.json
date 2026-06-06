@@ -1,0 +1,68 @@
+{
+  "timestamp": "2026-03-10 21:35:42",
+  "total_risk_factors": 4,
+  "risk_descriptions": [
+    {
+      "Risk Level": "Uphill",
+      "Specific Description": "The eastbound lanes had a 5% uphill grade. Uphill grades can reduce vehicle acceleration and influence gap selection during maneuvers.",
+      "Accident Report ID": "2005043699321",
+      "Risk Factor": "Road Grade"
+    },
+    {
+      "Risk Level": "Rigid Obstacle (Guardrail/Wall)",
+      "Specific Description": "A concrete traffic barrier divided the eastbound and westbound lanes, and Vehicle #1 struck this wall after swerving left onto the left shoulder. The presence of a rigid obstacle increases the consequences of loss of control, influencing the severity of the first collision.",
+      "Accident Report ID": "2005045705161",
+      "Risk Factor": "Roadside Safety Zone"
+    },
+    {
+      "Risk Level": "Emergency Braking",
+      "Specific Description": "Vehicle #1 suddenly stopped to allow oncoming traffic to pass before making a left turn, which required it to come to a full stop in the through lane. When a vehicle stops in the path of following traffic without sufficient advance warning or adequate distance, it often forces a follower into emergency braking. The report states: 'Vehicle #1, a 1998 Honda Accord, was traveling north on the two lane undivided roadway when it stopped to allow several southbound vehicles to pass before proceeding to make an intended left turn onto a side road.' This sudden deceleration increases collision risk by compressing the spatiotemporal buffer needed for following vehicles to respond appropriately.",
+      "Accident Report ID": "2005002585183",
+      "Risk Factor": "Key Vehicle Behavior"
+    },
+    {
+      "Risk Level": "Nighttime",
+      "Specific Description": "The crash occurred in the late evening hours on a dark and unlit roadway. Reduced visibility increases the difficulty of judging distances and speeds, especially for a turning maneuver like the one Vehicle 1 was attempting. This nighttime condition likely contributed to the misjudgment by the driver of Vehicle 1.",
+      "Accident Report ID": "2005045705861",
+      "Risk Factor": "Visibility Conditions"
+    }
+  ],
+  "detailed_results": [
+    {
+      "Input Factor": "RoadGrade",
+      "Input Value": "Uphill",
+      "Layer": "Road Layer",
+      "Risk Factor": "Road Grade",
+      "Risk Level": "Uphill",
+      "Specific Description": "The eastbound lanes had a 5% uphill grade. Uphill grades can reduce vehicle acceleration and influence gap selection during maneuvers.",
+      "Accident Report ID": "2005043699321"
+    },
+    {
+      "Input Factor": "RoadsideSafetyZone",
+      "Input Value": "RigidObstacle",
+      "Layer": "Infrastructure Layer",
+      "Risk Factor": "Roadside Safety Zone",
+      "Risk Level": "Rigid Obstacle (Guardrail/Wall)",
+      "Specific Description": "A concrete traffic barrier divided the eastbound and westbound lanes, and Vehicle #1 struck this wall after swerving left onto the left shoulder. The presence of a rigid obstacle increases the consequences of loss of control, influencing the severity of the first collision.",
+      "Accident Report ID": "2005045705161"
+    },
+    {
+      "Input Factor": "KeyVehicleBehavior",
+      "Input Value": "EmergencyBraking",
+      "Layer": "Object Interaction Layer",
+      "Risk Factor": "Key Vehicle Behavior",
+      "Risk Level": "Emergency Braking",
+      "Specific Description": "Vehicle #1 suddenly stopped to allow oncoming traffic to pass before making a left turn, which required it to come to a full stop in the through lane. When a vehicle stops in the path of following traffic without sufficient advance warning or adequate distance, it often forces a follower into emergency braking. The report states: 'Vehicle #1, a 1998 Honda Accord, was traveling north on the two lane undivided roadway when it stopped to allow several southbound vehicles to pass before proceeding to make an intended left turn onto a side road.' This sudden deceleration increases collision risk by compressing the spatiotemporal buffer needed for following vehicles to respond appropriately.",
+      "Accident Report ID": "2005002585183"
+    },
+    {
+      "Input Factor": "VisibilityConditions",
+      "Input Value": "Nighttime",
+      "Layer": "Environment Layer",
+      "Risk Factor": "Visibility Conditions",
+      "Risk Level": "Nighttime",
+      "Specific Description": "The crash occurred in the late evening hours on a dark and unlit roadway. Reduced visibility increases the difficulty of judging distances and speeds, especially for a turning maneuver like the one Vehicle 1 was attempting. This nighttime condition likely contributed to the misjudgment by the driver of Vehicle 1.",
+      "Accident Report ID": "2005045705861"
+    }
+  ]
+}

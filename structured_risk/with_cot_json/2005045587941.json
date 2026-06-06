@@ -1,0 +1,40 @@
+{
+  "risk_factor_classification": {
+    "Road Layer": [],
+    "Infrastructure Layer": [
+      {
+        "Risk Factor": "Roadside Safety Zone",
+        "Risk Level": "Level 2",
+        "Specific Description": "The crash occurred near a barrier-divided interstate, with a concrete retaining wall present. The report states Vehicle #1 ââ¦struck the left inside concrete retaining wall with its left sideâ¦â, indicating the presence of a rigid obstacle and contributing to the severity of the crash. "
+      }
+    ],
+    "Object Interaction Layer": [
+      {
+        "Risk Factor": "Following Behavior",
+        "Risk Level": "Level 2",
+        "Specific Description": "Vehicle #1 was âfollowing closelyâ Vehicle #2, attempting to make the driver move over. The report explicitly states Vehicle #1 âapproached the Cavalier (V2) from behind at a high rate of speed and began following closely in an attempt to get the driver to move over and let him pass.â This 'following too closely' behavior was a direct precursor to the near collision."
+      },
+      {
+        "Risk Factor": "Speed Interaction",
+        "Risk Level": "Level 2",
+        "Specific Description": "There was a 'large longitudinal speed difference' between Vehicle #1 and Vehicle #2. Vehicle #1 was approaching at a 'high rate of speed', and Vehicle #2's brake tap suggests differing speeds and a potential misjudgment of gap/speed by Vehicle #1, increasing the risk of a collision. "
+      },
+      {
+        "Risk Factor": "Key Vehicle Behavior",
+        "Risk Level": "Level 3",
+        "Specific Description": "Vehicle #1 executed an âillegal lane change/cut-inâ as it attempted to return to the left lane in front of Vehicle #2. The report states Vehicle #1 'tried to return to the far left in front of Vehicle #2', resulting in the initial contact between the vehicles, confirming an unsafe lane change maneuver. "
+      }
+    ],
+    "Environment Layer": [],
+    "Other Relevant Risk Layer": [
+      {
+        "Risk Factor": "Aggressive Driving",
+        "Specific Description": "Both drivers accused each other of aggressive driving. This behavior, while not in the predefined list, likely contributed to the escalation of the situation and the subsequent risky maneuvers, as stated in the report: 'aggressive acts, speeding and tailgating, were coded and the driver was upset with other vehicle driver.'"
+      },
+      {
+        "Risk Factor": "Misjudgment of Gap or Speed",
+        "Specific Description": "The critical reason for Vehicle #1âs critical event was a 'decision error, misjudgment of gap or other's speed'. This indicates a perceptual or cognitive error by the driver of Vehicle #1, contributing significantly to the collision, and is relevant to understanding the cause of the event."
+      }
+    ]
+  }
+}

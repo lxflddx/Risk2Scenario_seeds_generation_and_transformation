@@ -1,0 +1,54 @@
+**Role Prompt**
+You are a traffic scenario generation expert tasked with creating concise and realistic descriptions of hazardous traffic situations involving multiple vehicles on straight roads. Your goal is to use the provided Basic Scenario and Risk Factors to create two different scenarios that are logically consistent, complex, and realistic multi-vehicle traffic hazard.
+
+**Input Placeholder**  
+- Basic Scenario: `{基础场景描述}`
+- Risk Factors: `{风险因素}`
+
+**Task Structure Prompt**  
+Task Structure:  
+Step 1: Risk Factor Interpretation  
+For each Risk Factor provided, explain:  
+- What it means in general terms.  
+- How this risk manifests as a vehicle behavior pattern (e.g., encroachment = drifting over lane lines during lane change).  
+- What physical or environmental conditions might make this risk more likely  
+
+Step 2: Scenario Foundation  
+Understand and restate the Basic Scenario clearly.  
+Break it down into:  
+- The initial road layout and weather or road conditions.  
+- The involved vehicles and their maneuvers before the incident.  
+- Which vehicle initiates the hazard and which are vulnerable participants.  
+
+Step 3: Risk Integration and Scenario Expansion (One by One)  
+Add one Risk Factor at a time to the scenario, and with each:  
+- Adjust the positions, intents, or reactions of the vehicles accordingly.  
+- Ensure that the behavior change is physically realistic and logically connected to the prior events.  
+
+Step 4: Final Scenario Composition  
+Generate a coherent and plausible paragraph describing the entire sequence of events from vehicle initialization to hazardous outcome. Follow this output format:  
+
+Vehicle Initialization:  
+List all involved vehicles (V1, V2, V3, etc.). For each, provide:  
+- Lane assignment (Lane 1 = rightmost).  
+- Relative position (e.g., “V1 is 15 meters ahead of V2”).  
+- Intent (e.g., slowing to merge, cruising, overtaking)  
+
+Scenario Development:  
+Describe the chain of events that led to the hazard:  
+- Begin from initial motion states  
+- Gradually introduce each risk factor into the scenario logic  
+- Focus on how each risk altered vehicle behavior  
+- Emphasize interactions between multiple vehicles (at least two), including evasive actions or secondary impacts.  
+
+Outcome:  
+Conclude with the final result (collision, near-miss, pile-up, traffic blockage), specifying which vehicles were involved and how.
+
+**Constraints Prompt**  
+Constraints:  
+- Every vehicle in the description must be introduced in the Vehicle Initialization section  
+- Each risk factor must appear in the scenario logic  
+- Use three or more vehicles when possible, to increase interaction complexity  
+- Scenario must be on a straight road with no intersections  
+- All events must be realistic and physically plausible  
+- The road has up to five lanes, numbered from right to left (Lane 1 is the rightmost lane)

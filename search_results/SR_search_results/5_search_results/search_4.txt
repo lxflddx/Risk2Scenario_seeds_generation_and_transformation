@@ -1,0 +1,9 @@
+Risk Factor: Vehicle Encroachment
+Specific Description: Vehicle 1 encroached into Vehicle 2's lane, resulting in impact.
+
+Risk Factor: Phantom Vehicle
+Specific Description: Unsafe lane change by an unidentified vehicle initiated the chain of events.
+
+Risk Factor: Failure to Yield
+Specific Description: V2 failed to yield the right-of-way to V1 while turning left.
+

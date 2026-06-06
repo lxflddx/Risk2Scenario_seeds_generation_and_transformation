@@ -1,0 +1,252 @@
+{
+    "scenario_id": 6,
+    "accident_report": "Vehicle Initialization\nOn a one-way three-lane urban expressway (lanes numbered from right to left as Lane 1, Lane 2, Lane 3), the road segment features a continuous downhill grade of approximately -6.2%. At night, light rain creates a wet surface with reduced friction, and light fog limits visibility to around 120 meters.\nV1 is in Lane 2, approximately 180 meters ahead, traveling at 65 km/h and gently decelerating, intending to slow down before an upcoming exit.\nV2 is in Lane 2, about 35 meters behind V1, traveling at 90 km/h with steady motion, intending to maintain speed but following too closely.\nV3 is in Lane 3, slightly behind V2 by about 10 meters, traveling at 95 km/h and slightly accelerating, intending to overtake V2 from the left.\nV4 is in Lane 1, about 60 meters ahead of V2, traveling steadily at 70 km/h, maintaining its lane.\nScenario Development\nAs all vehicles proceed along the downhill section, V2 and V3 increase their speeds to above 100 km/h due to gravity without significant braking input. Meanwhile, V1 detects denser traffic near the exit and gradually slows to 55 km/h with mild braking. Due to reduced visibility from rain and fog, V2’s perception of V1’s deceleration is delayed. Its already short 35-meter following distance becomes insufficient under wet road conditions.\nMeanwhile, V3 accelerates further to 105 km/h in Lane 3, moving alongside and slightly ahead of V2. Feeling pressure from V3’s overtaking maneuver, V2 briefly maintains or slightly increases throttle to avoid being boxed behind, which further enlarges the longitudinal speed difference with V1 (about 45 km/h).\nWhen V2 closes to approximately 25 meters behind V1, it finally recognizes the significant speed reduction of V1. V2 initiates emergency braking, but due to the downhill slope and reduced tire-road friction, braking efficiency is limited. The required stopping distance exceeds the available gap.\nAt the same time, V3 occupies the left-front space of V2, preventing a safe lane change to the left. On the right, V4 in Lane 1 is about 30 meters ahead traveling at 70 km/h, making a rightward evasive maneuver unsafe. Consequently, V2 is forced to remain in its lane and brake.\nResult\nUnder the combined effects of downhill acceleration, reduced friction, limited visibility, insufficient following distance, and large speed difference, V2 fails to stop in time and rear-ends V1 in Lane 2 at an approximate relative speed of 40 km/h. V1 is pushed forward and briefly destabilized.\nThe collision is the result of interacting risk factors: downhill grade increasing speed and braking demand, wet surface reducing traction, rain and fog delaying perception, insufficient headway reducing reaction margin, and V3’s overtaking maneuver restricting lateral escape options. After the crash, Lane 2 becomes partially blocked, causing rapid traffic buildup behind and introducing secondary congestion risk.",
+    "tas_scenario": {
+        "Environmental Context": "Night, light rain, wet road surface, light fog (120m visibility), one-way three-lane urban expressway with a -6.2% downhill grade. Lanes numbered from right to left as Lane 1, Lane 2, Lane 3.",
+        "Agent Initial States": [
+            "V1 is in Lane 2, 180m ahead of V2, traveling at 65 km/h and decelerating.",
+            "V2 is in Lane 2, 35m behind V1, traveling at 90 km/h with steady motion.",
+            "V3 is in Lane 3, 10m behind V2, traveling at 95 km/h and accelerating.",
+            "V4 is in Lane 1, 60m ahead of V2, traveling at 70 km/h."
+        ],
+        "Temporal Action Sequence": [
+            [
+                "V1",
+                "decelerate",
+                "east",
+                "eastbound",
+                "lane 2",
+                "",
+                "1"
+            ],
+            [
+                "V2",
+                "keep_speed",
+                "east",
+                "eastbound",
+                "lane 2",
+                "",
+                "2"
+            ],
+            [
+                "V3",
+                "accelerate",
+                "east",
+                "eastbound",
+                "lane 3",
+                "",
+                "3"
+            ],
+            [
+                "V4",
+                "keep_speed",
+                "east",
+                "eastbound",
+                "lane 1",
+                "",
+                "4"
+            ],
+            [
+                "V2",
+                "accelerate",
+                "east",
+                "eastbound",
+                "lane 2",
+                "",
+                "5"
+            ],
+            [
+                "V3",
+                "accelerate",
+                "east",
+                "eastbound",
+                "lane 3",
+                "",
+                "6"
+            ],
+            [
+                "V1",
+                "decelerate",
+                "east",
+                "eastbound",
+                "lane 2",
+                "",
+                "7"
+            ],
+            [
+                "V2",
+                "keep_speed",
+                "east",
+                "eastbound",
+                "lane 2",
+                "",
+                "8"
+            ],
+            [
+                "V2",
+                "decelerate",
+                "east",
+                "eastbound",
+                "lane 2",
+                "",
+                "9"
+            ],
+            [
+                "V2",
+                "strike",
+                "east",
+                "eastbound",
+                "lane 2",
+                "V1",
+                "10"
+            ]
+        ],
+        "Candidate Ego Vehicle": "V1"
+    },
+    "logical_scenario": {
+        "world": {
+            "time_of_day": "night",
+            "weather": "rain",
+            "road_condition": "slippery"
+        },
+        "road": {
+            "structure": {
+                "type": "roadway",
+                "layout": "straight",
+                "num_lanes": 3,
+                "slope": "downhill"
+            },
+            "infrastructure": {
+                "roadside_safety": "wide_shoulder"
+            }
+        },
+        "vehicles": [
+            {
+                "vehicle_id": "ego",
+                "lane_id": [
+                    2,
+                    2
+                ],
+                "offset": [
+                    180,
+                    200
+                ],
+                "initial_speed": [
+                    20,
+                    25
+                ]
+            },
+            {
+                "vehicle_id": "V2",
+                "lane_id": [
+                    2,
+                    2
+                ],
+                "offset": [
+                    35,
+                    50
+                ],
+                "initial_speed": [
+                    25,
+                    30
+                ]
+            },
+            {
+                "vehicle_id": "V3",
+                "lane_id": [
+                    3,
+                    3
+                ],
+                "offset": [
+                    10,
+                    20
+                ],
+                "initial_speed": [
+                    30,
+                    35
+                ]
+            },
+            {
+                "vehicle_id": "V4",
+                "lane_id": [
+                    1,
+                    1
+                ],
+                "offset": [
+                    60,
+                    70
+                ],
+                "initial_speed": [
+                    23,
+                    28
+                ]
+            }
+        ],
+        "actions": [
+            {
+                "vehicle_id": "V3",
+                "type": "Accelerate",
+                "target_speed": [
+                    35,
+                    40
+                ],
+                "trigger_sequence": [
+                    2,
+                    2
+                ],
+                "time_interval": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "vehicle_id": "V2",
+                "type": "Accelerate",
+                "target_speed": [
+                    30,
+                    35
+                ],
+                "trigger_sequence": [
+                    3,
+                    3
+                ],
+                "time_interval": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "vehicle_id": "V3",
+                "type": "Accelerate",
+                "target_speed": [
+                    35,
+                    40
+                ],
+                "trigger_sequence": [
+                    3,
+                    3
+                ],
+                "time_interval": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "vehicle_id": "V2",
+                "type": "Decelerate",
+                "target_speed": [
+                    20,
+                    25
+                ],
+                "trigger_sequence": [
+                    5,
+                    5
+                ],
+                "time_interval": [
+                    1,
+                    2
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,382 @@
+{
+    "Road Layer": [
+        {
+            "Risk Factor": "Roadway Configuration",
+            "Specific Description": "Two-lane undivided roadway with a slight rightward curve limiting visibility and safe passing opportunities."
+        },
+        {
+            "Risk Factor": "Road Geometry",
+            "Specific Description": "Straight, level roadway potentially contributing to higher speeds and reduced driver anticipation."
+        },
+        {
+            "Risk Factor": "Road Surface",
+            "Specific Description": "Bituminous surface provided adequate friction (dry conditions), but did not mitigate the loss of control due to braking and steering."
+        },
+        {
+            "Risk Factor": "Highway Design",
+            "Specific Description": "Six-lane divided highway can contribute to higher speeds and increased risk of rear-end collisions due to greater speed differentials."
+        },
+        {
+            "Risk Factor": "Entrance Ramp",
+            "Specific Description": "The entrance ramp potentially introduced a merging vehicle (Vehicle #2) into the traffic stream, creating a dynamic environment, although not a direct cause of the initial impact."
+        },
+        {
+            "Risk Factor": "Highway Design",
+            "Specific Description": "The geometry of the on-ramp merging area may contribute to merging difficulties or limited reaction space."
+        },
+        {
+            "Risk Factor": "Speed Limit",
+            "Specific Description": "The posted speed limit of 97 kmph (60 mph) may have reduced reaction time and increased the severity of the outcome."
+        },
+        {
+            "Risk Factor": "Road Grade",
+            "Specific Description": "5% uphill grade potentially reducing visibility and subtly affecting speed/braking."
+        },
+        {
+            "Risk Factor": "Roadway Configuration",
+            "Specific Description": "Two-lane undivided roadway with a slight rightward curve limiting visibility and safe passing opportunities."
+        },
+        {
+            "Risk Factor": "Road Grade",
+            "Specific Description": "Downhill grade approaching the crash site and uphill grade at final rest may have influenced vehicle speeds and driver reaction times."
+        },
+        {
+            "Risk Factor": "Road Grade",
+            "Specific Description": "A -2% grade may slightly contribute to increased stopping distances, though likely minimal in this scenario."
+        },
+        {
+            "Risk Factor": "Roadway Grade",
+            "Specific Description": "A -6% grade on the access road exacerbated the crash's consequences, leading to Vehicle 1 rolling over after leaving the roadway."
+        },
+        {
+            "Risk Factor": "Road Surface Type",
+            "Specific Description": "Bituminous roadway surface becoming slick when wet, contributing to hydroplaning potential."
+        },
+        {
+            "Risk Factor": "Road Slope",
+            "Specific Description": "Downhill slope increased vehicle speed and contributed to hydroplaning conditions."
+        },
+        {
+            "Risk Factor": "Road Curvature",
+            "Specific Description": "Right hand curve combined with slope and water created conditions conducive to loss of control."
+        },
+        {
+            "Risk Factor": "Road Drainage",
+            "Specific Description": "Inadequate drainage leading to standing water and hydroplaning."
+        }
+    ],
+    "Infrastructure Layer": [
+        {
+            "Risk Factor": "Concrete Barrier Wall",
+            "Specific Description": "The barrier wall was impacted by V1 after the initial collision with V2, contributing to vehicle damage."
+        },
+        {
+            "Risk Factor": "Lack of Warning Signage",
+            "Specific Description": "Potential absence of adequate warning signage regarding merging traffic or advisory speed limits for the on-ramp."
+        },
+        {
+            "Risk Factor": "Undivided Roadway",
+            "Specific Description": "Lack of physical barrier increasing the risk of cross-median collisions."
+        },
+        {
+            "Risk Factor": "Center Turn Lane",
+            "Specific Description": "Presence of a center turn lane, while intended for safety, can create opportunities for conflict if not used properly."
+        },
+        {
+            "Risk Factor": "Concrete Barrier",
+            "Specific Description": "The presence of a concrete barrier, while a safety feature, contributed to the severity of the crash by providing a rigid impact surface."
+        },
+        {
+            "Risk Factor": "Shoulder Width",
+            "Specific Description": "The 3-meter wide shoulder provided a limited escape path for Vehicle #2, but was insufficient to fully avoid the collision."
+        },
+        {
+            "Risk Factor": "On-Ramp Proximity",
+            "Specific Description": "The on-ramp terminating close to the impact point could contribute to merging traffic and potential congestion."
+        },
+        {
+            "Risk Factor": "Lack of Lighting",
+            "Specific Description": "The accident occurred in darkness without street lighting, reducing visibility for both drivers."
+        },
+        {
+            "Risk Factor": "Crossover Design",
+            "Specific Description": "The crossover facilitating left turns across opposing traffic presented an inherent risk due to potential sightline limitations and speed differentials."
+        },
+        {
+            "Risk Factor": "Past Crash History",
+            "Specific Description": "Downed light pole and destroyed guardrail indicate a history of crashes at the location, suggesting potential design or maintenance issues."
+        }
+    ],
+    "Object Interaction Layer": [
+        {
+            "Risk Factor": "Driver Distraction",
+            "Specific Description": "Driver of Vehicle #2 was externally distracted by showing a passenger the scenery; delayed recognition of Vehicle #1 which was stopped ahead."
+        },
+        {
+            "Risk Factor": "Following Distance",
+            "Specific Description": "Insufficient following distance by Vehicle #2 to allow for safe stopping when Vehicle #1 unexpectedly stopped."
+        },
+        {
+            "Risk Factor": "Vehicle Maneuver â Stopping",
+            "Specific Description": "Vehicle #1âs stop to allow for a left turn created a scenario requiring Vehicle #2 to react to a stationary vehicle."
+        },
+        {
+            "Risk Factor": "Seatbelt Usage",
+            "Specific Description": "Passenger in Vehicle #2 was not wearing a seatbelt, leading to a head injury upon impact."
+        },
+        {
+            "Risk Factor": "Possible Impairment - Medications",
+            "Specific Description": "Driver of Vehicle #2 taking multiple medications for an immune deficiency disease. Potential impact on reaction time."
+        },
+        {
+            "Risk Factor": "Possible Impairment - Medications",
+            "Specific Description": "Driver of Vehicle #1 taking an antihistamine. Potential impact on drowsiness."
+        },
+        {
+            "Risk Factor": "Vision Correction",
+            "Specific Description": "Driver of Vehicle #1 wearing prescription contact lenses. Potential impact on visual acuity."
+        },
+        {
+            "Risk Factor": "Phantom Vehicle",
+            "Specific Description": "Unsafe lane change by an unidentified vehicle initiated the chain of events."
+        },
+        {
+            "Risk Factor": "Driver Behavior (V1)",
+            "Specific Description": "Incorrect evasive action (locking brakes and jerking steering) led to loss of control and encroachment into V2âs lane."
+        },
+        {
+            "Risk Factor": "Vehicle Speed (V2)",
+            "Specific Description": "V2âs speed, while within the limit, combined with the sudden encroachment, left insufficient time to react."
+        },
+        {
+            "Risk Factor": "Traffic Congestion",
+            "Specific Description": "Rush hour congestion reduced available space for maneuvering and increased the risk of collision."
+        },
+        {
+            "Risk Factor": "Insufficient Following Distance",
+            "Specific Description": "Congested traffic resulted in reduced spacing between vehicles, limiting reaction time and maneuverability."
+        },
+        {
+            "Risk Factor": "Speed Differential",
+            "Specific Description": "Vehicle #1 was traveling at a higher speed than Vehicle #3, leading to the rear-end collision."
+        },
+        {
+            "Risk Factor": "Driver Inexperience",
+            "Specific Description": "The 18-year-old driver of Vehicle #3 may have had limited experience in responding to sudden events, potentially contributing to the severity of the crash."
+        },
+        {
+            "Risk Factor": "Unidentified Critical Pre-Crash Event (Vehicle #1)",
+            "Specific Description": "The cause of Vehicle #1âs action is unknown. This could include distracted driving, following too closely, aggressive driving, or a vehicle malfunction."
+        },
+        {
+            "Risk Factor": "Hit and Run",
+            "Specific Description": "Vehicle #1 leaving the scene suggests potential negligence or violation of traffic laws."
+        },
+        {
+            "Risk Factor": "Vehicle Interaction",
+            "Specific Description": "The chain-reaction collision involving all three vehicles substantially heightened the risk of overall damage and potential for injury."
+        },
+        {
+            "Risk Factor": "Non-Contact Vehicle Merge",
+            "Specific Description": "Alleged improper merging maneuver by the non-contact vehicle without signaling, initiating the sequence of events."
+        },
+        {
+            "Risk Factor": "Vehicle 1 Driver Performance",
+            "Specific Description": "Overcompensation/sharp steering maneuver leading to loss of control."
+        },
+        {
+            "Risk Factor": "Vehicle 2 Driver Action",
+            "Specific Description": "Acceleration by Vehicle 2 to avoid the crash, potentially altering the dynamic situation."
+        },
+        {
+            "Risk Factor": "Vehicle 2 Driver Familiarity",
+            "Specific Description": "Infrequent use of the roadway by Vehicle 2âs driver, potentially reducing awareness of typical traffic patterns."
+        },
+        {
+            "Risk Factor": "Failure to Yield",
+            "Specific Description": "V2 failed to yield the right-of-way to V1 while turning left."
+        },
+        {
+            "Risk Factor": "Obstructed Visibility",
+            "Specific Description": "Traffic congestion obstructed the view of both drivers, specifically contributing to V2âs inability to see V1"
+        },
+        {
+            "Risk Factor": "Vehicle Speed",
+            "Specific Description": "V1 travelling at posted speed of 72 kmph (45 mph) reduced reaction time and impact severity."
+        },
+        {
+            "Risk Factor": "Driver Age/Experience",
+            "Specific Description": "The age of V2's driver (82 years old) and inexperience of V1's driver (16 years old) contributed to impaired judgement and reaction time."
+        },
+        {
+            "Risk Factor": "Traffic Congestion",
+            "Specific Description": "Dense traffic increased risk due to reduced visibility, limited maneuvering space, and increased driver stress."
+        },
+        {
+            "Risk Factor": "Decision Making (V2)",
+            "Specific Description": "V2âs brief stop before turning suggests a rushed decision and misjudgment of the situation."
+        },
+        {
+            "Risk Factor": "Driver Fatigue (V2)",
+            "Specific Description": "3 hours of drive time preceding the crash potentially caused driver fatigue, decreasing attentiveness."
+        },
+        {
+            "Risk Factor": "Driver Medication (V1)",
+            "Specific Description": "Allergy medication potentially impacted V1âs alertness and reaction time."
+        },
+        {
+            "Risk Factor": "Roadway Familiarity(V2)",
+            "Specific Description": "Driver unfamiliarity with the roadway potentially contributed to poor decision making."
+        },
+        {
+            "Risk Factor": "Driver Distraction",
+            "Specific Description": "Driver of Vehicle #2 was externally distracted by showing a passenger the scenery; delayed recognition of Vehicle #1 which was stopped ahead."
+        },
+        {
+            "Risk Factor": "Following Distance",
+            "Specific Description": "Insufficient following distance by Vehicle #2 to allow for safe stopping when Vehicle #1 unexpectedly stopped."
+        },
+        {
+            "Risk Factor": "Vehicle Maneuver – Stopping",
+            "Specific Description": "Vehicle #1’s stop to allow for a left turn created a scenario requiring Vehicle #2 to react to a stationary vehicle."
+        },
+        {
+            "Risk Factor": "Seatbelt Usage",
+            "Specific Description": "Passenger in Vehicle #2 was not wearing a seatbelt, leading to a head injury upon impact."
+        },
+        {
+            "Risk Factor": "Possible Impairment - Medications",
+            "Specific Description": "Driver of Vehicle #2 taking multiple medications for an immune deficiency disease. Potential impact on reaction time."
+        },
+        {
+            "Risk Factor": "Possible Impairment - Medications",
+            "Specific Description": "Driver of Vehicle #1 taking an antihistamine. Potential impact on drowsiness."
+        },
+        {
+            "Risk Factor": "Vision Correction",
+            "Specific Description": "Driver of Vehicle #1 wearing prescription contact lenses. Potential impact on visual acuity."
+        },
+        {
+            "Risk Factor": "Driver Overcompensation",
+            "Specific Description": "Vehicle #2 driverâs overcorrection while attempting to avoid perceived stopped traffic was a direct cause of the initial collision."
+        },
+        {
+            "Risk Factor": "Unexpected Traffic Slowdown",
+            "Specific Description": "The sudden and unexplained slowdown of traffic ahead created a hazardous situation requiring evasive maneuvers."
+        },
+        {
+            "Risk Factor": "Following Distance",
+            "Specific Description": "Potentially inadequate following distance by Vehicle #2 contributed to the inability to react safely to the slowing traffic."
+        },
+        {
+            "Risk Factor": "Driver Perception/Attention",
+            "Specific Description": "Vehicle #2 driverâs perception of a stopped vehicle and subsequent reaction suggest a potential issue with attentiveness or misjudgment."
+        },
+        {
+            "Risk Factor": "Driver Physiological State",
+            "Specific Description": "Vehicle #2 driver being in her first trimester and taking prenatal medication could have potentially affected her reaction time or judgment."
+        },
+        {
+            "Risk Factor": "Driver Distraction",
+            "Specific Description": "Vehicle #1 driver was internally distracted by reaching for coffee, leading to delayed recognition of the hazard."
+        },
+        {
+            "Risk Factor": "Inadequate Surveillance",
+            "Specific Description": "Vehicle #1 driver failed to scan far enough ahead to anticipate the slowing traffic."
+        },
+        {
+            "Risk Factor": "Driver Fatigue",
+            "Specific Description": "Vehicle #1 driver was fatigued due to insufficient sleep and extended driving time, potentially impairing reaction time and judgment."
+        },
+        {
+            "Risk Factor": "Possible Stimulant Use",
+            "Specific Description": "The presence of an open stimulant package in Vehicle #1 raises concerns about potential impairment of judgment or reaction time."
+        },
+        {
+            "Risk Factor": "Speed Management",
+            "Specific Description": "Vehicle #1 was traveling at or near the speed limit when traffic began to slow, leaving insufficient distance for safe stopping."
+        },
+        {
+            "Risk Factor": "Traffic Congestion",
+            "Specific Description": "Rush hour congestion created a higher density of traffic and increased the likelihood of sudden braking."
+        },
+        {
+            "Risk Factor": "Evasive Maneuver",
+            "Specific Description": "Vehicle #2âs attempt to move onto the shoulder, while intended to avoid the collision, was ultimately unsuccessful."
+        },
+        {
+            "Risk Factor": "Vehicle Condition (Tire)",
+            "Specific Description": "Vehicle #1 had a mismatched tire size and low tread depth on the left front tire, potentially reducing grip and increasing stopping distance."
+        },
+        {
+            "Risk Factor": "Driver Misjudgment (Vehicle 1)",
+            "Specific Description": "The driver of Vehicle 1 misjudged the gap in traffic and the speed of Vehicle 2 leading directly to the impact."
+        },
+        {
+            "Risk Factor": "Driver Impairment (Vehicle 1)",
+            "Specific Description": "The driver of Vehicle 1 was on medication for substance abuse and engaged in a conversation, potentially impairing judgment and attention."
+        },
+        {
+            "Risk Factor": "Driver Medication (Vehicle 2)",
+            "Specific Description": "The driver of Vehicle 2 was taking medication with potential side effects of drowsiness, dizziness, and light-headedness, potentially impairing her driving ability."
+        },
+        {
+            "Risk Factor": "Vehicle Age",
+            "Specific Description": "Both vehicles were older models lacking airbags, increasing the risk of injury to the occupants."
+        },
+        {
+            "Risk Factor": "Driver 1 Distraction/Focus",
+            "Specific Description": "Potential distraction due to recent work injury and related concerns; speculative but plausible."
+        },
+        {
+            "Risk Factor": "Vehicle 1 Tire Inflation",
+            "Specific Description": "Overinflated tires reduced contact patch and increased susceptibility to hydroplaning."
+        },
+        {
+            "Risk Factor": "Vehicle 2 Merge Maneuver",
+            "Specific Description": "Slow speed during merge created a vulnerable situation when Vehicle 1 lost control."
+        },
+        {
+            "Risk Factor": "Vehicle 2 Driver Health",
+            "Specific Description": "Driver 2âs pre-existing health conditions (high blood pressure & cholesterol) and medication as a potential latent risk factor affecting reaction time."
+        },
+        {
+            "Risk Factor": "Vehicle Encroachment",
+            "Specific Description": "Vehicle 1 encroached into Vehicle 2's lane, resulting in impact."
+        }
+    ],
+    "Weather Layer": [
+        {
+            "Risk Factor": "Clear Skies",
+            "Specific Description": "Favorable weather conditions did not contribute to the accident."
+        },
+        {
+            "Risk Factor": "Dry Road Surface",
+            "Specific Description": "Dry road surface did not contribute to the accident."
+        },
+        {
+            "Risk Factor": "Light Rain",
+            "Specific Description": "Reduced visibility and road friction, resulting in potentially extended stopping distances."
+        },
+        {
+            "Risk Factor": "Cloudy Conditions",
+            "Specific Description": "Cloudy conditions may have slightly reduced visibility, although the accident occurred in daylight."
+        },
+        {
+            "Risk Factor": "Rain/Wet Road Conditions",
+            "Specific Description": "Rain and wet road surfaces reduced tire grip and increased stopping distances."
+        },
+        {
+            "Risk Factor": "Reduced Visibility",
+            "Specific Description": "Rain reduced visibility, potentially contributing to the delayed recognition of the hazard by Vehicle #1."
+        },
+        {
+            "Risk Factor": "Heavy Rainfall",
+            "Specific Description": "Heavy rain caused hydroplaning and reduced visibility."
+        },
+        {
+            "Risk Factor": "Visibility Reduction",
+            "Specific Description": "Reduced visibility due to heavy rain hindered both drivers' ability to perceive hazards."
+        }
+    ]
+}

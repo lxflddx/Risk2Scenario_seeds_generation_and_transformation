@@ -1,0 +1,98 @@
+{
+  "timestamp": "2026-03-10 21:29:29",
+  "total_risk_factors": 6,
+  "risk_descriptions": [
+    {
+      "Risk Level": "Uphill",
+      "Specific Description": "The eastbound lanes had a 5% uphill grade. Uphill grades can reduce vehicle acceleration and influence gap selection during maneuvers.",
+      "Accident Report ID": "2005043699321",
+      "Risk Factor": "Road Grade"
+    },
+    {
+      "Risk Level": "Following Too Closely",
+      "Specific Description": "The driver of Vehicle #2 stated he saw the stopped Vehicle #1 too late and couldn't stop in time, indicating that he was following too closely and did not maintain adequate distance to react safely. The report notes: 'He stated he did see Vehicle #1 stopped in the roadway too late, tried to stop but didn't have enough time to stop.' This directly contributed to the collision by reducing reaction time and available space for deceleration under emergency braking conditions.",
+      "Accident Report ID": "2005002585183",
+      "Risk Factor": "Following Behavior"
+    },
+    {
+      "Risk Level": "Large Longitudinal Speed Difference",
+      "Specific Description": "The report states the critical pre-crash event for Vehicle #3 was the presence of Vehicle #1 in its lane at a higher speed. This indicates a significant speed difference between Vehicle #1 and #3, which would reduce the available time for either vehicle to react appropriately, increasing the likelihood of a collision.",
+      "Accident Report ID": "2005041600422",
+      "Risk Factor": "Speed Interaction"
+    },
+    {
+      "Risk Level": "Illegal Lane Change/Cut-in",
+      "Specific Description": "Vehicle #1 initiated a lane change to pass and then cut back in front of Vehicle #2, which was still present ahead and moving. Vehicle #2 accelerated concurrently, and the cut-in maneuver directly caused the vehicles to make contact.",
+      "Accident Report ID": "2005045587941",
+      "Risk Factor": "Key Vehicle Behavior"
+    },
+    {
+      "Risk Level": "Slippery",
+      "Specific Description": "Due to rain and wet roadways, the available traction was diminished. Therefore, lower road surface grip potentially extended V1âs required stopping distance, reducing tractional-reaction effectiveness in avoiding impact.",
+      "Accident Report ID": "2005045705282",
+      "Risk Factor": "Road Friction Coefficient"
+    },
+    {
+      "Risk Level": "Nighttime",
+      "Specific Description": "The crash occurred in the late evening hours on a dark and unlit roadway. Reduced visibility increases the difficulty of judging distances and speeds, especially for a turning maneuver like the one Vehicle 1 was attempting. This nighttime condition likely contributed to the misjudgment by the driver of Vehicle 1.",
+      "Accident Report ID": "2005045705861",
+      "Risk Factor": "Visibility Conditions"
+    }
+  ],
+  "detailed_results": [
+    {
+      "Input Factor": "RoadGrade",
+      "Input Value": "Uphill",
+      "Layer": "Road Layer",
+      "Risk Factor": "Road Grade",
+      "Risk Level": "Uphill",
+      "Specific Description": "The eastbound lanes had a 5% uphill grade. Uphill grades can reduce vehicle acceleration and influence gap selection during maneuvers.",
+      "Accident Report ID": "2005043699321"
+    },
+    {
+      "Input Factor": "FollowingBehavior",
+      "Input Value": "FollowingTooClosely",
+      "Layer": "Object Interaction Layer",
+      "Risk Factor": "Following Behavior",
+      "Risk Level": "Following Too Closely",
+      "Specific Description": "The driver of Vehicle #2 stated he saw the stopped Vehicle #1 too late and couldn't stop in time, indicating that he was following too closely and did not maintain adequate distance to react safely. The report notes: 'He stated he did see Vehicle #1 stopped in the roadway too late, tried to stop but didn't have enough time to stop.' This directly contributed to the collision by reducing reaction time and available space for deceleration under emergency braking conditions.",
+      "Accident Report ID": "2005002585183"
+    },
+    {
+      "Input Factor": "SpeedInteraction",
+      "Input Value": "LargeSpeedDifference",
+      "Layer": "Object Interaction Layer",
+      "Risk Factor": "Speed Interaction",
+      "Risk Level": "Large Longitudinal Speed Difference",
+      "Specific Description": "The report states the critical pre-crash event for Vehicle #3 was the presence of Vehicle #1 in its lane at a higher speed. This indicates a significant speed difference between Vehicle #1 and #3, which would reduce the available time for either vehicle to react appropriately, increasing the likelihood of a collision.",
+      "Accident Report ID": "2005041600422"
+    },
+    {
+      "Input Factor": "KeyVehicleBehavior",
+      "Input Value": "IllegalCutIn",
+      "Layer": "Object Interaction Layer",
+      "Risk Factor": "Key Vehicle Behavior",
+      "Risk Level": "Illegal Lane Change/Cut-in",
+      "Specific Description": "Vehicle #1 initiated a lane change to pass and then cut back in front of Vehicle #2, which was still present ahead and moving. Vehicle #2 accelerated concurrently, and the cut-in maneuver directly caused the vehicles to make contact.",
+      "Accident Report ID": "2005045587941"
+    },
+    {
+      "Input Factor": "RoadFrictionCoefficient",
+      "Input Value": "Slippery",
+      "Layer": "Environment Layer",
+      "Risk Factor": "Road Friction Coefficient",
+      "Risk Level": "Slippery",
+      "Specific Description": "Due to rain and wet roadways, the available traction was diminished. Therefore, lower road surface grip potentially extended V1âs required stopping distance, reducing tractional-reaction effectiveness in avoiding impact.",
+      "Accident Report ID": "2005045705282"
+    },
+    {
+      "Input Factor": "VisibilityConditions",
+      "Input Value": "Nighttime",
+      "Layer": "Environment Layer",
+      "Risk Factor": "Visibility Conditions",
+      "Risk Level": "Nighttime",
+      "Specific Description": "The crash occurred in the late evening hours on a dark and unlit roadway. Reduced visibility increases the difficulty of judging distances and speeds, especially for a turning maneuver like the one Vehicle 1 was attempting. This nighttime condition likely contributed to the misjudgment by the driver of Vehicle 1.",
+      "Accident Report ID": "2005045705861"
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+    "scenario_id": 52,
+    "accident_report": "Vehicle 1 (V1) is traveling eastbound in lane 1, positioned 20 meters behind a large truck (T1) that obstructs its view. Due to T1's slow speed and heavy traffic congestion, V1 decides to overtake by moving into lane 2, which is initially free. However, upon encountering more traffic in lane 2, V1 attempts to change lanes into lane 3, where it misjudges the gap and collides with Vehicle 2 (V2). V2, which was waiting in the center turn lane, had started a left turn into the eastbound lanes, finding a gap in westbound traffic. The collision between V1 and V2 in lane 3 causes traffic to halt and leads to secondary congestion issues.",
+    "tas_scenario": {
+        "Environmental Context": "Heavy traffic congestion, eastbound lanes, presence of a large truck obstructing view.",
+        "Agent Initial States": [
+            "V1: Vehicle, lane 1, moving eastbound, 20m behind T1.",
+            "V2: Vehicle, center turn lane, preparing for a left turn eastbound."
+        ],
+        "Temporal Action Sequence": [
+            [
+                "V1",
+                "keep_speed",
+                "east",
+                "eastbound",
+                "lane 1",
+                "",
+                "1"
+            ],
+            [
+                "V1",
+                "lane_change_left",
+                "east",
+                "eastbound",
+                "lane 1",
+                "lane 2",
+                "2"
+            ],
+            [
+                "V2",
+                "keep_speed",
+                "east",
+                "eastbound",
+                "center turn lane",
+                "",
+                "2"
+            ],
+            [
+                "V1",
+                "keep_speed",
+                "east",
+                "eastbound",
+                "lane 2",
+                "",
+                "3"
+            ],
+            [
+                "V2",
+                "accelerate",
+                "north",
+                "eastbound",
+                "center turn lane",
+                "",
+                "3"
+            ],
+            [
+                "V1",
+                "lane_change_left",
+                "east",
+                "eastbound",
+                "lane 2",
+                "lane 3",
+                "4"
+            ],
+            [
+                "V2",
+                "keep_speed",
+                "east",
+                "eastbound",
+                "lane 3",
+                "",
+                "4"
+            ],
+            [
+                "V1",
+                "strike",
+                "east",
+                "eastbound",
+                "lane 3",
+                "V2",
+                "5"
+            ]
+        ],
+        "Candidate Ego Vehicle": "V2"
+    },
+    "logical_scenario": {
+        "world": {
+            "time_of_day": "daytime",
+            "weather": "clear",
+            "road_condition": "dry"
+        },
+        "road": {
+            "structure": {
+                "type": "roadway",
+                "layout": "straight",
+                "num_lanes": 3,
+                "slope": "flat"
+            },
+            "infrastructure": {
+                "roadside_safety": "wide_shoulder"
+            }
+        },
+        "vehicles": [
+            {
+                "vehicle_id": "V1",
+                "lane_id": [
+                    1,
+                    1
+                ],
+                "offset": [
+                    20,
+                    30
+                ],
+                "initial_speed": [
+                    0,
+                    5
+                ]
+            },
+            {
+                "vehicle_id": "ego",
+                "lane_id": [
+                    2,
+                    2
+                ],
+                "offset": [
+                    0,
+                    10
+                ],
+                "initial_speed": [
+                    0,
+                    5
+                ]
+            }
+        ],
+        "actions": [
+            {
+                "vehicle_id": "V1",
+                "type": "LaneChanging",
+                "target_lane": [
+                    2,
+                    2
+                ],
+                "target_speed": [
+                    0,
+                    5
+                ],
+                "trigger_sequence": [
+                    1,
+                    1
+                ],
+                "time_interval": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "vehicle_id": "V1",
+                "type": "LaneChanging",
+                "target_lane": [
+                    3,
+                    3
+                ],
+                "target_speed": [
+                    5,
+                    15
+                ],
+                "trigger_sequence": [
+                    3,
+                    3
+                ],
+                "time_interval": [
+                    1,
+                    2
+                ]
+            }
+        ]
+    }
+}

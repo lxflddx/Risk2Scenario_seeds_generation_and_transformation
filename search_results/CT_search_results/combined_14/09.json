@@ -1,0 +1,68 @@
+{
+  "timestamp": "2026-03-10 21:31:07",
+  "total_risk_factors": 4,
+  "risk_descriptions": [
+    {
+      "Risk Level": "Uphill",
+      "Specific Description": "The eastbound lanes had a 5% uphill grade. Uphill grades can reduce vehicle acceleration and influence gap selection during maneuvers.",
+      "Accident Report ID": "2005043699321",
+      "Risk Factor": "Road Grade"
+    },
+    {
+      "Risk Level": "Illegal Evasion",
+      "Specific Description": "Vehicle #2 crossed multiple lanes in an evasive maneuver, striking Vehicle #1. Evasive actions like this, especially across multiple lanes and without proper clearance, are inherently risky and directly caused the initial collision.",
+      "Accident Report ID": "2005045705161",
+      "Risk Factor": "Key Vehicle Behavior"
+    },
+    {
+      "Risk Level": "Slippery",
+      "Specific Description": "Due to rain and wet roadways, the available traction was diminished. Therefore, lower road surface grip potentially extended V1âs required stopping distance, reducing tractional-reaction effectiveness in avoiding impact.",
+      "Accident Report ID": "2005045705282",
+      "Risk Factor": "Road Friction Coefficient"
+    },
+    {
+      "Risk Level": "Adverse Weather (Rain/Fog)",
+      "Specific Description": "The crash occurred during a heavy thunderstorm with heavy rain reported by both drivers. Adverse weather reduces visibility and increases the difficulty of maintaining control on wet surfaces.",
+      "Accident Report ID": "2005048102041",
+      "Risk Factor": "Visibility Conditions"
+    }
+  ],
+  "detailed_results": [
+    {
+      "Input Factor": "RoadGrade",
+      "Input Value": "Uphill",
+      "Layer": "Road Layer",
+      "Risk Factor": "Road Grade",
+      "Risk Level": "Uphill",
+      "Specific Description": "The eastbound lanes had a 5% uphill grade. Uphill grades can reduce vehicle acceleration and influence gap selection during maneuvers.",
+      "Accident Report ID": "2005043699321"
+    },
+    {
+      "Input Factor": "KeyVehicleBehavior",
+      "Input Value": "IllegalEvasion",
+      "Layer": "Object Interaction Layer",
+      "Risk Factor": "Key Vehicle Behavior",
+      "Risk Level": "Illegal Evasion",
+      "Specific Description": "Vehicle #2 crossed multiple lanes in an evasive maneuver, striking Vehicle #1. Evasive actions like this, especially across multiple lanes and without proper clearance, are inherently risky and directly caused the initial collision.",
+      "Accident Report ID": "2005045705161"
+    },
+    {
+      "Input Factor": "RoadFrictionCoefficient",
+      "Input Value": "Slippery",
+      "Layer": "Environment Layer",
+      "Risk Factor": "Road Friction Coefficient",
+      "Risk Level": "Slippery",
+      "Specific Description": "Due to rain and wet roadways, the available traction was diminished. Therefore, lower road surface grip potentially extended V1âs required stopping distance, reducing tractional-reaction effectiveness in avoiding impact.",
+      "Accident Report ID": "2005045705282"
+    },
+    {
+      "Input Factor": "VisibilityConditions",
+      "Input Value": "AdverseWeather",
+      "Layer": "Environment Layer",
+      "Risk Factor": "Visibility Conditions",
+      "Risk Level": "Adverse Weather (Rain/Fog)",
+      "Specific Description": "The crash occurred during a heavy thunderstorm with heavy rain reported by both drivers. Adverse weather reduces visibility and increases the difficulty of maintaining control on wet surfaces.",
+      "Accident Report ID": "2005048102041"
+    }
+  ]
+}

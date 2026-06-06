@@ -1,0 +1,228 @@
+{
+    "scenario_id": 111,
+    "accident_report": "Vehicle 1 (V1) is traveling in Lane 2 (second lane from the right), cruising at a steady speed. V1 is initially ahead of V2 and is about 10 meters ahead of V2. Vehicle 2 (V2) is traveling in Lane 1 (rightmost lane), cruising at a steady speed, slightly behind V1. Vehicle 3 (V3) is traveling in Lane 3 (third lane from the right), approaching V1 from behind. V3 makes a sudden lane change from Lane 3 to Lane 2 where V1 is traveling, which makes V1 make an evasive maneuver by swerving to the right into Lane 1. V1 loses control while swerving and encroaches into V2's lane (Lane 1). V2 notices V1 encroaching into Lane 1 and makes an evasive maneuver by swerving towards the shoulder on the right side of Lane 1. However, V1 still collides with V2 despite V2's evasive maneuver. Following the collision with V2, V1 continues to lose control and hits the concrete barrier wall on the right side of Lane 1. The final result is a collision where V1 first collides with V2 and then hits the barrier wall. Both V1 and V2 suffer damage due to the collisions. The scenario results in a collision chain triggered by V3's lane change.",
+    "tas_scenario": {
+        "Environmental Context": "Normal weather conditions, dry road surface, multi-lane highway with clearly marked lanes. Traffic is flowing in an eastbound direction.",
+        "Agent Initial States": [
+            "V1 is traveling in Lane 2, cruising at a steady speed, 10 meters ahead of V2.",
+            "V2 is traveling in Lane 1, cruising at a steady speed, slightly behind V1.",
+            "V3 is traveling in Lane 3, approaching V1 from behind."
+        ],
+        "Temporal Action Sequence": [
+            [
+                "V1",
+                "keep_speed",
+                "east",
+                "eastbound",
+                "lane 2",
+                "",
+                "1"
+            ],
+            [
+                "V2",
+                "keep_speed",
+                "east",
+                "eastbound",
+                "lane 1",
+                "",
+                "1"
+            ],
+            [
+                "V3",
+                "keep_speed",
+                "east",
+                "eastbound",
+                "lane 3",
+                "",
+                "1"
+            ],
+            [
+                "V3",
+                "lane_change_left",
+                "east",
+                "eastbound",
+                "lane 3",
+                "lane 2",
+                "2"
+            ],
+            [
+                "V1",
+                "decelerate",
+                "east",
+                "eastbound",
+                "lane 2",
+                "",
+                "3"
+            ],
+            [
+                "V1",
+                "lane_change_right",
+                "east",
+                "eastbound",
+                "lane 2",
+                "lane 1",
+                "4"
+            ],
+            [
+                "V2",
+                "decelerate",
+                "east",
+                "eastbound",
+                "lane 1",
+                "",
+                "5"
+            ],
+            [
+                "V1",
+                "strike",
+                "east",
+                "eastbound",
+                "lane 1",
+                "V2",
+                "6"
+            ],
+            [
+                "V1",
+                "keep_speed",
+                "east",
+                "eastbound",
+                "lane 1",
+                "",
+                "7"
+            ],
+            [
+                "V1",
+                "strike",
+                "east",
+                "eastbound",
+                "lane 1",
+                "None",
+                "8"
+            ]
+        ],
+        "Candidate Ego Vehicle": "V2"
+    },
+    "logical_scenario": {
+        "world": {
+            "time_of_day": "daytime",
+            "weather": "clear",
+            "road_condition": "dry"
+        },
+        "road": {
+            "structure": {
+                "type": "roadway",
+                "layout": "straight",
+                "num_lanes": 3,
+                "slope": "flat"
+            },
+            "infrastructure": {
+                "roadside_safety": "wide_shoulder"
+            }
+        },
+        "vehicles": [
+            {
+                "vehicle_id": "V1",
+                "lane_id": [
+                    2,
+                    2
+                ],
+                "offset": [
+                    20,
+                    30
+                ],
+                "initial_speed": [
+                    15,
+                    25
+                ]
+            },
+            {
+                "vehicle_id": "ego",
+                "lane_id": [
+                    1,
+                    1
+                ],
+                "offset": [
+                    10,
+                    20
+                ],
+                "initial_speed": [
+                    15,
+                    25
+                ]
+            },
+            {
+                "vehicle_id": "V3",
+                "lane_id": [
+                    3,
+                    3
+                ],
+                "offset": [
+                    0,
+                    10
+                ],
+                "initial_speed": [
+                    15,
+                    25
+                ]
+            }
+        ],
+        "actions": [
+            {
+                "vehicle_id": "V3",
+                "type": "LaneChanging",
+                "target_lane": [
+                    2,
+                    2
+                ],
+                "target_speed": [
+                    10,
+                    20
+                ],
+                "trigger_sequence": [
+                    1,
+                    1
+                ],
+                "time_interval": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "vehicle_id": "V1",
+                "type": "Decelerate",
+                "target_speed": [
+                    10,
+                    20
+                ],
+                "trigger_sequence": [
+                    2,
+                    2
+                ],
+                "time_interval": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "vehicle_id": "V1",
+                "type": "LaneChanging",
+                "target_lane": [
+                    1,
+                    1
+                ],
+                "target_speed": [
+                    10,
+                    20
+                ],
+                "trigger_sequence": [
+                    3,
+                    3
+                ],
+                "time_interval": [
+                    1,
+                    2
+                ]
+            }
+        ]
+    }
+}

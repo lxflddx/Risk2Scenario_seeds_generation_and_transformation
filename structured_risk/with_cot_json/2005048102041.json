@@ -1,0 +1,42 @@
+{
+  "risk_factor_classification": {
+    "Road Layer": [
+      {
+        "Risk Factor": "Road Curvature",
+        "Risk Level": "Level 2",
+        "Specific Description": "The report states the crash occurred in a âright hand curveâ. This curvature contributed to the loss of control, especially when combined with the slippery road conditions. âThe roadway runs south to north at the location of the crash and has â¦ a right hand curve.â"
+      },
+      {
+        "Risk Factor": "Road Grade",
+        "Risk Level": "Level 2",
+        "Specific Description": "The report explicitly identifies the roadway as âdownhillâ at the location of the crash, contributing to the increased risk of hydroplaning. âThis two-vehicle crash occurred during a heavy thunderstorm mid-afternoon on a downhill, bituminous roadwayâ¦â"
+      }
+    ],
+    "Infrastructure Layer": [],
+    "Object Interaction Layer": [
+      {
+        "Risk Factor": "Speed Interaction",
+        "Risk Level": "Level 2",
+        "Specific Description": "A significant speed difference existed between V1 and V2. V1 was traveling at the speed limit (80 kmph / 50 mph) prior to hydroplaning, while V2 was moving at only 8 kmph (5 mph) while attempting to merge. This significant longitudinal speed difference was a factor in the accident. The report states: âV2 was traveling at approximately 8 kmph (5 mph) as the driver was attempting to merge with northbound traffic.â"
+      }
+    ],
+    "Environment Layer": [
+      {
+        "Risk Factor": "Road Friction Coefficient",
+        "Risk Level": "Level 2",
+        "Specific Description": "The report explicitly states the road was âslipperyâ due to heavy rain, which led to V1 hydroplaning and losing control. The critical reason for the crash was assigned to âslick roadsâ. The report says: âVehicle one lost control as it hydroplaned â¦ The roadway could not handle the excessive water.â"
+      },
+      {
+        "Risk Factor": "Visibility Conditions",
+        "Risk Level": "Level 3",
+        "Specific Description": "Heavy rain was present at the time of the crash, constituting adverse weather conditions that reduced visibility and contributed to the accident. Both drivers described the weather as âheavy rainâ. "
+      }
+    ],
+    "Other Relevant Risk Layer": [
+      {
+        "Risk Factor": "Vehicle Tire Condition",
+        "Specific Description": "The vehicle tires on V1 were over inflated by 8 PSI, a contributing factor to the loss of control, even though not directly in the risk factor list. The report stated: 'The tires on V1 were over inflated an average of 8 PSI per tire'."
+      }
+    ]
+  }
+}

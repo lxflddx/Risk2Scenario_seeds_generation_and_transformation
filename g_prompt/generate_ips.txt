@@ -1,0 +1,47 @@
+Task Objective:
+
+Understand the provided scenario description and extract the following:
+
+1. Initial Actions: The initial position and behavior of each vehicle before any interaction begins.
+2. Interactive Pattern Sequence: A sequence of interactions between vehicles, focusing on their relative positions and dynamic behaviors.
+
+### Step-by-Step Process
+
+#### Step 1: Scene Understanding
+Analyze the scenario to understand:
+- The vehicles involved and their initial positions and behaviors.
+- Any interactions described, focusing on their cause-effect relationships.
+
+#### Step 2: Information Extraction
+Extract the information according to the following rules:
+
+- Initial Actions: Provide the initial position and behavior of each vehicle.
+  - Use "V#" format for vehicle names (e.g., V1, V2, V3).
+  - Describe positions relative to other vehicles (e.g., "5 car lengths behind V2").
+  - Describe behavior using only these verbs: {brake, decelerate, accelerate, swerve left/right}.
+- Interactive Pattern Sequence: Provide sequential interactions.
+  - Specify the involved vehicles using "V#" format.
+  - Focus on relative positions and dynamic behaviors.
+  - Ignore post-collision actions or irrelevant factors like psychological states or health.
+
+### Rules and Constraints:
+- Translate emotions or psychological states into specific behaviors (e.g., "panic" → "hard braking").
+- Ignore unquantifiable factors like medication effects, health conditions, or vehicle brands.
+
+### Output Format:
+Initial Actions:
+(V1): [Position and behavior of V1]
+(V2): [Position and behavior of V2]
+(V3): [Position and behavior of V3]
+
+Interactive Pattern Sequence:
+(Vi, Vj): [Relative positions and behaviors of Vi and Vj]
+(Vk, Vl): [Relative positions and behaviors of Vk and Vl]
+Input:
+Scenario 5: The Distracted Driver and the Lane Drift
+● Initial Positions:
+  ○ Vehicle #1: Left lane, approximately 7 car lengths behind Vehicle #2. Traveling at 68 mph.
+  ○ Vehicle #2: Right lane, traveling at 68 mph.
+● Triggering Event: The driver of Vehicle #1 becomes momentarily distracted (e.g., looking at their phone).
+● Risk Factor(s) Involved: Interpreting Risk Factor 5 (Vehicle 1 Driver Behavior - Decision Error) as contributing to lane keeping issues.
+● Scenario Description: Due to brief distraction, the driver of Vehicle #1 allows their vehicle to drift slightly to the right within their lane. Simultaneously, a large truck in the right-center lane begins to drift slightly left towards Vehicle #2's lane. To avoid the encroaching truck, the driver of Vehicle #2 initiates a lane change to the left. Because Vehicle #1 was drifting right within the left lane, this brings Vehicle #2 unexpectedly close to Vehicle #1 during the lane change. While not necessarily a collision, it creates a situation requiring hard braking and evasive maneuvering by Vehicle #1 to maintain a safe distance, highlighting the danger created by Vehicle #1's distracted driving leading to lane drift and its interaction with other traffic.

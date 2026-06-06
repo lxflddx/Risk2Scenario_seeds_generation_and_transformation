@@ -1,0 +1,38 @@
+{
+  "risk_factor_classification": {
+    "Road Layer": [
+      {
+        "Risk Factor": "Lane Connectivity",
+        "Risk State": "Down-grade",
+        "Specific Description": "The northbound lanes of the highway had a downhill grade of 5%, potentially influencing the speed and stopping distance capabilities of vehicles, as stated in the report: 'The roadway had a posted speed limit of 55 mph and the northbound lanes had a downhill grade of 5%.'"
+      }
+    ],
+    "Infrastructure Layer": [],
+    "Object Interaction Layer": [
+      {
+        "Risk Factor": "Sight-distance Condition",
+        "Risk State": "Dynamic obstruction",
+        "Specific Description": "A turning vehicle in the median obscured V1âs view of oncoming traffic. The report reads 'Another vehicle was also in the median area turning in the opposite direction and was partially obscuring V1's view of traffic.' This limited visibility directly contributed to V1's decision to turn left when it was unsafe."
+      },
+      {
+        "Risk Factor": "Yielding Behavior",
+        "Risk State": "Unprotected left-turn forcing",
+        "Specific Description": "V1 initiated a left turn with limited visibility, forcing V2 to react. V2âs statement, 'V1 inching out behind a van from the median intersection...V1 cut across the roadway in front of him,' describes V1âs yielding behavior influencing the crash dynamic."
+      }
+    ],
+    "Environment Layer": [
+      {
+        "Risk Factor": "Visibility Conditions",
+        "Risk State": "Nighttime",
+        "Specific Description": "The accident occurred during dark conditions, reducing visibility and potentially impacting both driver perception and reaction times. The report explicitly states 'Conditions were dark and dry.'"
+      }
+    ],
+    "Other Relevant Risk Layer": [
+      {
+        "Risk Factor": "Driver Distraction (V2)",
+        "Risk State": "Casual Conversation",
+        "Specific Description": "The driver of V2 was engaged in a casual conversation with his wife at the time of the crash, which may have diverted his attention and delayed his response to the encroaching vehicle as indicated in the report 'casual conversation between the driver and his wife at the time of the crash.'"
+      }
+    ]
+  }
+}

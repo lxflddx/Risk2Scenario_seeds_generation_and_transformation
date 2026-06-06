@@ -1,0 +1,83 @@
+{
+  "timestamp": "2026-03-10 21:32:37",
+  "total_risk_factors": 5,
+  "risk_descriptions": [
+    {
+      "Risk Level": "Curved Road",
+      "Specific Description": "The accident occurred on a road that slightly curved to the right prior to the crash site. According to the analysis, curved roads increase the visual and cognitive loading on drivers, especially those in the inside lane, which may contribute to delayed recognition of forward hazards such as a stopped vehicle.",
+      "Accident Report ID": "2005002585183",
+      "Risk Factor": "Road Curvature"
+    },
+    {
+      "Risk Level": "Rigid Obstacle (Guardrail/Wall)",
+      "Specific Description": "A concrete traffic barrier divided the eastbound and westbound lanes, and Vehicle #1 struck this wall after swerving left onto the left shoulder. The presence of a rigid obstacle increases the consequences of loss of control, influencing the severity of the first collision.",
+      "Accident Report ID": "2005045705161",
+      "Risk Factor": "Roadside Safety Zone"
+    },
+    {
+      "Risk Level": "Following Too Closely",
+      "Specific Description": "Vehicle #1 approached Vehicle #2 at high speed and followed closely, attempting to force the other driver to move over. This close proximity reduced the reaction margin and increased the chance of conflict during subsequent maneuvers.",
+      "Accident Report ID": "2005045587941",
+      "Risk Factor": "Following Behavior"
+    },
+    {
+      "Risk Level": "Large Longitudinal Speed Difference",
+      "Specific Description": "Vehicle two entered from the on-ramp and, being relatively unfamiliar with the roadway, likely had a lower speed compared to through traffic. This speed mismatch contributed to the risk during merging and subsequent evasive actions by V1. The difference in speeds reduced reaction time and increased the difficulty of avoiding conflict.",
+      "Accident Report ID": "2005043699241",
+      "Risk Factor": "Speed Interaction"
+    },
+    {
+      "Risk Level": "Illegal Lane Change/Cut-in",
+      "Specific Description": "The non-contact vehicle merged into lane two without signaling, according to V1âs driver. This unexpected and illegal lane change forced V1 to make a sharp evasive steering maneuver, directly leading to loss of control and initiating the crash sequence.",
+      "Accident Report ID": "2005043699241",
+      "Risk Factor": "Key Vehicle Behavior"
+    }
+  ],
+  "detailed_results": [
+    {
+      "Input Factor": "RoadCurvature",
+      "Input Value": "Curve",
+      "Layer": "Road Layer",
+      "Risk Factor": "Road Curvature",
+      "Risk Level": "Curved Road",
+      "Specific Description": "The accident occurred on a road that slightly curved to the right prior to the crash site. According to the analysis, curved roads increase the visual and cognitive loading on drivers, especially those in the inside lane, which may contribute to delayed recognition of forward hazards such as a stopped vehicle.",
+      "Accident Report ID": "2005002585183"
+    },
+    {
+      "Input Factor": "RoadsideSafetyZone",
+      "Input Value": "RigidObstacle",
+      "Layer": "Infrastructure Layer",
+      "Risk Factor": "Roadside Safety Zone",
+      "Risk Level": "Rigid Obstacle (Guardrail/Wall)",
+      "Specific Description": "A concrete traffic barrier divided the eastbound and westbound lanes, and Vehicle #1 struck this wall after swerving left onto the left shoulder. The presence of a rigid obstacle increases the consequences of loss of control, influencing the severity of the first collision.",
+      "Accident Report ID": "2005045705161"
+    },
+    {
+      "Input Factor": "FollowingBehavior",
+      "Input Value": "FollowingTooClosely",
+      "Layer": "Object Interaction Layer",
+      "Risk Factor": "Following Behavior",
+      "Risk Level": "Following Too Closely",
+      "Specific Description": "Vehicle #1 approached Vehicle #2 at high speed and followed closely, attempting to force the other driver to move over. This close proximity reduced the reaction margin and increased the chance of conflict during subsequent maneuvers.",
+      "Accident Report ID": "2005045587941"
+    },
+    {
+      "Input Factor": "SpeedInteraction",
+      "Input Value": "LargeSpeedDifference",
+      "Layer": "Object Interaction Layer",
+      "Risk Factor": "Speed Interaction",
+      "Risk Level": "Large Longitudinal Speed Difference",
+      "Specific Description": "Vehicle two entered from the on-ramp and, being relatively unfamiliar with the roadway, likely had a lower speed compared to through traffic. This speed mismatch contributed to the risk during merging and subsequent evasive actions by V1. The difference in speeds reduced reaction time and increased the difficulty of avoiding conflict.",
+      "Accident Report ID": "2005043699241"
+    },
+    {
+      "Input Factor": "KeyVehicleBehavior",
+      "Input Value": "IllegalCutIn",
+      "Layer": "Object Interaction Layer",
+      "Risk Factor": "Key Vehicle Behavior",
+      "Risk Level": "Illegal Lane Change/Cut-in",
+      "Specific Description": "The non-contact vehicle merged into lane two without signaling, according to V1âs driver. This unexpected and illegal lane change forced V1 to make a sharp evasive steering maneuver, directly leading to loss of control and initiating the crash sequence.",
+      "Accident Report ID": "2005043699241"
+    }
+  ]
+}

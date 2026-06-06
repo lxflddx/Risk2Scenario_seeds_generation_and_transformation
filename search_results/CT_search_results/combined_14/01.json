@@ -1,0 +1,68 @@
+{
+  "timestamp": "2026-03-18 22:44:57",
+  "total_risk_factors": 4,
+  "risk_descriptions": [
+    {
+      "Risk Level": "Large Longitudinal Speed Difference",
+      "Specific Description": "The report states the critical pre-crash event for Vehicle #3 was the presence of Vehicle #1 in its lane at a higher speed. This indicates a significant speed difference between Vehicle #1 and #3, which would reduce the available time for either vehicle to react appropriately, increasing the likelihood of a collision.",
+      "Accident Report ID": "2005041600422",
+      "Risk Factor": "Speed Interaction"
+    },
+    {
+      "Risk Level": "Illegal Lane Change/Cut-in",
+      "Specific Description": "The non-contact vehicle merged into lane two without signaling, according to V1âs driver. This unexpected and illegal lane change forced V1 to make a sharp evasive steering maneuver, directly leading to loss of control and initiating the crash sequence.",
+      "Accident Report ID": "2005043699241",
+      "Risk Factor": "Key Vehicle Behavior"
+    },
+    {
+      "Risk Level": "Slippery",
+      "Specific Description": "Vehicle one lost control due to hydroplaning caused by water on the road surface. The roadway was described as being unable to handle the excessive water, leading to a reduction in friction and subsequent loss of control.",
+      "Accident Report ID": "2005048102041",
+      "Risk Factor": "Road Friction Coefficient"
+    },
+    {
+      "Risk Level": "Adverse Weather (Rain/Fog)",
+      "Specific Description": "Light rain was present. Light rain, even without slippery roads, can reduce visibility and compound challenges in detecting oncoming traffic like V1.",
+      "Accident Report ID": "2005043699321",
+      "Risk Factor": "Visibility Conditions"
+    }
+  ],
+  "detailed_results": [
+    {
+      "Input Factor": "SpeedInteraction",
+      "Input Value": "LargeSpeedDifference",
+      "Layer": "Object Interaction Layer",
+      "Risk Factor": "Speed Interaction",
+      "Risk Level": "Large Longitudinal Speed Difference",
+      "Specific Description": "The report states the critical pre-crash event for Vehicle #3 was the presence of Vehicle #1 in its lane at a higher speed. This indicates a significant speed difference between Vehicle #1 and #3, which would reduce the available time for either vehicle to react appropriately, increasing the likelihood of a collision.",
+      "Accident Report ID": "2005041600422"
+    },
+    {
+      "Input Factor": "KeyVehicleBehavior",
+      "Input Value": "IllegalCutIn",
+      "Layer": "Object Interaction Layer",
+      "Risk Factor": "Key Vehicle Behavior",
+      "Risk Level": "Illegal Lane Change/Cut-in",
+      "Specific Description": "The non-contact vehicle merged into lane two without signaling, according to V1âs driver. This unexpected and illegal lane change forced V1 to make a sharp evasive steering maneuver, directly leading to loss of control and initiating the crash sequence.",
+      "Accident Report ID": "2005043699241"
+    },
+    {
+      "Input Factor": "RoadFrictionCoefficient",
+      "Input Value": "Slippery",
+      "Layer": "Environment Layer",
+      "Risk Factor": "Road Friction Coefficient",
+      "Risk Level": "Slippery",
+      "Specific Description": "Vehicle one lost control due to hydroplaning caused by water on the road surface. The roadway was described as being unable to handle the excessive water, leading to a reduction in friction and subsequent loss of control.",
+      "Accident Report ID": "2005048102041"
+    },
+    {
+      "Input Factor": "VisibilityConditions",
+      "Input Value": "AdverseWeather",
+      "Layer": "Environment Layer",
+      "Risk Factor": "Visibility Conditions",
+      "Risk Level": "Adverse Weather (Rain/Fog)",
+      "Specific Description": "Light rain was present. Light rain, even without slippery roads, can reduce visibility and compound challenges in detecting oncoming traffic like V1.",
+      "Accident Report ID": "2005043699321"
+    }
+  ]
+}

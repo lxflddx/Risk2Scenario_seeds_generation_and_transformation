@@ -1,0 +1,196 @@
+{
+    "scenario_id": 51,
+    "accident_report": "Vehicle 1 (V1) is traveling eastbound in lane one (the rightmost lane) at a speed of 60 km/h, 15 meters behind Vehicle 4 (V4), which is moving at a slower speed of 40 km/h in the same lane. V1's initial intent is to make a lane change from lane one to lane two (the adjacent lane to the left of lane one) due to the slower vehicle ahead. Meanwhile, Vehicle 2 (V2) is traveling eastbound in lane three (the leftmost lane) at a speed of 70 km/h, initially positioned 50 meters ahead of V1. However, V1 cannot directly see V2 because of Vehicle 3 (V3), which is traveling eastbound in lane two (the middle lane) at a speed of 65 km/h. V3's position obstructs V1's view of lane three.\n\nV1 encounters slower traffic in lane one due to V4 traveling at 40 km/h and decides to make a lane change to maintain a higher speed. After checking the mirrors and blind spots for a gap in lane two, V1 sees a gap behind V3 and makes a lane change into lane two while traveling at 60 km/h. Once V1 successfully merges into lane two, it aims to make another lane change into lane three for an anticipated \"faster\" lane. However, V1's visibility into lane three is obstructed by V3 traveling in lane two. V1 misjudges the gap in traffic in lane three and believes there should be a safe gap to make another lane change. But due to the obstructed visibility from V3, V1 misjudges V2's actual speed and real gap size.\n\nV1 makes a lane change toward lane three but fails to account for the actual speed of V2, which is traveling faster (70 km/h) than what V1 anticipated. As V1 begins making the lane change into lane three, V2 is closer than expected. V1 starts encroaching into lane three where V2 is traveling at 70 km/h. Upon realizing that V2 is much closer and traveling faster than expected, V1 makes a sudden swerve to return to lane two. However, V1's abrupt maneuver leads to a partial encounter where V1 makes contact with V2's right side while trying to abort the lane change.\n\nThe result is a side-swipe collision where the right side of V2 collides with the left side of V1. This collision was caused by a combination of vehicle encroachment (V1 into V2's lane), obstructed visibility (V1 could not see V2 due to V3), and a misjudgment by V1's driver about the traffic situation in lane three.",
+    "tas_scenario": {
+        "Environmental Context": "Eastbound traffic, multiple lanes. Obstructed visibility due to vehicle V3. Road surface condition and weather are not mentioned.",
+        "Agent Initial States": [
+            "V1: Vehicle, lane 1, 60 km/h, 15 m behind V4.",
+            "V2: Vehicle, lane 3, 70 km/h, 50 m ahead of V1.",
+            "V3: Vehicle, lane 2, 65 km/h, obstructing V1's view of lane 3.",
+            "V4: Vehicle, lane 1, 40 km/h, V1 is 15m behind."
+        ],
+        "Temporal Action Sequence": [
+            [
+                "V1",
+                "keep_speed",
+                "east",
+                "eastbound",
+                "lane 1",
+                "",
+                "1"
+            ],
+            [
+                "V2",
+                "keep_speed",
+                "east",
+                "eastbound",
+                "lane 3",
+                "",
+                "1"
+            ],
+            [
+                "V3",
+                "keep_speed",
+                "east",
+                "eastbound",
+                "lane 2",
+                "",
+                "1"
+            ],
+            [
+                "V4",
+                "keep_speed",
+                "east",
+                "eastbound",
+                "lane 1",
+                "",
+                "1"
+            ],
+            [
+                "V1",
+                "lane_change_left",
+                "east",
+                "eastbound",
+                "lane 1",
+                "lane 2",
+                "2"
+            ],
+            [
+                "V1",
+                "keep_speed",
+                "east",
+                "eastbound",
+                "lane 2",
+                "",
+                "3"
+            ],
+            [
+                "V1",
+                "lane_change_left",
+                "east",
+                "eastbound",
+                "lane 2",
+                "lane 3",
+                "4"
+            ],
+            [
+                "V1",
+                "decelerate",
+                "east",
+                "eastbound",
+                "lane 3",
+                "",
+                "5"
+            ],
+            [
+                "V1",
+                "lane_change_right",
+                "east",
+                "eastbound",
+                "lane 3",
+                "lane 2",
+                "6"
+            ],
+            [
+                "V2",
+                "keep_speed",
+                "east",
+                "eastbound",
+                "lane 3",
+                "",
+                "6"
+            ],
+            [
+                "V1",
+                "strike",
+                "east",
+                "eastbound",
+                "lane 3",
+                "V2",
+                "7"
+            ]
+        ],
+        "Candidate Ego Vehicle": "V1"
+    },
+    "logical_scenario": {
+        "world": {
+            "time_of_day": "daytime",
+            "weather": "clear",
+            "road_condition": "dry"
+        },
+        "road": {
+            "structure": {
+                "type": "roadway",
+                "layout": "straight",
+                "num_lanes": 3,
+                "slope": "flat"
+            },
+            "infrastructure": {
+                "roadside_safety": "wide_shoulder"
+            }
+        },
+        "vehicles": [
+            {
+                "vehicle_id": "ego",
+                "lane_id": [
+                    1,
+                    1
+                ],
+                "offset": [
+                    15,
+                    25
+                ],
+                "initial_speed": [
+                    55,
+                    65
+                ]
+            },
+            {
+                "vehicle_id": "V2",
+                "lane_id": [
+                    3,
+                    3
+                ],
+                "offset": [
+                    100,
+                    110
+                ],
+                "initial_speed": [
+                    65,
+                    75
+                ]
+            },
+            {
+                "vehicle_id": "V3",
+                "lane_id": [
+                    2,
+                    2
+                ],
+                "offset": [
+                    50,
+                    60
+                ],
+                "initial_speed": [
+                    60,
+                    70
+                ]
+            },
+            {
+                "vehicle_id": "V4",
+                "lane_id": [
+                    1,
+                    1
+                ],
+                "offset": [
+                    -15,
+                    0
+                ],
+                "initial_speed": [
+                    35,
+                    45
+                ]
+            }
+        ],
+        "actions": []
+    }
+}

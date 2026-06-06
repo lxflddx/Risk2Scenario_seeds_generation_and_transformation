@@ -1,0 +1,26 @@
+Restricted Risk Factor List:
+
+Risk Layer	Risk Factor	Level Settings (Level 1 is the default safe state and is NOT considered a risk)
+| Risk Layer           | Risk Factor                 | Level Settings                                                                                                                | Parameterization Method                                   |
+| -------------------- | --------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
+| Road Layer           | Intersection Geometry       | Level 1: Conventional cross-intersection<br>Level 2: Staggered / offset intersection                                          | Map selection                                             |
+|                      | Lane Connectivity           | Level 1: Flat grade<br>Level 2: Down-grade<br>Level 3: Up-grade                                                               | Map selection                                             |
+| Infrastructure Layer | Right-of-way Marking Status | Level 1: Clear, present markings<br>Level 2: Missing / worn markings                                                          | Map selection                                             |
+|                      | Traffic Control Devices     | Level 1: Normal signal control<br>Level 2: No signal control                                                                  | Map selection                                             |
+| Object Interaction Layer     | Sight-distance Condition    | Level 1: Unobstructed view<br>Level 2: Static obstruction<br>Level 3: Dynamic obstruction                                     | Set initial vehicle spacing                               |
+|                      | Yielding Behavior           | Level 1: Normal yielding<br>Level 2: Unprotected left-turn forcing<br>Level 3: Right-turn failure to yield to through traffic | Assign NPC behavior-model parameters & trigger conditions |
+| Environment Layer    | Road Friction Coefficient   | Level 1: Dry<br>Level 2: Slippery                                                                                             | Set surface friction value (μ)                            |
+|                      | Visibility Conditions       | Level 1: Good<br>Level 2: Nighttime<br>Level 3: Adverse Weather (Rain/Fog)                                                    | Adjust ambient light intensity & particle density         |
+
+Key Principles:
+
+Prioritize the extraction and classification of risks leading up to the first collision.
+
+Strictly restrict to the risk factors in the list above. Factors outside the list go into "Other Relevant Risk Layer".
+
+Extract only factors whose state is "Level 2" or higher (i.e., a deviated, risky state). Factors in "Level 1" (default safe state) are NOT considered risks and should NOT be extracted.
+
+Focus the analysis on observable traffic behavior, vehicle states, and environmental conditions, excluding driver-specific subjective factors.
+
+Ensure the hierarchical structure maintains logical consistency while remaining flexible to accommodate new or unlisted risks (via "Other Relevant Risk Layer").
+请输出你每一步的思考过程

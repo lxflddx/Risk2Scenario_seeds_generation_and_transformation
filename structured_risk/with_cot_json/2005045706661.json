@@ -1,0 +1,43 @@
+{
+  "risk_factor_classification": {
+    "Road Layer": [
+      {
+        "Risk Factor": "Lane Connectivity",
+        "Risk State": "Up-grade",
+        "Specific Description": "The arterial road has a positive grade of 2% approximately 50 meters west of the intersection. The grade, coupled with the intersection configuration may have influenced the drivers' perception of speed and distance."
+      }
+    ],
+    "Infrastructure Layer": [
+      {
+        "Risk Factor": "Traffic Control Devices",
+        "Risk State": "No signal control",
+        "Specific Description": "The residential street is controlled by a stop sign, creating a situation where Vehicle 1 needed to judge a gap in oncoming traffic to make a safe left turn."
+      }
+    ],
+    "Object Interaction Layer": [
+      {
+        "Risk Factor": "Sight-distance Condition",
+        "Risk State": "Dynamic obstruction",
+        "Specific Description": "A stopped vehicle in the left eastbound lane obstructed Vehicle 1âs view of oncoming traffic, as stated by the driver: 'she could not see completely around it', and contributed to the inadequate surveillance."
+      },
+      {
+        "Risk Factor": "Yielding Behavior",
+        "Risk State": "Unprotected left-turn forcing",
+        "Specific Description": "Vehicle 1 was attempting to turn left across oncoming traffic without the protection of a green arrow or designated turning phase, requiring a judgment of a safe gap that was miscalculated."
+      }
+    ],
+    "Environment Layer": [],
+    "Other Relevant Risk Layer": [
+      {
+        "Risk Factor": "Driver Distraction",
+        "Risk State": "N/A",
+        "Specific Description": "The driver of Vehicle 1 was talking with the passenger at the time of the crash, potentially diverting her attention from the driving task and contributing to the recognition error."
+      },
+      {
+        "Risk Factor": "Uncorrected Vision Impairment",
+        "Risk State": "N/A",
+        "Specific Description": "The driver of Vehicle 2 needed glasses but was not wearing them at the time of the crash, impairing their visual acuity and contributing to the encroachment of Vehicle 1."
+      }
+    ]
+  }
+}

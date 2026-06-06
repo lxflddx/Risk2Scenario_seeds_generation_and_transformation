@@ -1,0 +1,36 @@
+{
+  "risk_factor_classification": {
+    "Road Layer": [],
+    "Infrastructure Layer": [],
+    "Object Interaction Layer": [
+      {
+        "Risk Factor": "Sight-distance Condition",
+        "Risk Level": "Level 3",
+        "Specific Description": "The report states a 'sight line restriction' due to large vehicles stopped in the westbound left turn lane blocking V1's view of V2. This constitutes a 'Dynamic obstruction' to sight distance, impacting V1's ability to perceive the approaching V2 and contributing to the collision."
+      }
+    ],
+    "Environment Layer": [],
+    "Other Relevant Risk Layer": [
+      {
+        "Risk Factor": "Internal Distraction",
+        "Risk Level": "N/A",
+        "Specific Description": "The driver of V1 was internally distracted while reaching for medication, causing her to momentarily take her eyes off the road and the traffic signal. This contributed to her misjudgment of the signal change and subsequent decision to proceed through the intersection."
+      },
+      {
+        "Risk Factor": "Driver Fatigue",
+        "Risk Level": "N/A",
+        "Specific Description": "The report notes that the driver of V1 works long hours, has young children and had been doing physical work. This points to potential driver fatigue, which may have impaired her judgment and reaction time as evidenced by the 'decision error/illegal maneuver'."
+      },
+      {
+        "Risk Factor": "Medication Side Effects",
+        "Risk Level": "N/A",
+        "Specific Description": "The driver of V1 was taking multiple medications with potential side effects like dizziness and anxiety. These possible effects could have negatively influenced her cognitive functions and contributed to her impaired decision-making."
+      },
+      {
+        "Risk Factor": "Time Pressure/Schedule",
+        "Risk Level": "N/A",
+        "Specific Description": "The driver's schedule being filled with short stops the day before a holiday implies time pressure and potential rushing, contributing to her decision to proceed through a yellow light."
+      }
+    ]
+  }
+}

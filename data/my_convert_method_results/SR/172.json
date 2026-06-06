@@ -1,0 +1,268 @@
+{
+    "scenario_id": 172,
+    "accident_report": "V1 (Sports car) is initially in Lane 1 traveling at 65 mph, behind V2 (Truck) which is in Lane 2 at 55 mph. V3 (SUV) is ahead of V2 in Lane 2, also at 55 mph, and V4 (Sedan) is in Lane 3 at 65 mph. V1 changes from Lane 1 to Lane 2 to overtake V2. After overtaking V2, V1 needs to enter Lane 3 to fully overtake V3. However, due to an unidentified critical pre-crash event, V1 acts erratically while overtaking V3. Seeing V4 in Lane 3 traveling at 65 mph, V1 attempts to merge back into Lane 2 and then Lane 1. During this maneuver, V1 sideswipes V2 in Lane 2 due to the speed differential. The result is a sideswipe collision between V1 and V2 in Lane 2, causing damage to both vehicles.",
+    "tas_scenario": {
+        "Environmental Context": "Normal weather conditions, dry road surface, multi-lane highway with three lanes. Traffic is flowing at approximately 55-65 mph.",
+        "Agent Initial States": [
+            "V1 (Sports car) is in Lane 1 traveling at 65 mph, behind V2.",
+            "V2 (Truck) is in Lane 2 traveling at 55 mph, ahead of V1.",
+            "V3 (SUV) is in Lane 2 ahead of V2, traveling at 55 mph.",
+            "V4 (Sedan) is in Lane 3 traveling at 65 mph."
+        ],
+        "Temporal Action Sequence": [
+            [
+                "V1",
+                "keep_speed",
+                "east",
+                "highway",
+                "lane 1",
+                "",
+                "1"
+            ],
+            [
+                "V2",
+                "keep_speed",
+                "east",
+                "highway",
+                "lane 2",
+                "",
+                "1"
+            ],
+            [
+                "V3",
+                "keep_speed",
+                "east",
+                "highway",
+                "lane 2",
+                "",
+                "1"
+            ],
+            [
+                "V4",
+                "keep_speed",
+                "east",
+                "highway",
+                "lane 3",
+                "",
+                "1"
+            ],
+            [
+                "V1",
+                "lane_change_right",
+                "east",
+                "highway",
+                "lane 1",
+                "lane 2",
+                "2"
+            ],
+            [
+                "V1",
+                "keep_speed",
+                "east",
+                "highway",
+                "lane 2",
+                "",
+                "3"
+            ],
+            [
+                "V1",
+                "lane_change_left",
+                "east",
+                "highway",
+                "lane 2",
+                "lane 3",
+                "4"
+            ],
+            [
+                "V1",
+                "lane_change_right",
+                "east",
+                "highway",
+                "lane 3",
+                "lane 2",
+                "5"
+            ],
+            [
+                "V1",
+                "lane_change_right",
+                "east",
+                "highway",
+                "lane 2",
+                "lane 1",
+                "6"
+            ],
+            [
+                "V1",
+                "strike",
+                "east",
+                "highway",
+                "lane 2",
+                "V2",
+                "7"
+            ]
+        ],
+        "Candidate Ego Vehicle": "V2"
+    },
+    "logical_scenario": {
+        "world": {
+            "time_of_day": "daytime",
+            "weather": "clear",
+            "road_condition": "dry"
+        },
+        "road": {
+            "structure": {
+                "type": "roadway",
+                "layout": "straight",
+                "num_lanes": 3,
+                "slope": "flat"
+            },
+            "infrastructure": {
+                "roadside_safety": "wide_shoulder"
+            }
+        },
+        "vehicles": [
+            {
+                "vehicle_id": "V1",
+                "lane_id": [
+                    1,
+                    1
+                ],
+                "offset": [
+                    10,
+                    20
+                ],
+                "initial_speed": [
+                    60,
+                    70
+                ]
+            },
+            {
+                "vehicle_id": "ego",
+                "lane_id": [
+                    2,
+                    2
+                ],
+                "offset": [
+                    20,
+                    30
+                ],
+                "initial_speed": [
+                    50,
+                    60
+                ]
+            },
+            {
+                "vehicle_id": "V3",
+                "lane_id": [
+                    2,
+                    2
+                ],
+                "offset": [
+                    30,
+                    40
+                ],
+                "initial_speed": [
+                    50,
+                    60
+                ]
+            },
+            {
+                "vehicle_id": "V4",
+                "lane_id": [
+                    3,
+                    3
+                ],
+                "offset": [
+                    10,
+                    20
+                ],
+                "initial_speed": [
+                    60,
+                    70
+                ]
+            }
+        ],
+        "actions": [
+            {
+                "vehicle_id": "V1",
+                "type": "LaneChanging",
+                "target_lane": [
+                    2,
+                    2
+                ],
+                "target_speed": [
+                    50,
+                    60
+                ],
+                "trigger_sequence": [
+                    1,
+                    1
+                ],
+                "time_interval": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "vehicle_id": "V1",
+                "type": "LaneChanging",
+                "target_lane": [
+                    3,
+                    3
+                ],
+                "target_speed": [
+                    60,
+                    70
+                ],
+                "trigger_sequence": [
+                    2,
+                    2
+                ],
+                "time_interval": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "vehicle_id": "V1",
+                "type": "LaneChanging",
+                "target_lane": [
+                    2,
+                    2
+                ],
+                "target_speed": [
+                    50,
+                    60
+                ],
+                "trigger_sequence": [
+                    3,
+                    3
+                ],
+                "time_interval": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "vehicle_id": "V1",
+                "type": "LaneChanging",
+                "target_lane": [
+                    1,
+                    1
+                ],
+                "target_speed": [
+                    60,
+                    70
+                ],
+                "trigger_sequence": [
+                    4,
+                    4
+                ],
+                "time_interval": [
+                    1,
+                    2
+                ]
+            }
+        ]
+    }
+}

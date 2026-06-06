@@ -1,0 +1,83 @@
+{
+  "timestamp": "2026-03-10 21:29:03",
+  "total_risk_factors": 5,
+  "risk_descriptions": [
+    {
+      "Risk Level": "Downhill",
+      "Specific Description": "The grade measurement 200 meters back from the first harmful event was -6.2%, indicating a downhill approach. Downhill sections can lead to increased vehicle speeds especially if drivers do not properly modulate braking; this could have influenced Vehicle #2âs inability to stop in time.",
+      "Accident Report ID": "2005045705161",
+      "Risk Factor": "Road Grade"
+    },
+    {
+      "Risk Level": "Following Too Closely",
+      "Specific Description": "The driver of Vehicle #2 stated he saw the stopped Vehicle #1 too late and couldn't stop in time, indicating that he was following too closely and did not maintain adequate distance to react safely. The report notes: 'He stated he did see Vehicle #1 stopped in the roadway too late, tried to stop but didn't have enough time to stop.' This directly contributed to the collision by reducing reaction time and available space for deceleration under emergency braking conditions.",
+      "Accident Report ID": "2005002585183",
+      "Risk Factor": "Following Behavior"
+    },
+    {
+      "Risk Level": "Large Longitudinal Speed Difference",
+      "Specific Description": "Vehicle #1 was approaching Vehicle #2 at a high relative speed and tailgating. Vehicle #2 then accelerated during the cut-in attempt. This significant speed difference compromised safe coordination and increased the likelihood of a collision.",
+      "Accident Report ID": "2005045587941",
+      "Risk Factor": "Speed Interaction"
+    },
+    {
+      "Risk Level": "Slippery",
+      "Specific Description": "Due to rain and wet roadways, the available traction was diminished. Therefore, lower road surface grip potentially extended V1âs required stopping distance, reducing tractional-reaction effectiveness in avoiding impact.",
+      "Accident Report ID": "2005045705282",
+      "Risk Factor": "Road Friction Coefficient"
+    },
+    {
+      "Risk Level": "Adverse Weather (Rain/Fog)",
+      "Specific Description": "Light rain was present. Light rain, even without slippery roads, can reduce visibility and compound challenges in detecting oncoming traffic like V1.",
+      "Accident Report ID": "2005043699321",
+      "Risk Factor": "Visibility Conditions"
+    }
+  ],
+  "detailed_results": [
+    {
+      "Input Factor": "RoadGrade",
+      "Input Value": "Downhill",
+      "Layer": "Road Layer",
+      "Risk Factor": "Road Grade",
+      "Risk Level": "Downhill",
+      "Specific Description": "The grade measurement 200 meters back from the first harmful event was -6.2%, indicating a downhill approach. Downhill sections can lead to increased vehicle speeds especially if drivers do not properly modulate braking; this could have influenced Vehicle #2âs inability to stop in time.",
+      "Accident Report ID": "2005045705161"
+    },
+    {
+      "Input Factor": "FollowingBehavior",
+      "Input Value": "FollowingTooClosely",
+      "Layer": "Object Interaction Layer",
+      "Risk Factor": "Following Behavior",
+      "Risk Level": "Following Too Closely",
+      "Specific Description": "The driver of Vehicle #2 stated he saw the stopped Vehicle #1 too late and couldn't stop in time, indicating that he was following too closely and did not maintain adequate distance to react safely. The report notes: 'He stated he did see Vehicle #1 stopped in the roadway too late, tried to stop but didn't have enough time to stop.' This directly contributed to the collision by reducing reaction time and available space for deceleration under emergency braking conditions.",
+      "Accident Report ID": "2005002585183"
+    },
+    {
+      "Input Factor": "SpeedInteraction",
+      "Input Value": "LargeSpeedDifference",
+      "Layer": "Object Interaction Layer",
+      "Risk Factor": "Speed Interaction",
+      "Risk Level": "Large Longitudinal Speed Difference",
+      "Specific Description": "Vehicle #1 was approaching Vehicle #2 at a high relative speed and tailgating. Vehicle #2 then accelerated during the cut-in attempt. This significant speed difference compromised safe coordination and increased the likelihood of a collision.",
+      "Accident Report ID": "2005045587941"
+    },
+    {
+      "Input Factor": "RoadFrictionCoefficient",
+      "Input Value": "Slippery",
+      "Layer": "Environment Layer",
+      "Risk Factor": "Road Friction Coefficient",
+      "Risk Level": "Slippery",
+      "Specific Description": "Due to rain and wet roadways, the available traction was diminished. Therefore, lower road surface grip potentially extended V1âs required stopping distance, reducing tractional-reaction effectiveness in avoiding impact.",
+      "Accident Report ID": "2005045705282"
+    },
+    {
+      "Input Factor": "VisibilityConditions",
+      "Input Value": "AdverseWeather",
+      "Layer": "Environment Layer",
+      "Risk Factor": "Visibility Conditions",
+      "Risk Level": "Adverse Weather (Rain/Fog)",
+      "Specific Description": "Light rain was present. Light rain, even without slippery roads, can reduce visibility and compound challenges in detecting oncoming traffic like V1.",
+      "Accident Report ID": "2005043699321"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "timestamp": "2026-03-10 21:30:44",
+  "total_risk_factors": 2,
+  "risk_descriptions": [
+    {
+      "Risk Level": "Curved Road",
+      "Specific Description": "The accident occurred on a road that slightly curved to the right prior to the crash site. According to the analysis, curved roads increase the visual and cognitive loading on drivers, especially those in the inside lane, which may contribute to delayed recognition of forward hazards such as a stopped vehicle.",
+      "Accident Report ID": "2005002585183",
+      "Risk Factor": "Road Curvature"
+    },
+    {
+      "Risk Level": "Nighttime",
+      "Specific Description": "The crash occurred in the late evening hours on a dark and unlit roadway. Reduced visibility increases the difficulty of judging distances and speeds, especially for a turning maneuver like the one Vehicle 1 was attempting. This nighttime condition likely contributed to the misjudgment by the driver of Vehicle 1.",
+      "Accident Report ID": "2005045705861",
+      "Risk Factor": "Visibility Conditions"
+    }
+  ],
+  "detailed_results": [
+    {
+      "Input Factor": "RoadCurvature",
+      "Input Value": "Curve",
+      "Layer": "Road Layer",
+      "Risk Factor": "Road Curvature",
+      "Risk Level": "Curved Road",
+      "Specific Description": "The accident occurred on a road that slightly curved to the right prior to the crash site. According to the analysis, curved roads increase the visual and cognitive loading on drivers, especially those in the inside lane, which may contribute to delayed recognition of forward hazards such as a stopped vehicle.",
+      "Accident Report ID": "2005002585183"
+    },
+    {
+      "Input Factor": "VisibilityConditions",
+      "Input Value": "Nighttime",
+      "Layer": "Environment Layer",
+      "Risk Factor": "Visibility Conditions",
+      "Risk Level": "Nighttime",
+      "Specific Description": "The crash occurred in the late evening hours on a dark and unlit roadway. Reduced visibility increases the difficulty of judging distances and speeds, especially for a turning maneuver like the one Vehicle 1 was attempting. This nighttime condition likely contributed to the misjudgment by the driver of Vehicle 1.",
+      "Accident Report ID": "2005045705861"
+    }
+  ]
+}

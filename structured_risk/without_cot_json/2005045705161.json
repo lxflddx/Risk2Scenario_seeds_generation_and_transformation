@@ -1,0 +1,49 @@
+{
+  "risk_factor_classification": {
+    "Road Layer": [
+      {
+        "Risk Factor": "Road Grade",
+        "Risk Level": "Level 2",
+        "Specific Description": "The report states a -6.2% grade 200 meters prior to the collision, indicating a downhill slope. This downhill grade could have contributed to the speed of the vehicles and reduced the driver's reaction time to the sudden slowing of traffic."
+      }
+    ],
+    "Infrastructure Layer": [
+      {
+        "Risk Factor": "Roadside Safety Zone",
+        "Risk Level": "Level 2",
+        "Specific Description": "The presence of a concrete traffic barrier (wall) along the shoulder is a rigid obstacle. Vehicle #1 and Vehicle #2 both impacted the wall, demonstrating the hazard presented by this infrastructure element in the event of a lane departure."
+      }
+    ],
+    "Object Interaction Layer": [
+      {
+        "Risk Factor": "Speed Interaction",
+        "Risk Level": "Level 2",
+        "Specific Description": "Both drivers reported that traffic ahead began to slow suddenly. This created a large longitudinal speed difference, as Vehicle #2 attempted to avoid a slowing vehicle and encroached into the lane of Vehicle #1."
+      },
+      {
+        "Risk Factor": "Key Vehicle Behavior",
+        "Risk Level": "Level 2",
+        "Specific Description": "Vehicle #1 performed emergency braking, indicated by 'braking with lockup', in response to the encroaching Vehicle #2. It demonstrated the reaction of the driver in this case."
+      },
+      {
+        "Risk Factor": "Key Vehicle Behavior",
+        "Risk Level": "Level 4",
+        "Specific Description": "Vehicle #2 performed an illegal evasion maneuver as the driver 'swerved hard left' to avoid a vehicle ahead, crossing into the lane of Vehicle #1. This action directly led to the initial collision."
+      }
+    ],
+    "Environment Layer": [
+      {
+        "Risk Factor": "Visibility Conditions",
+        "Risk Level": "Level 1",
+        "Specific Description": "Although the condition was 'daylight cloudy', the condition is still Level 1. As the factor is still safe, no risk extraction."
+      }
+    ],
+    "Other Relevant Risk Layer": [
+      {
+        "Risk Factor": "Unexpected Traffic Slowdown",
+        "Risk Level": "Level 2",
+        "Specific Description": "The report indicates traffic slowed unexpectedly for an unknown reason, triggering the chain of events leading to the collision. This contributed to the sudden need for Vehicle #2 to react and ultimately caused the evasive maneuver."
+      }
+    ]
+  }
+}

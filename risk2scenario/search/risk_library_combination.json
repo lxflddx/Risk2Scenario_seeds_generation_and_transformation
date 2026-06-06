@@ -1,0 +1,282 @@
+{
+    "Road Layer": [
+        {
+            "risk_factor": {
+                "Risk Factor": "Road Curvature",
+                "Risk Level": "Curved Road",
+                "Specific Description": "The accident occurred on a road that slightly curved to the right prior to the crash site. According to the analysis, curved roads increase the visual and cognitive loading on drivers, especially those in the inside lane, which may contribute to delayed recognition of forward hazards such as a stopped vehicle."
+            },
+            "accident_report_id": "2005002585183"
+        },
+        {
+            "risk_factor": {
+                "Risk Factor": "Lane Configuration",
+                "Risk Level": "Undivided Lanes",
+                "Specific Description": "The roadway had undivided lanes, which inherently increases the difficulty for following drivers to judge safe following distances and respond to sudden deceleration of lead vehicles due to shared space with opposing traffic. The report states: 'This crash occurred on a two lane undivided roadway.' This creates inherently higher risk of rear-end impacts because drivers must divide attention between multiple traffic flows."
+            },
+            "accident_report_id": "2005002585183"
+        },
+        {
+            "risk_factor": {
+                "Risk Factor": "Lane Configuration",
+                "Risk Level": "Undivided Lanes",
+                "Specific Description": "The roadway was a five-lane undivided configuration with a center turn lane. This configuration increases the risk of wrong-direction collisions during turning maneuvers."
+            },
+            "accident_report_id": "2005043699321"
+        },
+        {
+            "risk_factor": {
+                "Risk Factor": "Road Grade",
+                "Risk Level": "Uphill",
+                "Specific Description": "The eastbound lanes had a 5% uphill grade. Uphill grades can reduce vehicle acceleration and influence gap selection during maneuvers."
+            },
+            "accident_report_id": "2005043699321"
+        },
+        {
+            "risk_factor": {
+                "Risk Factor": "Road Grade",
+                "Risk Level": "Downhill",
+                "Specific Description": "The grade measurement 200 meters back from the first harmful event was -6.2%, indicating a downhill approach. Downhill sections can lead to increased vehicle speeds especially if drivers do not properly modulate braking; this could have influenced Vehicle #2âs inability to stop in time."
+            },
+            "accident_report_id": "2005045705161"
+        },
+        {
+            "risk_factor": {
+                "Risk Factor": "Road Grade",
+                "Risk Level": "Downhill",
+                "Specific Description": "The roadway had a -2% grade in the precrash location. This downhill segment likely influenced speed retention which may not align with surrounding traffic deceleration needs, contributing to insufficient reaction/stopping capability by V1."
+            },
+            "accident_report_id": "2005045705282"
+        },
+        {
+            "risk_factor": {
+                "Risk Factor": "Road Grade",
+                "Risk Level": "Downhill",
+                "Specific Description": "The driveway and parking lot on the west side where Vehicle 1 was turning into had a -6% grade. Although the collision happened on the main roadway, this downhill grade contributed to the post-impact movement of both vehicles, increasing their momentum and affecting the severity of their path post-collision. The grade itself was not directly causal but played a role in the dynamics immediately following impact."
+            },
+            "accident_report_id": "2005045705861"
+        },
+        {
+            "risk_factor": {
+                "Risk Factor": "Road Grade",
+                "Risk Level": "Downhill",
+                "Specific Description": "Vehicle one lost control while hydroplaning on a downhill slope. Downhill grades increase the vehicle's potential energy and longitudinal forces, making it more difficult to decelerate or maintain directional control, especially on wet surfaces."
+            },
+            "accident_report_id": "2005048102041"
+        },
+        {
+            "risk_factor": {
+                "Risk Factor": "Road Curvature",
+                "Risk Level": "Curved Road",
+                "Specific Description": "The loss of control occurred in a right-hand curve. Curved sections increase lateral forces, and in combination with low friction from hydroplaning, contributed to the vehicleâs inability to maintain a stable trajectory."
+            },
+            "accident_report_id": "2005048102041"
+        }
+    ],
+    "Infrastructure Layer": [
+        {
+            "risk_factor": {
+                "Risk Factor": "Roadside Safety Zone",
+                "Risk Level": "Rigid Obstacle (Guardrail/Wall)",
+                "Specific Description": "A concrete traffic barrier divided the eastbound and westbound lanes, and Vehicle #1 struck this wall after swerving left onto the left shoulder. The presence of a rigid obstacle increases the consequences of loss of control, influencing the severity of the first collision."
+            },
+            "accident_report_id": "2005045705161"
+        },
+        {
+            "risk_factor": {
+                "Risk Factor": "Roadside Safety Zone",
+                "Risk Level": "Rigid Obstacle (Guardrail/Wall)",
+                "Specific Description": "The left shoulder was adjoined by a rigid concrete wall. Though some buffer existed, the presence of the wall reduced margin of safety. During Evasive steering attempt by either driver, contact with such an obstacle raises collision severity risks."
+            },
+            "accident_report_id": "2005045705282"
+        }
+    ],
+    "Object Interaction Layer": [
+        {
+            "risk_factor": {
+                "Risk Factor": "Following Behavior",
+                "Risk Level": "Following Too Closely",
+                "Specific Description": "The driver of Vehicle #2 stated he saw the stopped Vehicle #1 too late and couldn't stop in time, indicating that he was following too closely and did not maintain adequate distance to react safely. The report notes: 'He stated he did see Vehicle #1 stopped in the roadway too late, tried to stop but didn't have enough time to stop.' This directly contributed to the collision by reducing reaction time and available space for deceleration under emergency braking conditions."
+            },
+            "accident_report_id": "2005002585183"
+        },
+        {
+            "risk_factor": {
+                "Risk Factor": "Key Vehicle Behavior",
+                "Risk Level": "Emergency Braking",
+                "Specific Description": "Vehicle #1 suddenly stopped to allow oncoming traffic to pass before making a left turn, which required it to come to a full stop in the through lane. When a vehicle stops in the path of following traffic without sufficient advance warning or adequate distance, it often forces a follower into emergency braking. The report states: 'Vehicle #1, a 1998 Honda Accord, was traveling north on the two lane undivided roadway when it stopped to allow several southbound vehicles to pass before proceeding to make an intended left turn onto a side road.' This sudden deceleration increases collision risk by compressing the spatiotemporal buffer needed for following vehicles to respond appropriately."
+            },
+            "accident_report_id": "2005002585183"
+        },
+        {
+            "risk_factor": {
+                "Risk Factor": "Following Behavior",
+                "Risk Level": "Following Too Closely",
+                "Specific Description": "Rush-hour congestion resulted in insufficient spacing between vehicles, reducing margins for safe reaction to sudden events such as evasive braking."
+            },
+            "accident_report_id": "2005041508581"
+        },
+        {
+            "risk_factor": {
+                "Risk Factor": "Key Vehicle Behavior",
+                "Risk Level": "Emergency Braking",
+                "Specific Description": "V1's driver applied emergency braking upon the phantom vehicle's cut-in, initiating a loss of directional control that led to lane departure and collision."
+            },
+            "accident_report_id": "2005041508581"
+        },
+        {
+            "risk_factor": {
+                "Risk Factor": "Following Behavior",
+                "Risk Level": "Following Too Closely",
+                "Specific Description": "Vehicle #1 impacting the right rear of Vehicle #3 suggests Vehicle #1 was following too closely. This behavior directly contributed to the rear-end collision by reducing the reaction time and space needed to avoid impact."
+            },
+            "accident_report_id": "2005041600422"
+        },
+        {
+            "risk_factor": {
+                "Risk Factor": "Speed Interaction",
+                "Risk Level": "Large Longitudinal Speed Difference",
+                "Specific Description": "The report states the critical pre-crash event for Vehicle #3 was the presence of Vehicle #1 in its lane at a higher speed. This indicates a significant speed difference between Vehicle #1 and #3, which would reduce the available time for either vehicle to react appropriately, increasing the likelihood of a collision."
+            },
+            "accident_report_id": "2005041600422"
+        },
+        {
+            "risk_factor": {
+                "Risk Factor": "Speed Interaction",
+                "Risk Level": "Large Longitudinal Speed Difference",
+                "Specific Description": "Vehicle two entered from the on-ramp and, being relatively unfamiliar with the roadway, likely had a lower speed compared to through traffic. This speed mismatch contributed to the risk during merging and subsequent evasive actions by V1. The difference in speeds reduced reaction time and increased the difficulty of avoiding conflict."
+            },
+            "accident_report_id": "2005043699241"
+        },
+        {
+            "risk_factor": {
+                "Risk Factor": "Key Vehicle Behavior",
+                "Risk Level": "Illegal Lane Change/Cut-in",
+                "Specific Description": "The non-contact vehicle merged into lane two without signaling, according to V1âs driver. This unexpected and illegal lane change forced V1 to make a sharp evasive steering maneuver, directly leading to loss of control and initiating the crash sequence."
+            },
+            "accident_report_id": "2005043699241"
+        },
+        {
+            "risk_factor": {
+                "Risk Factor": "Following Behavior",
+                "Risk Level": "Following Too Closely",
+                "Specific Description": "Vehicle #1 approached Vehicle #2 at high speed and followed closely, attempting to force the other driver to move over. This close proximity reduced the reaction margin and increased the chance of conflict during subsequent maneuvers."
+            },
+            "accident_report_id": "2005045587941"
+        },
+        {
+            "risk_factor": {
+                "Risk Factor": "Key Vehicle Behavior",
+                "Risk Level": "Illegal Lane Change/Cut-in",
+                "Specific Description": "Vehicle #1 initiated a lane change to pass and then cut back in front of Vehicle #2, which was still present ahead and moving. Vehicle #2 accelerated concurrently, and the cut-in maneuver directly caused the vehicles to make contact."
+            },
+            "accident_report_id": "2005045587941"
+        },
+        {
+            "risk_factor": {
+                "Risk Factor": "Speed Interaction",
+                "Risk Level": "Large Longitudinal Speed Difference",
+                "Specific Description": "Vehicle #1 was approaching Vehicle #2 at a high relative speed and tailgating. Vehicle #2 then accelerated during the cut-in attempt. This significant speed difference compromised safe coordination and increased the likelihood of a collision."
+            },
+            "accident_report_id": "2005045587941"
+        },
+        {
+            "risk_factor": {
+                "Risk Factor": "Following Behavior",
+                "Risk Level": "Following Too Closely",
+                "Specific Description": "A highway-related factor for both vehicles was that traffic ahead was slowed unexpectedly for an unknown reason. Reduced following distances leave insufficient reaction time, potentially forcing abrupt maneuvers like swerving which contributed to Vehicle #2 striking Vehicle #1."
+            },
+            "accident_report_id": "2005045705161"
+        },
+        {
+            "risk_factor": {
+                "Risk Factor": "Speed Interaction",
+                "Risk Level": "Large Longitudinal Speed Difference",
+                "Specific Description": "Vehicle #2 swerved left to avoid what she thought was a vehicle stopping suddenly ahead while traveling faster than or at mismatched speed to the slowing traffic. Speed differences between vehicles can distort perception of closing rates, leading to encroachment into another lane without timely clearance."
+            },
+            "accident_report_id": "2005045705161"
+        },
+        {
+            "risk_factor": {
+                "Risk Factor": "Key Vehicle Behavior",
+                "Risk Level": "Illegal Evasion",
+                "Specific Description": "Vehicle #2 crossed multiple lanes in an evasive maneuver, striking Vehicle #1. Evasive actions like this, especially across multiple lanes and without proper clearance, are inherently risky and directly caused the initial collision."
+            },
+            "accident_report_id": "2005045705161"
+        },
+        {
+            "risk_factor": {
+                "Risk Factor": "Following Behavior",
+                "Risk Level": "Following Too Closely",
+                "Specific Description": "V1 followed V2 closely despite observing traffic decrease speed. Lack of sufficient following distance limited the opportunity to safely mitigate approaching conflict."
+            },
+            "accident_report_id": "2005045705282"
+        },
+        {
+            "risk_factor": {
+                "Risk Factor": "Speed Interaction",
+                "Risk Level": "Large Longitudinal Speed Difference",
+                "Specific Description": "V1 approached V2 at a significantly higher speed than V2, increasing likelihood and severity of impact as per kinetic principles."
+            },
+            "accident_report_id": "2005045705282"
+        },
+        {
+            "risk_factor": {
+                "Risk Factor": "Key Vehicle Behavior",
+                "Risk Level": "Illegal Evasion",
+                "Specific Description": "Vehicle 1's turning maneuver across oncoming traffic (Vehicle 2) represents a turning vehicle behavior that introduces risk into an oncoming stream of traffic. The NTSB coding indicates a misjudgment of speed or gap, which corresponds to an illegal or inappropriate maneuver â 'Illegal Evasion' as it required unexpected yielding behavior from oncoming traffic without coordination. This behavior directly placed Vehicle 1 in the path of Vehicle 2."
+            },
+            "accident_report_id": "2005045705861"
+        }
+    ],
+    "Environment Layer": [
+        {
+            "risk_factor": {
+                "Risk Factor": "Visibility Conditions",
+                "Risk Level": "Adverse Weather (Rain/Fog)",
+                "Specific Description": "Light rain was present. Light rain, even without slippery roads, can reduce visibility and compound challenges in detecting oncoming traffic like V1."
+            },
+            "accident_report_id": "2005043699321"
+        },
+        {
+            "risk_factor": {
+                "Risk Factor": "Road Friction Coefficient",
+                "Risk Level": "Slippery",
+                "Specific Description": "Due to rain and wet roadways, the available traction was diminished. Therefore, lower road surface grip potentially extended V1âs required stopping distance, reducing tractional-reaction effectiveness in avoiding impact."
+            },
+            "accident_report_id": "2005045705282"
+        },
+        {
+            "risk_factor": {
+                "Risk Factor": "Visibility Conditions",
+                "Risk Level": "Adverse Weather (Rain/Fog)",
+                "Specific Description": "Heavy rainfall significantly impaired sightlines. Restricted vision delayed perceivable response from V1 to visible cues indicating the necessity of reducing speed."
+            },
+            "accident_report_id": "2005045705282"
+        },
+        {
+            "risk_factor": {
+                "Risk Factor": "Visibility Conditions",
+                "Risk Level": "Nighttime",
+                "Specific Description": "The crash occurred in the late evening hours on a dark and unlit roadway. Reduced visibility increases the difficulty of judging distances and speeds, especially for a turning maneuver like the one Vehicle 1 was attempting. This nighttime condition likely contributed to the misjudgment by the driver of Vehicle 1."
+            },
+            "accident_report_id": "2005045705861"
+        },
+        {
+            "risk_factor": {
+                "Risk Factor": "Road Friction Coefficient",
+                "Risk Level": "Slippery",
+                "Specific Description": "Vehicle one lost control due to hydroplaning caused by water on the road surface. The roadway was described as being unable to handle the excessive water, leading to a reduction in friction and subsequent loss of control."
+            },
+            "accident_report_id": "2005048102041"
+        },
+        {
+            "risk_factor": {
+                "Risk Factor": "Visibility Conditions",
+                "Risk Level": "Adverse Weather (Rain/Fog)",
+                "Specific Description": "The crash occurred during a heavy thunderstorm with heavy rain reported by both drivers. Adverse weather reduces visibility and increases the difficulty of maintaining control on wet surfaces."
+            },
+            "accident_report_id": "2005048102041"
+        }
+    ]
+}

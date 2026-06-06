@@ -1,0 +1,9 @@
+Risk Factor: Vehicle 2 Driver Action
+Specific Description: Acceleration by Vehicle 2 to avoid the crash, potentially altering the dynamic situation.
+
+Risk Factor: Driver Behavior (V1)
+Specific Description: Incorrect evasive action (locking brakes and jerking steering) led to loss of control and encroachment into V2âs lane.
+
+Risk Factor: Vehicle Maneuver â Stopping
+Specific Description: Vehicle #1âs stop to allow for a left turn created a scenario requiring Vehicle #2 to react to a stationary vehicle.
+

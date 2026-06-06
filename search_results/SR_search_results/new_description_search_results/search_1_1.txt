@@ -1,0 +1,9 @@
+Risk Factor: Speed Differential
+Specific Description: Vehicle #1 was traveling at a higher speed than Vehicle #3, leading to the rear-end collision.
+
+Risk Factor: Vehicle Maneuver â Stopping
+Specific Description: Vehicle #1âs stop to allow for a left turn created a scenario requiring Vehicle #2 to react to a stationary vehicle.
+
+Risk Factor: Evasive Maneuver
+Specific Description: Vehicle #2âs attempt to move onto the shoulder, while intended to avoid the collision, was ultimately unsuccessful.
+

@@ -1,0 +1,53 @@
+{
+  "timestamp": "2026-03-10 21:31:33",
+  "total_risk_factors": 3,
+  "risk_descriptions": [
+    {
+      "Risk Level": "Following Too Closely",
+      "Specific Description": "The driver of Vehicle #2 stated he saw the stopped Vehicle #1 too late and couldn't stop in time, indicating that he was following too closely and did not maintain adequate distance to react safely. The report notes: 'He stated he did see Vehicle #1 stopped in the roadway too late, tried to stop but didn't have enough time to stop.' This directly contributed to the collision by reducing reaction time and available space for deceleration under emergency braking conditions.",
+      "Accident Report ID": "2005002585183",
+      "Risk Factor": "Following Behavior"
+    },
+    {
+      "Risk Level": "Large Longitudinal Speed Difference",
+      "Specific Description": "The report states the critical pre-crash event for Vehicle #3 was the presence of Vehicle #1 in its lane at a higher speed. This indicates a significant speed difference between Vehicle #1 and #3, which would reduce the available time for either vehicle to react appropriately, increasing the likelihood of a collision.",
+      "Accident Report ID": "2005041600422",
+      "Risk Factor": "Speed Interaction"
+    },
+    {
+      "Risk Level": "Emergency Braking",
+      "Specific Description": "V1's driver applied emergency braking upon the phantom vehicle's cut-in, initiating a loss of directional control that led to lane departure and collision.",
+      "Accident Report ID": "2005041508581",
+      "Risk Factor": "Key Vehicle Behavior"
+    }
+  ],
+  "detailed_results": [
+    {
+      "Input Factor": "FollowingBehavior",
+      "Input Value": "FollowingTooClosely",
+      "Layer": "Object Interaction Layer",
+      "Risk Factor": "Following Behavior",
+      "Risk Level": "Following Too Closely",
+      "Specific Description": "The driver of Vehicle #2 stated he saw the stopped Vehicle #1 too late and couldn't stop in time, indicating that he was following too closely and did not maintain adequate distance to react safely. The report notes: 'He stated he did see Vehicle #1 stopped in the roadway too late, tried to stop but didn't have enough time to stop.' This directly contributed to the collision by reducing reaction time and available space for deceleration under emergency braking conditions.",
+      "Accident Report ID": "2005002585183"
+    },
+    {
+      "Input Factor": "SpeedInteraction",
+      "Input Value": "LargeSpeedDifference",
+      "Layer": "Object Interaction Layer",
+      "Risk Factor": "Speed Interaction",
+      "Risk Level": "Large Longitudinal Speed Difference",
+      "Specific Description": "The report states the critical pre-crash event for Vehicle #3 was the presence of Vehicle #1 in its lane at a higher speed. This indicates a significant speed difference between Vehicle #1 and #3, which would reduce the available time for either vehicle to react appropriately, increasing the likelihood of a collision.",
+      "Accident Report ID": "2005041600422"
+    },
+    {
+      "Input Factor": "KeyVehicleBehavior",
+      "Input Value": "EmergencyBraking",
+      "Layer": "Object Interaction Layer",
+      "Risk Factor": "Key Vehicle Behavior",
+      "Risk Level": "Emergency Braking",
+      "Specific Description": "V1's driver applied emergency braking upon the phantom vehicle's cut-in, initiating a loss of directional control that led to lane departure and collision.",
+      "Accident Report ID": "2005041508581"
+    }
+  ]
+}

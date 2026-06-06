@@ -1,0 +1,43 @@
+{
+  "risk_factor_classification": {
+    "Road Layer": [],
+    "Infrastructure Layer": [
+      {
+        "Risk Factor": "Traffic Control Devices",
+        "Risk Level": "Level 2",
+        "Specific Description": "The accident report states there were no warning signs or devices to indicate a need to change lanes or slow down approaching the utility work zone. This lack of traffic control devices contributed to the driver's (V1) inability to anticipate the obstruction in lane two and react accordingly."
+      }
+    ],
+    "Object Interaction Layer": [
+      {
+        "Risk Factor": "Sight-distance Condition",
+        "Risk Level": "Level 2",
+        "Specific Description": "A six-inch pipe was lying across lane two, and its protective covering blended in with the gray asphalt roadway, creating a static obstruction that was difficult to see. This reduced sight-distance condition contributed to the driver (V1) not perceiving the hazard until it was directly in front of the vehicle, leaving insufficient time to react safely."
+      }
+    ],
+    "Environment Layer": [
+      {
+        "Risk Factor": "Road Friction Coefficient",
+        "Risk Level": "Level 1",
+        "Specific Description": "The report states dry road conditions. This is a Level 1 condition and therefore excluded."
+      },
+      {
+        "Risk Factor": "Visibility Conditions",
+        "Risk Level": "Level 1",
+        "Specific Description": "The report states daylight and clear skies. This is a Level 1 condition and therefore excluded."
+      }
+    ],
+    "Other Relevant Risk Layer": [
+      {
+        "Risk Factor": "Work Zone Traffic Flow Interruption",
+        "Risk Level": "Level 2",
+        "Specific Description": "The utility crew's presence and the resulting obstruction (the pipe) created a traffic flow interruption in lane two. This interruption, coupled with the lack of adequate warning, directly contributed to the collision by forcing the driver (V1) to react suddenly to an unexpected hazard."
+      },
+      {
+        "Risk Factor": "Inadequate Warning of Work Zone",
+        "Risk Level": "Level 2",
+        "Specific Description": "The Critical Precrash Event and Reason detailed in the report indicate an inadequacy of signs/signals preceding the work zone and this significantly contributed to the crash occurrence. The driver was operating safely but could not avoid the collision due to the inadequate warning."
+      }
+    ]
+  }
+}

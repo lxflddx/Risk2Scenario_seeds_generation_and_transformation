@@ -1,0 +1,48 @@
+{
+  "risk_factor_classification": {
+    "Road Layer": [
+      {
+        "Risk Factor": "Road Curvature",
+        "Risk Level": "Level 2",
+        "Specific Description": "The report states the crash occurred in a 'right hand curve'. This indicates a deviation from a straight road, contributing to the increased risk of loss of control, especially under adverse conditions."
+      },
+      {
+        "Risk Factor": "Road Grade",
+        "Risk Level": "Level 2",
+        "Specific Description": "The roadway was 'downhill' at the crash location. This grade, combined with the curve and wet conditions, likely increased the vehicle's speed and reduced its stability, contributing to the hydroplaning event."
+      }
+    ],
+    "Infrastructure Layer": [],
+    "Object Interaction Layer": [
+      {
+        "Risk Factor": "Speed Interaction",
+        "Risk Level": "Level 2",
+        "Specific Description": "Vehicle 2 was traveling at approximately 8 kmph (5 mph) while attempting to merge, while V1 was travelling at the speed limit of 80 kmph. The substantial difference in speed between the two vehicles contributed to the severity of the impact, making it almost unavoidable once V1 lost control."
+      }
+    ],
+    "Environment Layer": [
+      {
+        "Risk Factor": "Road Friction Coefficient",
+        "Risk Level": "Level 2",
+        "Specific Description": "The report explicitly states the roads were 'slick' and that V1 'hydroplaned'. This indicates a significant reduction in road friction, directly contributing to the loss of control."
+      },
+      {
+        "Risk Factor": "Visibility Conditions",
+        "Risk Level": "Level 3",
+        "Specific Description": "The crash occurred during a 'heavy thunderstorm' with 'heavy rain,' creating 'adverse weather' conditions. This reduced visibility and contributed to the increased risk of hydroplaning and loss of control."
+      }
+    ],
+    "Other Relevant Risk Layer": [
+      {
+        "Risk Factor": "Roadway Drainage",
+        "Risk Level": "Level 2",
+        "Specific Description": "The report states 'the roadway could not handle the excessive water'. While 'Road Friction Coefficient' captures the effect, the underlying cause is insufficient drainage, which is not directly in the list."
+      },
+      {
+        "Risk Factor": "Super-elevation",
+        "Risk Level": "Level 2",
+        "Specific Description": "The road is 'super elevated down to the center of radius of curvature'. While not explicitly listed as a risk, the combination of superelevation, downhill grade, and wet conditions created a hazardous situation and contributed to the severity of outcome."
+      }
+    ]
+  }
+}

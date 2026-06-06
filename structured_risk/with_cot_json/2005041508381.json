@@ -1,0 +1,32 @@
+{
+  "risk_factor_classification": {
+    "Road Layer": [],
+    "Infrastructure Layer": [
+      {
+        "Risk Factor": "Traffic Control Devices",
+        "Risk Level": "Level 2",
+        "Specific Description": "The report states, 'there were no warning signs or devices to indicate that she needed to change lanes, or even to slow down to an advisory speed limit.' This indicates a lack of adequate traffic control devices to warn drivers of the work zone and potential lane obstruction, contributing to the driver's inability to react in time."
+      }
+    ],
+    "Object Interaction Layer": [
+      {
+        "Risk Factor": "Sight-distance Condition",
+        "Risk Level": "Level 2",
+        "Specific Description": "The report specifically states that 'the pipe was coated with a protective covering which was gray in color. The covering blended in color with the pavement, making it difficult to see.' This created a static obstruction that was difficult to detect, reducing the effective sight distance and contributing to the driverâs late reaction."
+      }
+    ],
+    "Environment Layer": [],
+    "Other Relevant Risk Layer": [
+      {
+        "Risk Factor": "Work Zone Traffic Flow Interruption",
+        "Risk Level": "N/A",
+        "Specific Description": "The utility crew's activity, specifically 'pumping water out from a manhole coverâ and the presence of 'a six-inch pipe lying across lane two,â created a traffic flow interruption, as acknowledged in the report's Critical Reason as âwork zone created a traffic flow interruption factor.â"
+      },
+      {
+        "Risk Factor": "Inadequate Signage",
+        "Risk Level": "N/A",
+        "Specific Description": "The report explicitly states, 'signs preceding this work zone did not provide any information about the traffic flow changes,â indicating a deficiency in pre-warning signage that led to the driver's surprise encounter with the obstruction."
+      }
+    ]
+  }
+}

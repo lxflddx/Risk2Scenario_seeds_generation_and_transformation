@@ -1,0 +1,54 @@
+{
+  "risk_factor_classification": {
+    "Road Layer": [
+      {
+        "Risk Factor": "Intersection Geometry",
+        "Risk Level": "Level 2",
+        "Specific Description": "The report states the collision occurred at a T-intersection. This intersection is not described as a conventional cross-intersection, thus falling into the 'Staggered / offset intersection' category, contributing to the complexity of the maneuver for V1."
+      },
+      {
+        "Risk Factor": "Lane Connectivity",
+        "Risk Level": "Level 3",
+        "Specific Description": "The southbound roadway had a +4 percent gradient leading to the intersection. This up-grade may have affected V1âs speed and visibility as it approached and maneuvered through the intersection."
+      }
+    ],
+    "Infrastructure Layer": [
+      {
+        "Risk Factor": "Traffic Control Devices",
+        "Risk Level": "Level 2",
+        "Specific Description": "The east/west roadway had no traffic control device, while the southbound roadway was controlled by a stop sign. This creates an asymmetrical control environment, increasing the risk for vehicles entering from the stop-controlled roadway. The absence of control on the major roadway contributed to the collision as V1 initiated a turn across traffic."
+      }
+    ],
+    "Object Interaction Layer": [
+      {
+        "Risk Factor": "Sight-distance Condition",
+        "Risk Level": "Level 2",
+        "Specific Description": "A non-contact box truck was stopped in the first westbound lane. The report specifically states this truck created a 'sightline restriction' for V1, obscuring V2 and contributing to the 'turned with obstructed view' decision error by V1."
+      },
+      {
+        "Risk Factor": "Sight-distance Condition",
+        "Risk Level": "Level 2",
+        "Specific Description": "The non-contact vehicle restricted the sight lines for V2, masking the impending problem caused by V1 maneuvering into its path."
+      }
+    ],
+    "Environment Layer": [
+      {
+        "Risk Factor": "Road Friction Coefficient",
+        "Risk Level": "Level 1",
+        "Specific Description": "The report states the roadway was dry, meaning the risk factor is at the default safe state."
+      },
+      {
+        "Risk Factor": "Visibility Conditions",
+        "Risk Level": "Level 1",
+        "Specific Description": "The report states the conditions were 'partly cloudy skies'. This falls under good visibility conditions, meaning the risk factor is at the default safe state."
+      }
+    ],
+    "Other Relevant Risk Layer": [
+      {
+        "Risk Factor": "Traffic Flow Interruption",
+        "Risk Level": "Level 2",
+        "Specific Description": "The report mentions 'rush hour congestion' and 'traffic backed-up'. This interruption likely influenced driver expectations and potentially contributed to V2's recognition error, masking the encroachment of V1, as well as V1âs reliance on the wave from the box truck."
+      }
+    ]
+  }
+}

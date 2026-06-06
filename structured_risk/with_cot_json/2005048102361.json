@@ -1,0 +1,43 @@
+{
+  "risk_factor_classification": {
+    "Road Layer": [
+      {
+        "Risk Factor": "Intersection Geometry",
+        "Risk State": "Staggered / offset intersection",
+        "Specific Description": "The intersection incorporates an access road complicating traffic flow, creating a non-conventional layout. This layout potentially increased the complexity of the decision-making process for V1 as it assessed the gap in traffic."
+      },
+      {
+        "Risk Factor": "Lane Connectivity",
+        "Risk State": "Down-grade",
+        "Specific Description": "The 6.5% down-grade on the east leg approaching the intersection may have increased V1's speed as it approached the yield sign, subconsciously altering the driver's perception of time to react."
+      }
+    ],
+    "Infrastructure Layer": [
+      {
+        "Risk Factor": "Traffic Control Devices",
+        "Risk State": "No signal control",
+        "Specific Description": "The reliance on yield and stop sign control, rather than signalized control, places a greater burden on drivers to accurately assess gaps in traffic, and potentially increases the risk of misjudgment."
+      }
+    ],
+    "Object Interaction Layer": [
+      {
+        "Risk Factor": "Sight-distance Condition",
+        "Risk State": "Static obstruction",
+        "Specific Description": "The driver of V1's initial sighting of V2, coupled with the multiple looks left, suggests a potentially limited or briefly obstructed view of approaching traffic from the north leg which is curved. This impaired V1's ability to adequately assess the speed and distance of V2."
+      }
+    ],
+    "Environment Layer": [],
+    "Other Relevant Risk Layer": [
+      {
+        "Risk Factor": "Curvature of North Leg",
+        "Risk State": "N/A",
+        "Specific Description": "The curvature of the north leg of the intersection potentially impacts driver expectancy and available sight distance."
+      },
+      {
+        "Risk Factor": "Trailer being Towed",
+        "Risk State": "N/A",
+        "Specific Description": "V2 was towing a pontoon boat which significantly alters braking and maneuverability characteristics, potentially increasing stopping distance and decreasing maneuverability if evasive action was required."
+      }
+    ]
+  }
+}

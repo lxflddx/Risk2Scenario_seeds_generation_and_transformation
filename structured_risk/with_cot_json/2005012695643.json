@@ -1,0 +1,32 @@
+{
+  "risk_factor_classification": {
+    "Road Layer": [],
+    "Infrastructure Layer": [
+      {
+        "Risk Factor": "Traffic Control Devices",
+        "Risk State": "No signal control",
+        "Specific Description": "There were no traffic control devices present for either V1 or V2 indicates an absence of signals, signs, or other regulatory devices to manage the intersection. This contributed to the collision by removing a safety mechanism for drivers to negotiate the turn."
+      }
+    ],
+    "Object Interaction Layer": [
+      {
+        "Risk Factor": "Sight-distance Condition",
+        "Risk State": "Dynamic obstruction",
+        "Specific Description": "A non-contact truck that was stopped in the second southbound laneâ¦ blocked V1's view directly impaired V1âs ability to perceive oncoming traffic. This limited visibility greatly contributed to the inadequate surveillance and the collision."
+      },
+      {
+        "Risk Factor": "Yielding Behavior",
+        "Risk State": "Unprotected left-turn forcing",
+        "Specific Description": "Heâ¦thought that its driver would wait for him to pass before beginning the left turn indicates flawed expectations about yielding behavior. This suggests the driver of V2 may have proceeded without adequate confirmation that V1 would yield, based on a presumption."
+      }
+    ],
+    "Environment Layer": [],
+    "Other Relevant Risk Layer": [
+      {
+        "Risk Factor": "Recognition error/inadequate surveillance",
+        "Risk State": "N/A",
+        "Specific Description": "The Critical Reason for the Critical Precrash Event was a recognition error, inadequate surveillance (failed to look, looked but did not see). This highlights a fundamental perceptual failure contributing to the incorrect decision-making of the driver of V1."
+      }
+    ]
+  }
+}

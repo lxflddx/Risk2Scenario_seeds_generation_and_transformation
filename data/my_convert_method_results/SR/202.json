@@ -1,0 +1,176 @@
+{
+    "scenario_id": 202,
+    "accident_report": "V1 (Car) is in Lane 3, traveling parallel to V2 in Lane 2 (V1 could be slightly behind V2). V2 (Truck) is in Lane 2, traveling slightly ahead of V1. V3 (\"Phantom Vehicle\") is traveling in Lane 1 behind V2 and makes an unsafe lane change from Lane 1 to Lane 2. On a straight road, V1 is in Lane 3 while V2 is in Lane 2 traveling slightly ahead of V1. V3 makes an unsafe lane change from Lane 1 to Lane 2, failing to yield to V2 who is in Lane 2. V2 makes a sudden lane change into Lane 3 to avoid a collision with the aggressive V3 who merges into Lane 2. V2 encroaches into V1's lane (Lane 3) where V1 is cruising. As a result, V1 and V2 sideswipe each other in Lane 3. A sideswipe collision occurs between V1 and V2 in Lane 3 because V2 swerved into V1's lane to avoid an unsafe maneuver by the \"phantom vehicle\" V3.",
+    "tas_scenario": {
+        "Environmental Context": "Straight road, multiple lanes.",
+        "Agent Initial States": [
+            "V1 (Car) is in Lane 3, traveling parallel to V2.",
+            "V2 (Truck) is in Lane 2, traveling slightly ahead of V1.",
+            "V3 is in Lane 1, behind V2."
+        ],
+        "Temporal Action Sequence": [
+            [
+                "V1",
+                "keep_speed",
+                "east",
+                "straight",
+                "lane 3",
+                "",
+                "1"
+            ],
+            [
+                "V2",
+                "keep_speed",
+                "east",
+                "straight",
+                "lane 2",
+                "",
+                "1"
+            ],
+            [
+                "V3",
+                "lane_change_right",
+                "east",
+                "straight",
+                "lane 1",
+                "lane 2",
+                "2"
+            ],
+            [
+                "V2",
+                "lane_change_left",
+                "east",
+                "straight",
+                "lane 2",
+                "lane 3",
+                "3"
+            ],
+            [
+                "V1",
+                "keep_speed",
+                "east",
+                "straight",
+                "lane 3",
+                "",
+                "3"
+            ],
+            [
+                "V2",
+                "strike",
+                "east",
+                "straight",
+                "lane 3",
+                "V1",
+                "4"
+            ]
+        ],
+        "Candidate Ego Vehicle": "V1"
+    },
+    "logical_scenario": {
+        "world": {
+            "time_of_day": "daytime",
+            "weather": "clear",
+            "road_condition": "dry"
+        },
+        "road": {
+            "structure": {
+                "type": "roadway",
+                "layout": "straight",
+                "num_lanes": 3,
+                "slope": "flat"
+            },
+            "infrastructure": {
+                "roadside_safety": "wide_shoulder"
+            }
+        },
+        "vehicles": [
+            {
+                "vehicle_id": "ego",
+                "lane_id": [
+                    3,
+                    3
+                ],
+                "offset": [
+                    0,
+                    10
+                ],
+                "initial_speed": [
+                    10,
+                    20
+                ]
+            },
+            {
+                "vehicle_id": "V2",
+                "lane_id": [
+                    2,
+                    2
+                ],
+                "offset": [
+                    10,
+                    20
+                ],
+                "initial_speed": [
+                    10,
+                    20
+                ]
+            },
+            {
+                "vehicle_id": "V3",
+                "lane_id": [
+                    1,
+                    1
+                ],
+                "offset": [
+                    -10,
+                    -20
+                ],
+                "initial_speed": [
+                    10,
+                    20
+                ]
+            }
+        ],
+        "actions": [
+            {
+                "vehicle_id": "V3",
+                "type": "LaneChanging",
+                "target_lane": [
+                    2,
+                    2
+                ],
+                "target_speed": [
+                    10,
+                    20
+                ],
+                "trigger_sequence": [
+                    1,
+                    1
+                ],
+                "time_interval": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "vehicle_id": "V2",
+                "type": "LaneChanging",
+                "target_lane": [
+                    3,
+                    3
+                ],
+                "target_speed": [
+                    10,
+                    20
+                ],
+                "trigger_sequence": [
+                    2,
+                    2
+                ],
+                "time_interval": [
+                    1,
+                    2
+                ]
+            }
+        ]
+    }
+}

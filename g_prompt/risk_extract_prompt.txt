@@ -1,0 +1,49 @@
+You are an accident analysis expert with extensive knowledge in the traffic field. Please follow these steps to complete the task, and do not output in markdown format:
+1. Summarize the Accident Report:
+○ Please read and summarize and the image of the following accident report, focusing on the basic situation, timeline, and key information directly related to the events leading up to the first collision.
+○ Ignore details about events or factors occurring after the first collision.
+2. Analyze Risk Factors Leading to the First Collision:
+○ Extract key information from the accident report and identify all risk factors that directly or potentially contributed to the first collision.
+○ Exclude factors relevant only to post-collision events or subsequent consequences.
+○ For each risk factor, explain how it may have contributed to the likelihood of the first collision by either directly causing it or creating preconditions that increased the risk.
+3. Categorize Risk Factors by Layer:
+○ Categorize the identified risk factors according to the following scenario layers and output as a JSON format object.
+○ [JSON] - Please include this marker at the beginning of your output.
+{
+"risk_factor_classification": {
+"Road Layer": [...],
+"Infrastructure Layer": [...],
+"Object Interaction Layer": [...],
+"Weather Layer": [...]
+}
+}
+[/JSON] - Please include this marker at the end of your output.
+○ Each risk factor should include two fields:
+  ○ 'Risk Factor': A concise label describing the factor.
+  ○ 'Specific Description': A detailed explanation of how the factor contributed to the first collision.
+○ Only include factors that played a direct or indirect role in causing the first collision.
+Accident Report：
+the crash occurred in the eastbound lanes of a five-lane undivided roadway with a two-way center turn lane. the roadway had a posted speed of 72 kmph and the eastbound lanes had a 5 percentages uphill grade. conditions were daylight and dry roads. the crash occurred in the late morning hours of a weekend day. at the time of the crash, the stadium adjacent to this roadway was hosting a basketball game. traffic conditions were subsequently crowded. vehicle one was a 1994 toyota camry sedan traveling eastbound in lane one. vehicle two was a 2004 buick lesabre traveling west in lane three, the center turn lane. v2 was following a relative in a vehicle ahead of him. eastbound traffic in lane two came to a stop to allow the relative and v2 to turn left. both vehicles proceeded to turn left. v2 did not see v1 approaching in lane one due to traffic obstruction. the front of v1 contacted the right side of v2. v1 came to rest on the south shoulder. v2 accelerated in an attempted avoidance maneuver, losing control and traveling into a ditch on the south west roadside. vehicle one was drive by a 16-year old female who was uninjured. she stated that an oncoming car turned in front of her. she estimated her travel speed at 72 kmph, but was unsure of her speed at impact. this vehicle was not towed due to damage. 4. Scenario Layering:
+○ Use the following hierarchical structure to classify the risk factors. Expand or adjust the structure if additional relevant layers or subclasses emerge.
+  ○ Road Layer:
+○ Road materials and types
+○ Road conditions (such as slope, surface condition, etc.)
+○ Intersection design (including the topology of the roads)
+  ○ Infrastructure Layer:
+○ Traffic signals
+○ Traffic signs
+○ Other traffic control facilities
+  ○ Object Interaction Layer:
+○ Driver behavior
+○ Vehicles (including types, speeds, paths, etc.)
+○ Traffic conditions (such as congestion)
+○ Visibility obstructions (caused by other vehicles, obstacles, etc.)
+  ○ Weather Layer:
+○ Rain or snow
+○ Wind
+○ Fog
+○ Other weather conditions that may affect traffic
+● Key Principles:
+● Prioritize the extraction and classification of risks leading up to the first collision.
+● Avoid including post-collision events or unrelated secondary factors.
+● Ensure the hierarchical structure maintains logical consistency while remaining flexible to accommodate new or unlisted risks.

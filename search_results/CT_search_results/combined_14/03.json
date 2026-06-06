@@ -1,0 +1,53 @@
+{
+  "timestamp": "2026-03-10 21:25:56",
+  "total_risk_factors": 3,
+  "risk_descriptions": [
+    {
+      "Risk Level": "Downhill",
+      "Specific Description": "The grade measurement 200 meters back from the first harmful event was -6.2%, indicating a downhill approach. Downhill sections can lead to increased vehicle speeds especially if drivers do not properly modulate braking; this could have influenced Vehicle #2âs inability to stop in time.",
+      "Accident Report ID": "2005045705161",
+      "Risk Factor": "Road Grade"
+    },
+    {
+      "Risk Level": "Illegal Lane Change/Cut-in",
+      "Specific Description": "The non-contact vehicle merged into lane two without signaling, according to V1âs driver. This unexpected and illegal lane change forced V1 to make a sharp evasive steering maneuver, directly leading to loss of control and initiating the crash sequence.",
+      "Accident Report ID": "2005043699241",
+      "Risk Factor": "Key Vehicle Behavior"
+    },
+    {
+      "Risk Level": "Slippery",
+      "Specific Description": "Vehicle one lost control due to hydroplaning caused by water on the road surface. The roadway was described as being unable to handle the excessive water, leading to a reduction in friction and subsequent loss of control.",
+      "Accident Report ID": "2005048102041",
+      "Risk Factor": "Road Friction Coefficient"
+    }
+  ],
+  "detailed_results": [
+    {
+      "Input Factor": "RoadGrade",
+      "Input Value": "Downhill",
+      "Layer": "Road Layer",
+      "Risk Factor": "Road Grade",
+      "Risk Level": "Downhill",
+      "Specific Description": "The grade measurement 200 meters back from the first harmful event was -6.2%, indicating a downhill approach. Downhill sections can lead to increased vehicle speeds especially if drivers do not properly modulate braking; this could have influenced Vehicle #2âs inability to stop in time.",
+      "Accident Report ID": "2005045705161"
+    },
+    {
+      "Input Factor": "KeyVehicleBehavior",
+      "Input Value": "IllegalCutIn",
+      "Layer": "Object Interaction Layer",
+      "Risk Factor": "Key Vehicle Behavior",
+      "Risk Level": "Illegal Lane Change/Cut-in",
+      "Specific Description": "The non-contact vehicle merged into lane two without signaling, according to V1âs driver. This unexpected and illegal lane change forced V1 to make a sharp evasive steering maneuver, directly leading to loss of control and initiating the crash sequence.",
+      "Accident Report ID": "2005043699241"
+    },
+    {
+      "Input Factor": "RoadFrictionCoefficient",
+      "Input Value": "Slippery",
+      "Layer": "Environment Layer",
+      "Risk Factor": "Road Friction Coefficient",
+      "Risk Level": "Slippery",
+      "Specific Description": "Vehicle one lost control due to hydroplaning caused by water on the road surface. The roadway was described as being unable to handle the excessive water, leading to a reduction in friction and subsequent loss of control.",
+      "Accident Report ID": "2005048102041"
+    }
+  ]
+}

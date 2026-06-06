@@ -1,0 +1,43 @@
+Restricted Risk Factor List:
+
+Risk Layer	Risk Factor	Level Settings (Level 1 is the default safe state and is NOT considered a risk)
+Road Layer	Road Curvature	Level 1: Straight Road
+Level 2: Curved Road
+Road Grade	Level 1: Level Road
+Level 2: Downhill
+Level 3: Uphill
+Lane Configuration	Level 1: Divided Lanes
+Level 2: Undivided Lanes
+Infrastructure Layer	Roadside Safety Zone	Level 1: Wide Shoulder
+Level 2: Rigid Obstacle (Guardrail/Wall)
+Traffic Control Signs	Level 1: Complete Signs
+Level 2: Missing Signs
+Object Interaction Layer	Following Behavior	Level 1: Safe Following
+Level 2: Following Too Closely
+Speed Interaction	Level 1: Speed Coordination
+Level 2: Large Longitudinal Speed Difference
+Key Vehicle Behavior	Level 1: Normal Driving
+Level 2: Emergency Braking
+Level 3: Illegal Lane Change/Cut-in
+Level 4: Illegal Evasion
+Environment Layer	Road Friction Coefficient	Level 1: Dry
+Level 2: Slippery
+Visibility Conditions	Level 1: Good
+Level 2: Nighttime
+Level 3: Adverse Weather (Rain/Fog)
+
+Key Principles:
+
+Prioritize the extraction and classification of risks leading up to the first collision.
+
+Strictly restrict to the risk factors in the list above. Factors outside the list go into "Other Relevant Risk Layer".
+
+Extract only factors whose state is "Level 2" or higher (i.e., a deviated, risky state). Factors in "Level 1" (default safe state) are NOT considered risks and should NOT be extracted.
+
+Focus the analysis on observable traffic behavior, vehicle states, and environmental conditions, excluding driver-specific subjective factors.
+
+Avoid including post-collision events or unrelated secondary factors.
+
+Constraint: Include only factors that played a direct or indirect role in causing the first collision AND whose state corresponds to “Level 2” or higher (i.e., non-default safe state).
+“Final validation rule: if any item in the JSON has a Level 1 meaning, the output is invalid and must be revised before returning.”
+Perform a final check before output.

@@ -1,0 +1,227 @@
+{
+    "scenario_id": 8,
+    "accident_report": "Vehicle Initialization\nOn a one-way four-lane urban arterial road, the roadway transitions from a straight segment into a right-hand curve. The segment is unlit and under nighttime conditions, resulting in reduced visibility.\n\nVehicle V1 is traveling in lane 2 (inner lane of the curve), approximately 80 meters before the curve entry, at an initial speed of 78 km/h, maintaining steady motion with the intent to continue forward.\nVehicle V2 is also in lane 2, about 35 meters ahead of V1, initially traveling at 72 km/h, already beginning to decelerate slightly due to downstream traffic conditions.\nVehicle V3 is in lane 3, roughly parallel to V1 but 10 meters ahead, traveling at 80 km/h with steady motion, intending to maintain its lane.\nVehicle V4 is in lane 1, about 20 meters ahead of V2, moving at 40 km/h due to a slow-moving maintenance-related vehicle condition ahead, intending to proceed through the area at low speed.\n\nScenario Development\nAs vehicles enter the right-hand curve, V1, positioned on the inside lane, experiences increased visual and cognitive load due to the curvature, requiring simultaneous steering control and forward monitoring. Under nighttime conditions, visibility is limited to headlight illumination, significantly shortening the distance at which forward hazards can be detected.\n\nV2 is the first to detect V4’s low speed. With only about 20 meters of spacing at 72 km/h, V2 initiates braking, reducing speed to 45 km/h. Although V2’s brake lights provide a visual cue, the curved alignment and limited illumination reduce how early V1 can perceive this deceleration.\n\nV1 recognizes V2’s deceleration approximately 2 seconds after entering the curve, at which point the gap has decreased to around 22 meters while still traveling at 78 km/h. Due to reduced visibility and misjudgment of relative speed, V1 initially underestimates the severity of V2’s deceleration and only applies mild braking, reducing speed to 70 km/h.\n\nMeanwhile, V3 in lane 3 observes V2’s deceleration and anticipates a potential hazard, slightly adjusting lateral position but not committing to a lane change. The presence of V3 creates a perceived constraint for V1, discouraging immediate evasive lane change maneuvers.\n\nAs the gap further reduces to approximately 12 meters, V1 finally recognizes the critical situation and applies hard braking. However, due to delayed reaction and high closing speed, the available stopping distance is insufficient. Additionally, the curve limits aggressive steering-based avoidance due to stability constraints.\n\nV2, still responding to V4 ahead, brakes again, reducing speed to 35 km/h. This further compresses the following distance available to V1. Despite emergency braking reducing V1’s speed from 70 km/h to approximately 52 km/h, collision becomes unavoidable.\n\nOutcome\nV1 ultimately rear-ends V2 in lane 2 at approximately 50 km/h. The collision results from the combined effects of delayed hazard recognition due to road curvature and nighttime visibility limitations, along with progressive compression of following distance caused by V2’s repeated deceleration in response to V4.\n\nFollowing the impact, V2 is pushed forward toward V4, creating a potential secondary collision risk. The initial rear-end collision constitutes the endpoint of the scenario. The blockage of lane 2 introduces subsequent traffic disruption risks as following vehicles must decelerate or change lanes.",
+    "tas_scenario": {
+        "Environmental Context": "Nighttime conditions on a one-way four-lane urban arterial road transitioning from a straight segment into a right-hand curve. Roadway is unlit, resulting in reduced visibility.",
+        "Agent Initial States": [
+            "V1 is traveling in lane 2 at 78 km/h, 80 meters before the curve.",
+            "V2 is in lane 2, 35 meters ahead of V1, traveling at 72 km/h and decelerating.",
+            "V3 is in lane 3, roughly parallel to V1 but 10 meters ahead, traveling at 80 km/h.",
+            "V4 is in lane 1, about 20 meters ahead of V2, moving at 40 km/h."
+        ],
+        "Temporal Action Sequence": [
+            [
+                "V1",
+                "keep_speed",
+                "east",
+                "eastbound",
+                "lane 2",
+                "",
+                "1"
+            ],
+            [
+                "V2",
+                "decelerate",
+                "east",
+                "eastbound",
+                "lane 2",
+                "",
+                "2"
+            ],
+            [
+                "V3",
+                "keep_speed",
+                "east",
+                "eastbound",
+                "lane 3",
+                "",
+                "3"
+            ],
+            [
+                "V4",
+                "keep_speed",
+                "east",
+                "eastbound",
+                "lane 1",
+                "",
+                "4"
+            ],
+            [
+                "V2",
+                "decelerate",
+                "east",
+                "eastbound",
+                "lane 2",
+                "",
+                "5"
+            ],
+            [
+                "V1",
+                "decelerate",
+                "east",
+                "eastbound",
+                "lane 2",
+                "",
+                "6"
+            ],
+            [
+                "V2",
+                "decelerate",
+                "east",
+                "eastbound",
+                "lane 2",
+                "",
+                "7"
+            ],
+            [
+                "V1",
+                "decelerate",
+                "east",
+                "eastbound",
+                "lane 2",
+                "",
+                "8"
+            ],
+            [
+                "V1",
+                "strike",
+                "east",
+                "eastbound",
+                "lane 2",
+                "V2",
+                "9"
+            ]
+        ],
+        "Candidate Ego Vehicle": "V1"
+    },
+    "logical_scenario": {
+        "world": {
+            "time_of_day": "night",
+            "weather": "clear",
+            "road_condition": "dry"
+        },
+        "road": {
+            "structure": {
+                "type": "roadway",
+                "layout": "curve",
+                "num_lanes": 4,
+                "slope": "flat"
+            },
+            "infrastructure": {
+                "roadside_safety": "wide_shoulder"
+            }
+        },
+        "vehicles": [
+            {
+                "vehicle_id": "ego",
+                "lane_id": [
+                    2,
+                    2
+                ],
+                "offset": [
+                    80,
+                    90
+                ],
+                "initial_speed": [
+                    21,
+                    29
+                ]
+            },
+            {
+                "vehicle_id": "V2",
+                "lane_id": [
+                    2,
+                    2
+                ],
+                "offset": [
+                    45,
+                    55
+                ],
+                "initial_speed": [
+                    20,
+                    22
+                ]
+            },
+            {
+                "vehicle_id": "V3",
+                "lane_id": [
+                    3,
+                    3
+                ],
+                "offset": [
+                    90,
+                    100
+                ],
+                "initial_speed": [
+                    22,
+                    28
+                ]
+            },
+            {
+                "vehicle_id": "V4",
+                "lane_id": [
+                    1,
+                    1
+                ],
+                "offset": [
+                    20,
+                    30
+                ],
+                "initial_speed": [
+                    13,
+                    17
+                ]
+            }
+        ],
+        "actions": [
+            {
+                "vehicle_id": "V2",
+                "type": "Decelerate",
+                "target_speed": [
+                    15,
+                    25
+                ],
+                "trigger_sequence": [
+                    1,
+                    1
+                ],
+                "time_interval": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "vehicle_id": "V2",
+                "type": "Decelerate",
+                "target_speed": [
+                    10,
+                    20
+                ],
+                "trigger_sequence": [
+                    2,
+                    2
+                ],
+                "time_interval": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "vehicle_id": "V2",
+                "type": "Decelerate",
+                "target_speed": [
+                    5,
+                    15
+                ],
+                "trigger_sequence": [
+                    4,
+                    4
+                ],
+                "time_interval": [
+                    1,
+                    2
+                ]
+            }
+        ]
+    }
+}

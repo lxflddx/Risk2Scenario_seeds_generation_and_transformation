@@ -1,0 +1,162 @@
+{
+    "scenario_id": 11,
+    "accident_report": "Vehicle #1 (V1) is assigned to Lane 2 (second lane from the right), traveling at a normal speed until it needs to make a left turn where it stops completely. Vehicle #2 (V2) is also in Lane 2, following V1 at a distance of 50 meters and a speed of 70 km/h until V1 stops. Vehicle #3 (V3) is traveling in Lane 3, 100 meters behind V1 and V2 initially but does not directly interact until the collision might cause a secondary reaction. V1 attempts to make a left turn from Lane 2 across Lane 3 where a safe opening is needed. V1 slows down and stops completely in Lane 2 because it needs to cross Lane 3. V2 follows V1 in Lane 2 initially but is distracted by showing a passenger a point of interest outside (for instance, a significant landmark), which makes the driver fail to notice that V1 has come to a full stop until it is too late. V2 continues at a speed of 70 km/h and does not notice the stopped V1 until the driver finally turns attention back to the road and realizes that V1 is stopped directly ahead. The significant speed differential between V1 (0 km/h) and V2 (70 km/h) makes it impossible for V2 to stop in time, thus it rear-ends V1.",
+    "tas_scenario": {
+        "Environmental Context": "Normal speed, daylight, dry road conditions, multi-lane road, traffic infrastructure includes lanes and potential left turn crossing.",
+        "Agent Initial States": [
+            "V1 is in lane 2 traveling at a normal speed, intending to turn left.",
+            "V2 is in lane 2, following V1 at a distance of 50 meters traveling at 70 km/h.",
+            "V3 is in lane 3, 100 meters behind V1 and V2 initially."
+        ],
+        "Temporal Action Sequence": [
+            [
+                "V1",
+                "keep_speed",
+                "east",
+                "eastbound",
+                "lane 2",
+                "",
+                "1"
+            ],
+            [
+                "V2",
+                "keep_speed",
+                "east",
+                "eastbound",
+                "lane 2",
+                "",
+                "2"
+            ],
+            [
+                "V1",
+                "decelerate",
+                "east",
+                "eastbound",
+                "lane 2",
+                "",
+                "3"
+            ],
+            [
+                "V2",
+                "keep_speed",
+                "east",
+                "eastbound",
+                "lane 2",
+                "",
+                "4"
+            ],
+            [
+                "V1",
+                "decelerate",
+                "east",
+                "eastbound",
+                "lane 2",
+                "",
+                "5"
+            ],
+            [
+                "V2",
+                "keep_speed",
+                "east",
+                "eastbound",
+                "lane 2",
+                "",
+                "6"
+            ],
+            [
+                "V1",
+                "keep_speed",
+                "east",
+                "eastbound",
+                "lane 2",
+                "",
+                "7"
+            ],
+            [
+                "V2",
+                "keep_speed",
+                "east",
+                "eastbound",
+                "lane 2",
+                "",
+                "8"
+            ],
+            [
+                "V2",
+                "strike",
+                "east",
+                "eastbound",
+                "lane 2",
+                "V1",
+                "9"
+            ]
+        ],
+        "Candidate Ego Vehicle": "V1"
+    },
+    "logical_scenario": {
+        "world": {
+            "time_of_day": "daytime",
+            "weather": "clear",
+            "road_condition": "dry"
+        },
+        "road": {
+            "structure": {
+                "type": "roadway",
+                "layout": "straight",
+                "num_lanes": 3,
+                "slope": "flat"
+            },
+            "infrastructure": {
+                "roadside_safety": "wide_shoulder"
+            }
+        },
+        "vehicles": [
+            {
+                "vehicle_id": "ego",
+                "lane_id": [
+                    2,
+                    2
+                ],
+                "offset": [
+                    70,
+                    80
+                ],
+                "initial_speed": [
+                    20,
+                    30
+                ]
+            },
+            {
+                "vehicle_id": "V2",
+                "lane_id": [
+                    2,
+                    2
+                ],
+                "offset": [
+                    20,
+                    30
+                ],
+                "initial_speed": [
+                    65,
+                    75
+                ]
+            },
+            {
+                "vehicle_id": "V3",
+                "lane_id": [
+                    3,
+                    3
+                ],
+                "offset": [
+                    -30,
+                    -20
+                ],
+                "initial_speed": [
+                    20,
+                    30
+                ]
+            }
+        ],
+        "actions": []
+    }
+}

@@ -1,0 +1,53 @@
+You are an expert in Simulation-based Testing for Autonomous Driving Systems, with the goal of generating logical test cases with suitable parameter ranges that correspond to functional scenario descriptions. 
+Here is the scenario model and the test case model: 
+class NPC:
+    def __init__(self, lane_id: int, offset: float, initial_speed: float):
+        pass
+
+    def accelerate(self, target_speed: float, trigger_sequence: int):
+        pass
+
+    def decelerate(self, target_speed: float, trigger_sequence: int):
+        pass
+
+    def changeLane(self, target_lane: int, target_speed: float, trigger_sequence: int):
+        pass
+Attention:
+1. Treat merging and diverging as special cases of lane changing:
+   - Merging: Vehicles changing from a ramp lane to a main road lane.
+2. When using the `changeLane` method:
+   - For merging, ensure that the target lane is on the main road and provide the necessary speed adjustment.
+
+  def testcase():
+   vehicle1 = NPC(lane_id= , offset= , initial_speed= ) 
+   vehicle2 = NPC(lane_id= , offset= , initial_speed= ) 
+   
+   vehicle1.decelerate(target_speed= , trigger_sequence= ) 
+   vehicle2.changeLane(target_lane= , target_speed= , trigger_sequence= )
+
+Please generate the test case corresponding to the following scenario description:
+Initial Actions:
+(V1): Left lane, approximately 7 car lengths behind V2. Traveling at 68 mph.
+(V2): Right lane, traveling at 68 mph.
+(V3): Right-center lane.
+Interactive Pattern Sequence:
+(V1): drifts right.
+(V3): drifts left towards V2's lane.
+(V2, V3): V2 is beside V3, and V3 drifts left towards V2.
+(V2): swerves left.
+(V1, V2): V2 is close to V1 during the swerve.
+(V1): brake.
+
+Can you specify a positive range for each of the parameters in the test case, that can make the scenario happen like the text description? Please fill in all of the [] in this test case and output the new test case.
+Attention:
+1.Before generating the test case, ensure you:
+   Analyze the scenario description to identify all involved vehicles and their roles.
+2. just output the new test case in a code snippet with the format of the example test case, which only contain the class initialization and method calls;
+3. you can combine multiple atomic actions in the scenario model to represent a complex action from the scenario description;
+4.Each lane_id must adhere to the following convention:
+Lane IDs increase from left to right, starting at 1. For example:
+Lane 1 is the leftmost lane.
+Lane 2 is the lane to the right of Lane 1, and so on；
+5. each method call or multiple calls should correspond to an action described in the functional scenario, and each vehicle object is named as 'vehicle{1-n}';
+6. you can add comments to describe each action in the test case;
+7. do not add other actions such as the towing action.

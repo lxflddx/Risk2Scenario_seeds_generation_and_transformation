@@ -1,0 +1,235 @@
+{
+    "scenario_id": 9,
+    "accident_report": "(1) Vehicle Initialization\nOn a one-way urban expressway with four lanes (numbered from right to left as Lane 1 to Lane 4), the roadway has an approximate 5% uphill grade. A heavy rainstorm is ongoing, resulting in reduced visibility to about 80 meters and a wet, low-friction road surface.\nV1 is traveling in Lane 2 at 72 km/h, positioned mid-stream in the traffic flow, maintaining a following distance of approximately 35 meters from its lead vehicle, with the intent to continue straight uphill.\nV2 is in Lane 4, approximately 20 meters ahead of V1, traveling at 78 km/h, with the intention of moving rightward across lanes to reach an upcoming exit.\nV3 is in Lane 3, about 15 meters behind and to the right of V2, traveling at 70 km/h, maintaining a cautious speed due to reduced traction, and continuing straight.\nV4 is in Lane 1, approximately 10 meters behind V1, traveling at 68 km/h. Due to the uphill grade, its acceleration capability is limited, and it is only gradually increasing speed while maintaining its lane.\n\n(2) Scenario Development\nThe uphill grade reduces the acceleration performance of all vehicles, most notably V4, which struggles to increase speed and begins to lag relative to V1. Simultaneously, the heavy rain reduces tire-road friction, increasing stopping distances for all vehicles. The reduced visibility delays drivers’ perception of downstream traffic changes.\n\nWhile traveling in Lane 4, V2 fails to detect the upcoming exit in time due to limited visibility. Upon realizing it is nearing the exit, V2 initiates a rapid evasive maneuver to the right. At this moment, the available gap between V2 and V3 in Lane 3—approximately 15 meters in combined longitudinal and lateral spacing—is insufficient for a safe lane change under wet and uphill conditions. Despite this, V2 steers abruptly into Lane 3.\n\nV3 detects V2’s lateral movement with a delay of about 1 second due to reduced visibility. It applies braking, reducing speed from 70 km/h to approximately 62 km/h. However, due to the slippery surface, braking effectiveness is limited, and the increased stopping distance prevents V3 from fully establishing a safe buffer. After entering Lane 3, V2 continues attempting to merge further right into Lane 2.\n\nMeanwhile, V1 in Lane 2 only becomes aware of V2’s encroachment at a distance of about 70 meters due to visibility constraints. V1 immediately brakes, attempting to reduce speed from 72 km/h, but the wet road limits deceleration, and its speed only drops to approximately 65 km/h over a short interval. At the same time, V1’s left escape path (Lane 3) is blocked by V2, and its right side (Lane 1) is constrained by V4, which is traveling at approximately 68 km/h and positioned about 8 meters behind V1. This restricts V1’s ability to perform an evasive maneuver.\n\nAs V2 continues its multi-lane evasive maneuver from Lane 3 into Lane 2, the combination of rapid lateral movement, reduced tire grip, and uphill load transfer degrades its lateral stability. Its trajectory becomes less controlled. The longitudinal gap between V2 and V1 shrinks to approximately 12 meters, which is insufficient for either vehicle to safely brake or avoid conflict under the current conditions.\n\n(3) Outcome\nDuring the attempted merge into Lane 2, the front-right side of V2 collides with the front-left side of V1, resulting in a lateral sideswipe with slight angular deflection. The collision is primarily caused by V2’s unsafe multi-lane evasive maneuver under reduced visibility, low friction, and diminished acceleration conditions, combined with V1’s inability to effectively brake or evade due to extended stopping distance and limited lateral escape space.\n\nFollowing the collision, V1 decelerates further to approximately 50 km/h and deviates slightly within Lane 2. V2 becomes partially unstable and comes to rest straddling Lanes 2 and 3, creating a partial blockage. This initial collision significantly disrupts traffic flow in both lanes, forcing following vehicles to brake sharply and creating a high risk of secondary rear-end collisions.",
+    "tas_scenario": {
+        "Environmental Context": "One-way urban expressway with four lanes, 5% uphill grade, heavy rainstorm, visibility 80 meters, wet and low-friction road surface.",
+        "Agent Initial States": [
+            "V1 is traveling in Lane 2 at 72 km/h, maintaining a following distance of approximately 35 meters from its lead vehicle.",
+            "V2 is in Lane 4, approximately 20 meters ahead of V1, traveling at 78 km/h, with the intention of moving rightward.",
+            "V3 is in Lane 3, about 15 meters behind and to the right of V2, traveling at 70 km/h.",
+            "V4 is in Lane 1, approximately 10 meters behind V1, traveling at 68 km/h."
+        ],
+        "Temporal Action Sequence": [
+            [
+                "V1",
+                "keep_speed",
+                "east",
+                "eastbound",
+                "lane 2",
+                "",
+                "1"
+            ],
+            [
+                "V2",
+                "keep_speed",
+                "east",
+                "eastbound",
+                "lane 4",
+                "",
+                "2"
+            ],
+            [
+                "V3",
+                "keep_speed",
+                "east",
+                "eastbound",
+                "lane 3",
+                "",
+                "3"
+            ],
+            [
+                "V4",
+                "keep_speed",
+                "east",
+                "eastbound",
+                "lane 1",
+                "",
+                "4"
+            ],
+            [
+                "V2",
+                "lane_change_right",
+                "east",
+                "eastbound",
+                "lane 4",
+                "lane 3",
+                "5"
+            ],
+            [
+                "V3",
+                "decelerate",
+                "east",
+                "eastbound",
+                "lane 3",
+                "",
+                "6"
+            ],
+            [
+                "V1",
+                "decelerate",
+                "east",
+                "eastbound",
+                "lane 2",
+                "",
+                "7"
+            ],
+            [
+                "V2",
+                "lane_change_right",
+                "east",
+                "eastbound",
+                "lane 3",
+                "lane 2",
+                "8"
+            ],
+            [
+                "V2",
+                "strike",
+                "east",
+                "eastbound",
+                "lane 2",
+                "V1",
+                "9"
+            ]
+        ],
+        "Candidate Ego Vehicle": "V1"
+    },
+    "logical_scenario": {
+        "world": {
+            "time_of_day": "daytime",
+            "weather": "rain",
+            "road_condition": "slippery"
+        },
+        "road": {
+            "structure": {
+                "type": "roadway",
+                "layout": "straight",
+                "num_lanes": 4,
+                "slope": "uphill"
+            },
+            "infrastructure": {
+                "roadside_safety": "wide_shoulder"
+            }
+        },
+        "vehicles": [
+            {
+                "vehicle_id": "ego",
+                "lane_id": [
+                    2,
+                    2
+                ],
+                "offset": [
+                    35,
+                    45
+                ],
+                "initial_speed": [
+                    20,
+                    22
+                ]
+            },
+            {
+                "vehicle_id": "V2",
+                "lane_id": [
+                    4,
+                    4
+                ],
+                "offset": [
+                    20,
+                    30
+                ],
+                "initial_speed": [
+                    22,
+                    24
+                ]
+            },
+            {
+                "vehicle_id": "V3",
+                "lane_id": [
+                    3,
+                    3
+                ],
+                "offset": [
+                    15,
+                    25
+                ],
+                "initial_speed": [
+                    19,
+                    21
+                ]
+            },
+            {
+                "vehicle_id": "V4",
+                "lane_id": [
+                    1,
+                    1
+                ],
+                "offset": [
+                    10,
+                    20
+                ],
+                "initial_speed": [
+                    19,
+                    21
+                ]
+            }
+        ],
+        "actions": [
+            {
+                "vehicle_id": "V2",
+                "type": "LaneChanging",
+                "target_lane": [
+                    3,
+                    3
+                ],
+                "target_speed": [
+                    19,
+                    24
+                ],
+                "trigger_sequence": [
+                    1,
+                    1
+                ],
+                "time_interval": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "vehicle_id": "V3",
+                "type": "Decelerate",
+                "target_speed": [
+                    15,
+                    20
+                ],
+                "trigger_sequence": [
+                    2,
+                    2
+                ],
+                "time_interval": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "vehicle_id": "V2",
+                "type": "LaneChanging",
+                "target_lane": [
+                    2,
+                    2
+                ],
+                "target_speed": [
+                    15,
+                    24
+                ],
+                "trigger_sequence": [
+                    4,
+                    4
+                ],
+                "time_interval": [
+                    1,
+                    2
+                ]
+            }
+        ]
+    }
+}

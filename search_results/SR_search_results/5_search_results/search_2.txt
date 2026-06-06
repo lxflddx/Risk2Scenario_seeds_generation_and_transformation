@@ -1,0 +1,9 @@
+Risk Factor: Vehicle Encroachment
+Specific Description: Vehicle 1 encroached into Vehicle 2's lane, resulting in impact.
+
+Risk Factor: Speed Differential
+Specific Description: Vehicle #1 was traveling at a higher speed than Vehicle #3, leading to the rear-end collision.
+
+Risk Factor: Unidentified Critical Pre-Crash Event (Vehicle #1)
+Specific Description: The cause of Vehicle #1âs action is unknown. This could include distracted driving, following too closely, aggressive driving, or a vehicle malfunction.
+

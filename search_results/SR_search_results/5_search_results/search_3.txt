@@ -1,0 +1,9 @@
+Risk Factor: Vehicle Encroachment
+Specific Description: Vehicle 1 encroached into Vehicle 2's lane, resulting in impact.
+
+Risk Factor: Concrete Barrier Wall
+Specific Description: The barrier wall was impacted by V1 after the initial collision with V2, contributing to vehicle damage.
+
+Risk Factor: Evasive Maneuver
+Specific Description: Vehicle #2âs attempt to move onto the shoulder, while intended to avoid the collision, was ultimately unsuccessful.
+

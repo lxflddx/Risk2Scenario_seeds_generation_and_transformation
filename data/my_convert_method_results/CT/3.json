@@ -1,0 +1,213 @@
+{
+    "scenario_id": 3,
+    "accident_report": "(1)Vehicle Initialization\nOn a one-way three-lane downhill roadway (grade approximately -6.2%), the surface is covered with standing water, resulting in low friction. V1 is traveling in lane 2 at 87 km/h, maintaining steady motion with the intent to continue straight. V2 follows V1 in lane 2 at a distance of approximately 30 meters, traveling at 91 km/h, with a slight acceleration trend due to the downhill grade. V3 is in lane 3, about 5 meters behind V1, traveling at 89 km/h, intending to merge into lane 2 without signaling.\n(2)Scenario Development\nAs vehicles proceed downhill, V2’s speed increases from 91 km/h to 95 km/h due to gravity, reducing the gap to V1 from 30 meters to approximately 22 meters. Meanwhile, the wet road reduces tire grip, though drivers have not adjusted sufficiently.\nAt this moment, V3 abruptly merges from lane 3 into lane 2 without signaling, entering approximately 10 meters ahead of V1. This illegal cut-in sharply reduces V1’s available headway. V1 responds with hard braking and slight left steering to avoid a collision.\nDue to the slippery surface, V1 experiences tire slip during braking. Its speed decreases from 87 km/h to about 79 km/h, but lateral instability develops, causing it to drift toward the left side of lane 2 and occupy more lateral space. This sudden deceleration propagates backward, forcing V2 to brake aggressively.\nV2, approaching at 95 km/h with only about 22 meters of spacing, faces extended stopping distance due to downhill inertia and reduced friction. Despite full braking, its speed only drops to about 86 km/h within a short time. At the same time, V1’s lateral drift reduces available maneuvering space, while V3—having just merged—occupies the forward-right area and cannot accelerate away quickly, limiting V2’s option to evade by changing lanes.\nUnder these combined constraints, V2 is unable to either stop in time or execute an effective lane-change maneuver.\n(3)Outcome\nUltimately, V2 rear-ends V1 at approximately 82 km/h in lane 2. This is the first collision and marks the end of the scenario. After impact, V1 rotates slightly but remains within lane 2, while V2 comes to a stop with severe front-end damage. The collision results from the coupled effects of downhill-induced speed increase, sudden headway reduction due to illegal cut-in, and reduced friction leading to degraded braking performance and vehicle instability.",
+    "tas_scenario": {
+        "Environmental Context": "One-way three-lane downhill roadway (grade approximately -6.2%), wet road surface with standing water resulting in low friction.",
+        "Agent Initial States": [
+            "V1 is traveling in lane 2 at 87 km/h, maintaining steady motion and intending to continue straight. Initial longitudinal position: Leading vehicle in lane 2.",
+            "V2 follows V1 in lane 2 at 91 km/h, approximately 30 meters behind V1, with a slight acceleration trend. Initial longitudinal position: 30 meters behind V1 in lane 2.",
+            "V3 is in lane 3, about 5 meters behind V1, traveling at 89 km/h, intending to merge into lane 2 without signaling. Initial longitudinal position: 5 meters behind V1 in lane 3."
+        ],
+        "Temporal Action Sequence": [
+            [
+                "V1",
+                "keep_speed",
+                "east",
+                "eastbound",
+                "lane 2",
+                "",
+                "1"
+            ],
+            [
+                "V2",
+                "accelerate",
+                "east",
+                "eastbound",
+                "lane 2",
+                "",
+                "2"
+            ],
+            [
+                "V3",
+                "lane_change_left",
+                "east",
+                "eastbound",
+                "lane 2",
+                "",
+                "3"
+            ],
+            [
+                "V2",
+                "decelerate",
+                "east",
+                "eastbound",
+                "lane 2",
+                "",
+                "4"
+            ],
+            [
+                "V1",
+                "decelerate",
+                "east",
+                "eastbound",
+                "lane 2",
+                "",
+                "5"
+            ],
+            [
+                "V2",
+                "decelerate",
+                "east",
+                "eastbound",
+                "lane 2",
+                "",
+                "6"
+            ],
+            [
+                "V1",
+                "strike",
+                "east",
+                "eastbound",
+                "lane 2",
+                "V2",
+                "7"
+            ]
+        ],
+        "Candidate Ego Vehicle": "V1"
+    },
+    "logical_scenario": {
+        "world": {
+            "time_of_day": "daytime",
+            "weather": "rain",
+            "road_condition": "slippery"
+        },
+        "road": {
+            "structure": {
+                "type": "roadway",
+                "layout": "straight",
+                "num_lanes": 3,
+                "slope": "downhill"
+            },
+            "infrastructure": {
+                "roadside_safety": "wide_shoulder"
+            }
+        },
+        "vehicles": [
+            {
+                "vehicle_id": "ego",
+                "lane_id": [
+                    2,
+                    2
+                ],
+                "offset": [
+                    50,
+                    60
+                ],
+                "initial_speed": [
+                    24,
+                    24
+                ]
+            },
+            {
+                "vehicle_id": "V2",
+                "lane_id": [
+                    2,
+                    2
+                ],
+                "offset": [
+                    20,
+                    30
+                ],
+                "initial_speed": [
+                    25,
+                    25
+                ]
+            },
+            {
+                "vehicle_id": "V3",
+                "lane_id": [
+                    3,
+                    3
+                ],
+                "offset": [
+                    45,
+                    55
+                ],
+                "initial_speed": [
+                    24,
+                    24
+                ]
+            }
+        ],
+        "actions": [
+            {
+                "vehicle_id": "V2",
+                "type": "Accelerate",
+                "target_speed": [
+                    25,
+                    25
+                ],
+                "trigger_sequence": [
+                    1,
+                    1
+                ],
+                "time_interval": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "vehicle_id": "V3",
+                "type": "LaneChanging",
+                "target_lane": [
+                    2,
+                    2
+                ],
+                "target_speed": [
+                    24,
+                    24
+                ],
+                "trigger_sequence": [
+                    2,
+                    2
+                ],
+                "time_interval": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "vehicle_id": "V2",
+                "type": "Decelerate",
+                "target_speed": [
+                    20,
+                    20
+                ],
+                "trigger_sequence": [
+                    3,
+                    3
+                ],
+                "time_interval": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "vehicle_id": "V2",
+                "type": "Decelerate",
+                "target_speed": [
+                    15,
+                    15
+                ],
+                "trigger_sequence": [
+                    5,
+                    5
+                ],
+                "time_interval": [
+                    1,
+                    2
+                ]
+            }
+        ]
+    }
+}

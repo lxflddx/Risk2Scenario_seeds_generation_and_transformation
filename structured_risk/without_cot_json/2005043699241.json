@@ -1,0 +1,37 @@
+{
+  "risk_factor_classification": {
+    "Road Layer": [
+      {
+        "Risk Factor": "Lane Configuration",
+        "Risk Level": "Level 1",
+        "Specific Description": "The report states the roadway has divided lanes, which is the default safe state and therefore not a risk factor."
+      }
+    ],
+    "Infrastructure Layer": [],
+    "Object Interaction Layer": [
+      {
+        "Risk Factor": "Key Vehicle Behavior",
+        "Risk Level": "Level 3",
+        "Specific Description": "The non-contact vehicle performed an illegal cut-in, merging into V1's lane without signaling, which triggered V1âs evasive maneuver and subsequent loss of control. This directly contributed to the initial collision sequence."
+      },
+      {
+        "Risk Factor": "Speed Interaction",
+        "Risk Level": "Level 2",
+        "Specific Description": "V2 accelerated to avoid the crash, indicating a large longitudinal speed difference between V1 and V2. This, while reactive, was a contributing factor in the interaction and subsequent contact."
+      }
+    ],
+    "Environment Layer": [],
+    "Other Relevant Risk Layer": [
+      {
+        "Risk Factor": "Overcompensation",
+        "Risk Level": "Level 2",
+        "Specific Description": "The critical reason for V1âs crash was a performance error of overcompensation after the non-contact vehicle attempted to merge into its lane. This indicates an incorrect response to the perceived hazard which led to loss of control."
+      },
+      {
+        "Risk Factor": "Unfamiliarity with roadway",
+        "Risk Level": "Level 2",
+        "Specific Description": "V2's driver reported being unfamiliar with the roadway, driving it only approximately once a month. While the report states the driver wasn't thought to have contributed to the crash, the relative unfamiliarity is a relevant risk factor that may have influenced the driver's reaction."
+      }
+    ]
+  }
+}

@@ -1,0 +1,263 @@
+{
+    "scenario_id": 12,
+    "accident_report": "Vehicle #1 (V1) is positioned in Lane 2 and stops when attempting a left turn from a T-intersection on a multi-lane road. Vehicle #2 (V2) is 30 meters behind V1 in Lane 2, traveling at 80 km/h while the driver is showing a passenger a scenic landmark on the right side of the road. Vehicle #3 (V3) is traveling in Lane 3, 20 meters ahead of V1 when V1 stops. V1 travels until a T-intersection requires a left turn from Lane 2 where it needs to wait for a safe opening in Lane 3 traffic. V1 stops entirely within Lane 2. V2 follows V1 at a distance of 30 meters but is distracted because the driver points out a scenic landmark (e.g., famous building) on the right to a passenger. V2 fails to recognize that V1 has stopped until the driver looks back at the road only when V2 is already very close to V1. The speed differential here is substantial as V1 is completely stopped while V2 travels at 80 km/h, which makes stopping in time impossible.",
+    "tas_scenario": {
+        "Environmental Context": "Multi-lane road with a T-intersection. The scenario occurs during daylight. Road surface condition is dry. Road type is eastbound. Lane structure includes at least three lanes. Traffic infrastructure includes a T-intersection.",
+        "Agent Initial States": [
+            "V1 is in lane 2, attempting a left turn at the T-intersection, and slowing down.",
+            "V2 is 30 meters behind V1 in lane 2, traveling at 80 km/h.",
+            "V3 is in lane 3, 20 meters ahead of V1."
+        ],
+        "Temporal Action Sequence": [
+            [
+                "V1",
+                "decelerate",
+                "east",
+                "eastbound",
+                "lane 2",
+                "",
+                "1"
+            ],
+            [
+                "V2",
+                "keep_speed",
+                "east",
+                "eastbound",
+                "lane 2",
+                "",
+                "1"
+            ],
+            [
+                "V3",
+                "keep_speed",
+                "east",
+                "eastbound",
+                "lane 3",
+                "",
+                "1"
+            ],
+            [
+                "V1",
+                "decelerate",
+                "east",
+                "eastbound",
+                "lane 2",
+                "",
+                "2"
+            ],
+            [
+                "V2",
+                "keep_speed",
+                "east",
+                "eastbound",
+                "lane 2",
+                "",
+                "2"
+            ],
+            [
+                "V1",
+                "decelerate",
+                "east",
+                "eastbound",
+                "lane 2",
+                "",
+                "3"
+            ],
+            [
+                "V2",
+                "keep_speed",
+                "east",
+                "eastbound",
+                "lane 2",
+                "",
+                "3"
+            ],
+            [
+                "V1",
+                "decelerate",
+                "east",
+                "eastbound",
+                "lane 2",
+                "",
+                "4"
+            ],
+            [
+                "V2",
+                "keep_speed",
+                "east",
+                "eastbound",
+                "lane 2",
+                "",
+                "4"
+            ],
+            [
+                "V1",
+                "keep_speed",
+                "east",
+                "eastbound",
+                "lane 2",
+                "",
+                "5"
+            ],
+            [
+                "V2",
+                "keep_speed",
+                "east",
+                "eastbound",
+                "lane 2",
+                "",
+                "5"
+            ],
+            [
+                "V2",
+                "decelerate",
+                "east",
+                "eastbound",
+                "lane 2",
+                "",
+                "6"
+            ],
+            [
+                "V2",
+                "strike",
+                "east",
+                "eastbound",
+                "lane 2",
+                "V1",
+                "6"
+            ]
+        ],
+        "Candidate Ego Vehicle": "V2"
+    },
+    "logical_scenario": {
+        "world": {
+            "time_of_day": "daytime",
+            "weather": "clear",
+            "road_condition": "dry"
+        },
+        "road": {
+            "structure": {
+                "type": "roadway",
+                "layout": "straight",
+                "num_lanes": 3,
+                "slope": "flat"
+            },
+            "infrastructure": {
+                "roadside_safety": "wide_shoulder"
+            }
+        },
+        "vehicles": [
+            {
+                "vehicle_id": "V1",
+                "lane_id": [
+                    2,
+                    2
+                ],
+                "offset": [
+                    60,
+                    70
+                ],
+                "initial_speed": [
+                    20,
+                    30
+                ]
+            },
+            {
+                "vehicle_id": "ego",
+                "lane_id": [
+                    2,
+                    2
+                ],
+                "offset": [
+                    30,
+                    40
+                ],
+                "initial_speed": [
+                    80,
+                    90
+                ]
+            },
+            {
+                "vehicle_id": "V3",
+                "lane_id": [
+                    3,
+                    3
+                ],
+                "offset": [
+                    80,
+                    90
+                ],
+                "initial_speed": [
+                    80,
+                    90
+                ]
+            }
+        ],
+        "actions": [
+            {
+                "vehicle_id": "V1",
+                "type": "Decelerate",
+                "target_speed": [
+                    10,
+                    20
+                ],
+                "trigger_sequence": [
+                    1,
+                    1
+                ],
+                "time_interval": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "vehicle_id": "V1",
+                "type": "Decelerate",
+                "target_speed": [
+                    5,
+                    15
+                ],
+                "trigger_sequence": [
+                    2,
+                    2
+                ],
+                "time_interval": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "vehicle_id": "V1",
+                "type": "Decelerate",
+                "target_speed": [
+                    0,
+                    10
+                ],
+                "trigger_sequence": [
+                    3,
+                    3
+                ],
+                "time_interval": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "vehicle_id": "V1",
+                "type": "Decelerate",
+                "target_speed": [
+                    0,
+                    5
+                ],
+                "trigger_sequence": [
+                    4,
+                    4
+                ],
+                "time_interval": [
+                    1,
+                    2
+                ]
+            }
+        ]
+    }
+}
