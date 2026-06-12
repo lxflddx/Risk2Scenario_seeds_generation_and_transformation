@@ -10,10 +10,10 @@ from openpyxl import Workbook
 USE_TC_FORMAT = True
 
 # 输入文件夹路径
-folder_path = r"D:\pythonProject\LLM_Scenario\data\risk2Scenario_CT\risk_combine_1"
+folder_path = r"D:\pythonProject\LLM_Scenario\data\my_convert_method_results\SR"
 
 # 输出 Excel 文件
-excel_path = r"D:\pythonProject\LLM_Scenario\data\result_time_test\CT.xlsx"
+excel_path = r"D:\pythonProject\LLM_Scenario\data\my_convert_method_results\SR.xlsx"
 
 # ========================================
 

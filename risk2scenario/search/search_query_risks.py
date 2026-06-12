@@ -214,7 +214,6 @@ def search_risk(query_risk, top_k=3):
 if __name__ == "__main__":
     # folder_path = 'D:\\pythonProject\\LLM_Scenario\\new_risk_json\\new_risk_json_highway_gemma'
     file_path = r'/risk2scenario/search/risk_library_semantic.json'
-    # file_path = 'D:\\pythonProject\\LLM_Scenario\\extract\\weather_layer.json'
     load_risk_data_and_model(file_path)
     query_risk = "The ego is driving straight through an intersection when a crossing vehicle runs the red light and unexpectedly accelerates, forcing the ego to quickly reassess the situation and perform a collision avoidance maneuver."
     search_risk(query_risk)
