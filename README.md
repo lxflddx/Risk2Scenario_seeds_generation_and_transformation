@@ -1,4 +1,4 @@
-# Risk2Scenario_seeds_generation_and_transformation
+# risk2scenario_seeds_generation_and_transformation
 本项目实现了基于风险知识增强的种子场景生成与转换：  
 1. 从原始事故数据中**提取风险**（支持 CoT / 非 CoT 两种方式）  
 2. 构建**JOSN结构化风险知识库**  
