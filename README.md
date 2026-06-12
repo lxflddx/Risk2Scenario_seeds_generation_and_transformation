@@ -109,7 +109,7 @@ LLM_Scenario/
 │   └── without_cot_txt/
 ├── utils/                            # 工具
 │   ├── file_util.py                  # 分层整理风险
-│   ├── llm_util.py                   # 大模型配置
+│   ├── llm_util.py                   # openrouter大模型配置
 │   ├── openai_llm_utils.py           # openai大模型配置
 │   ├── process_json_util.py          # 把提取出的风险部分的json数据保存到文件中
 │   ├── process_testcase.py           # 将转换得到的json测试用例提取到表格中，便于后续运行仿真
